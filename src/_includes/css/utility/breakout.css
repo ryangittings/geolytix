@@ -1,0 +1,12 @@
+.breakout {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.breakout-left {
+  margin-left: calc(50% - 50vw);
+}
+
+.breakout-right {
+  margin-right: calc(50% - 50vw);
+}

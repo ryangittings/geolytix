@@ -1,0 +1,11 @@
+.grid-block {
+}
+
+.grid-block__title {
+  font-size: var(--size-400);
+  margin-bottom: 0.5rem;
+}
+
+.grid-block__icon {
+  margin-bottom: 1rem;
+}

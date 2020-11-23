@@ -1,0 +1,15 @@
+.image-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.image-panel__image {
+  width: 100%;
+}
+
+.image-panel__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--size-900);
+}

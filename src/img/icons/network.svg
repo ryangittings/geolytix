@@ -1,0 +1,15 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#F5C8B8"/>
+<path d="M12 48V42C12 34.5 6 28.2 6 19.5C6 10.8 13.05 3.75 21.75 3.75C30.45 3.75 37.5 10.8 37.5 19.5L42 30.75H37.5V37.5C37.5 39.975 35.475 42 33 42H28.5V48" fill="white"/>
+<path d="M28.5 42H26.25" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M12 48V42C12 34.5 6 28.2 6 19.5C6 10.8 13.05 3.75 21.75 3.75C30.45 3.75 37.5 10.8 37.5 19.5L42 30.75H37.5V37.5C37.5 39.975 35.475 42 33 42H28.5V48" fill="white"/>
+<path d="M12 48V42C12 34.5 6 28.2 6 19.5C6 10.8 13.05 3.75 21.75 3.75C30.45 3.75 37.5 10.8 37.5 19.5L42 30.75H37.5V37.5C37.5 39.975 35.475 42 33 42H28.5V48" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M21.75 30.75C27.9632 30.75 33 25.7132 33 19.5C33 13.2868 27.9632 8.25 21.75 8.25C15.5368 8.25 10.5 13.2868 10.5 19.5C10.5 25.7132 15.5368 30.75 21.75 30.75Z" fill="white"/>
+<path d="M21.75 30.75C27.9632 30.75 33 25.7132 33 19.5C33 13.2868 27.9632 8.25 21.75 8.25C15.5368 8.25 10.5 13.2868 10.5 19.5C10.5 25.7132 15.5368 30.75 21.75 30.75Z" fill="white" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M11.25 15.75H32.25" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M11.25 23.25H32.25" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M18 19.5H19.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M21 19.5H22.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M24 19.5H25.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M21.75 30.75C25.0637 30.75 27.75 25.7132 27.75 19.5C27.75 13.2868 25.0637 8.25 21.75 8.25C18.4363 8.25 15.75 13.2868 15.75 19.5C15.75 25.7132 18.4363 30.75 21.75 30.75Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+</svg>

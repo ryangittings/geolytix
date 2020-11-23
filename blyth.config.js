@@ -5,11 +5,15 @@ const theme = {
   },
   colors: {
     primary: '#401505',
+    'primary-light': '#9AABBC',
+    'primary-mid': '#63778C',
     secondary: '#EC602D',
     'secondary-dark': '#401505',
     light: '#ffffff',
     dark: '#003D57',
     cream: '#E3D2C1',
+    'light-gray': '#F7F8FA',
+    'regular-gray': '#F0F0F0',
   },
   fonts: {
     base: 'Inter, sans-serif',
@@ -94,6 +98,13 @@ module.exports = {
       items: theme.sizeScale,
       responsive: true,
       property: 'font-size',
+    },
+    'text-align': {
+      items: {
+        center: 'center',
+      },
+      responsive: true,
+      property: 'text-align',
     },
     transition: {
       items: {

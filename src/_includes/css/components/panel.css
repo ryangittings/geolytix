@@ -1,0 +1,5 @@
+.panel {
+  position: relative;
+  z-index: 1;
+  padding: var(--size-900) 0;
+}
