@@ -1,4 +1,15 @@
-{% set css %}{% endset %}
+{% set css %}
+  {% include '../css/utility/reset.css' %}
+  {% include '../css/utility/tokens.css' %}
+  {% include '../css/utility/type-scale.css' %}
+  {% include '../css/utility/wrapper.css' %}
+  {% include '../css/global/bg.css' %}
+  {% include '../css/global/site-header.css' %}
+  {% include '../css/global/type.css' %}
+  {% include '../css/components/button.css' %}
+  {% include '../css/components/hero.css' %}
+  {% include '../css/components/nav.css' %}
+{% endset %}
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -6,11 +17,33 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% include 'partials/meta.njk' %}
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
       {{ css | cssmin | safe }}
     </style>
   </head>
   <body>
+    <header class="site-header">
+      <div class="wrapper">
+        <div class="site-header__inner">
+          {% include '../../img/logo.svg' %}
+
+          <nav class="site-header__navigation">
+            <ul class="nav">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">GeoData</a></li>
+              <li><a href="#">MAPP</a></li>
+              <li class="divider"><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#" class="button button--outline">Enquire</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
     <main>
       {{ content | safe }}
     </main>

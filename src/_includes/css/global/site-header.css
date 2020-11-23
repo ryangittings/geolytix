@@ -1,0 +1,19 @@
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: var(--size-600) 0;
+  color: var(--color-light);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__navigation {
+  margin-left: auto;
+  font-size: var(--size-300);
+}

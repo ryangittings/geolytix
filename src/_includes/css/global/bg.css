@@ -1,0 +1,7 @@
+[class*='bg-dark'] h1,
+[class*='bg-dark'] h2,
+[class*='bg-dark'] h3,
+[class*='bg-dark'] h4,
+[class*='bg-dark'] h5 {
+  color: var(--color-cream);
+}

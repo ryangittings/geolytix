@@ -7,6 +7,7 @@
     "url": "https://github.com/bly-th/eleventy"
   },
   "scripts": {
+    "blyth": "npm run blyth",
     "dev": "npm run serve",
     "serve": "ELEVENTY_ENV=development npx eleventy --serve",
     "production": "npx eleventy"
@@ -15,7 +16,7 @@
     "blyth": "node_modules/@bly-th/css/src/index.js"
   },
   "blyth": {
-    "tokensOutputPath": "src/_includes/css/tokens.css",
+    "tokensOutputPath": "src/_includes/css/utility/tokens.css",
     "utilityOutputPath": "src/_includes/css/utility"
   },
   "author": "Ryan Gittings",
