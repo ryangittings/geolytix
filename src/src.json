@@ -1,9 +1,0 @@
-{
-  "pagination": {
-    "data": "langs",
-    "size": 1,
-    "alias": "lang"
-  },
-  "langs": ["uk", "de"],
-  "permalink": "{{ lang }}/{{ page.filePathStem }}.html"
-}
