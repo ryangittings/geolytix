@@ -26,7 +26,7 @@ const theme = {
     600: 'var(--step-2)',
     700: 'var(--step-4)',
     800: 'var(--step-6)',
-    900: 'var(--step-7)',
+    900: 'calc(4rem + var(--size-800))',
   },
 };
 
@@ -63,10 +63,17 @@ module.exports = {
       },
       property: 'line-height',
     },
+    'letter-spacing': {
+      items: {
+        normal: '0.1em',
+      },
+      property: 'letter-spacing',
+      variable: true,
+    },
     measure: {
       items: {
         long: '75ch',
-        short: '60ch',
+        short: '50ch',
         compact: '40ch',
       },
       property: 'max-width',

@@ -41,7 +41,7 @@ p {
 }
 
 .eyebrow {
-  font-size: var(--size-200);
+  font-size: var(--size-300);
   text-transform: uppercase;
-  letter-spacing: 0.25em;
+  letter-spacing: var(--letter-spacing-normal);
 }

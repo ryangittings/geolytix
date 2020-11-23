@@ -21,3 +21,12 @@
   box-shadow: 0 0 0 2px var(--button-background) inset;
   color: currentColor;
 }
+
+.bg-secondary .button {
+  --button-background: var(--color-secondary-dark);
+  --button-foreground: var(--color-light);
+}
+
+.bg-secondary .button:hover {
+  --button-foreground: var(--color-secondary);
+}

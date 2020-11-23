@@ -1,2 +1,21 @@
+.stat-block-grid {
+  --auto-grid-min: 8rem;
+}
+
 .stat-block {
+  text-align: center;
+}
+
+.stat-block__number {
+  font-size: var(--size-700);
+  margin-bottom: 0;
+  color: var(--color-dark);
+}
+
+.stat-block__overview {
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-normal);
+  font-weight: var(--weight-mid);
+  font-size: var(--size-300);
+  margin-bottom: 0;
 }

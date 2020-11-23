@@ -1,4 +1,9 @@
 .hex-background {
+  position: relative;
+  z-index: 1;
+}
+
+.hex-background__canvas {
   position: absolute;
   top: 0;
   left: 0;

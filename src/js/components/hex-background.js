@@ -1,4 +1,4 @@
-var canvas = document.querySelector('.hex-background'),
+var canvas = document.querySelector('.hex-background__canvas'),
   can_w = parseInt(canvas.getAttribute('width')),
   can_h = parseInt(canvas.getAttribute('height')),
   ctx = canvas.getContext('2d');
@@ -84,7 +84,6 @@ function randomArrayItem(arr) {
 function randomNumFrom(min, max) {
   return Math.random() * (max - min) + min;
 }
-console.log(randomNumFrom(0, 10));
 // Random Ball
 function getRandomBall() {
   var pos = randomArrayItem(['top', 'right', 'bottom', 'left']);
@@ -303,7 +302,6 @@ function initCanvas() {
   can_h = parseInt(canvas.getAttribute('height'));
 }
 window.addEventListener('resize', function (e) {
-  console.log('Window Resize...');
   initCanvas();
 });
 
@@ -317,13 +315,11 @@ goMovie();
 
 // Mouse effect
 canvas.addEventListener('mouseenter', function () {
-  console.log('mouseenter');
   mouse_in = true;
   balls.push(mouse_ball);
 });
 
 canvas.addEventListener('mouseleave', function () {
-  console.log('mouseleave');
   mouse_in = false;
   var new_balls = [];
   Array.prototype.forEach.call(balls, function (b) {
@@ -338,5 +334,4 @@ canvas.addEventListener('mousemove', function (e) {
   var e = e || window.event;
   mouse_ball.x = e.pageX;
   mouse_ball.y = e.pageY;
-  // console.log(mouse_ball);
 });

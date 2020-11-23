@@ -1,0 +1,12 @@
+.checklist {
+  line-height: 2;
+}
+
+.checklist li:before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: url('/img/icons/check.svg') center / contain;
+  margin-right: 0.5rem;
+}

@@ -1,10 +1,12 @@
 const cssMinFilter = require('./src/filters/css-min.js');
 const globalFilter = require('./src/filters/global.js');
+const i18nFilter = require('./src/filters/i18n.js');
 
 module.exports = (config) => {
   // Minify filters
   config.addFilter('cssmin', cssMinFilter);
   config.addFilter('global', globalFilter);
+  config.addFilter('i18n', i18nFilter);
 
   // Pass through
   config.addPassthroughCopy('./src/img/');
