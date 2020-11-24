@@ -1,0 +1,52 @@
+{
+  "locations": [
+    {
+      "title": "London",
+      "address": "Office 117, The Finsbury Business, 40 Bowling Green Lane, London, EC1R 0NE",
+      "telephone": "+44 (0)20 74 15 70 43",
+      "email": "info@geolytix.com"
+    },
+    {
+      "title": "Leeds",
+      "address": "Office 117, The Finsbury Business, 40 Bowling Green Lane, London, EC1R 0NE",
+      "telephone": "+44 (0)20 74 15 70 43",
+      "email": "info@geolytix.com"
+    },
+    {
+      "title": "Warsaw",
+      "address": "Office 117, The Finsbury Business, 40 Bowling Green Lane, London, EC1R 0NE",
+      "telephone": "+44 (0)20 74 15 70 43",
+      "email": "info@geolytix.com"
+    },
+    {
+      "title": "Shanghai",
+      "address": "Office 117, The Finsbury Business, 40 Bowling Green Lane, London, EC1R 0NE",
+      "telephone": "+44 (0)20 74 15 70 43",
+      "email": "info@geolytix.com"
+    },
+    {
+      "title": "Guangzhou",
+      "address": "Office 117, The Finsbury Business, 40 Bowling Green Lane, London, EC1R 0NE",
+      "telephone": "+44 (0)20 74 15 70 43",
+      "email": "info@geolytix.com"
+    },
+    {
+      "title": "Tokyo",
+      "address": "Office 117, The Finsbury Business, 40 Bowling Green Lane, London, EC1R 0NE",
+      "telephone": "+44 (0)20 74 15 70 43",
+      "email": "info@geolytix.com"
+    },
+    {
+      "title": "Johannesburg",
+      "address": "Office 117, The Finsbury Business, 40 Bowling Green Lane, London, EC1R 0NE",
+      "telephone": "+44 (0)20 74 15 70 43",
+      "email": "info@geolytix.com"
+    },
+    {
+      "title": "Melbourne",
+      "address": "Office 117, The Finsbury Business, 40 Bowling Green Lane, London, EC1R 0NE",
+      "telephone": "+44 (0)20 74 15 70 43",
+      "email": "info@geolytix.com"
+    }
+  ]
+}

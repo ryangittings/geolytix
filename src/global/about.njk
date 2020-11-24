@@ -72,14 +72,9 @@ title: About
 
     <div class="gap-top-800">
       <ul class="[ location-list ] [ color-primary text-500 weight-mid ]">
-        <li>London</li>
-        <li>Leeds</li>
-        <li>Warsaw</li>
-        <li>Shanghai</li>
-        <li>Guangzhou</li>
-        <li>Tokyo</li>
-        <li>Johannesburg</li>
-        <li>Melbourne</li>
+        {% for office in offices.locations %}
+          <li>{{ office.title }}</li>
+        {% endfor %}
       </ul>
     </div>
   </div>

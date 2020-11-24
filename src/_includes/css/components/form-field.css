@@ -1,0 +1,21 @@
+.form-field {
+}
+
+.form-field label {
+  display: block;
+  font-weight: var(--weight-mid);
+  margin-bottom: 0.5rem;
+}
+
+.form-field input,
+.form-field textarea {
+  display: block;
+  width: 100%;
+  padding: var(--size-200);
+  border: 1px solid var(--color-primary-light);
+  border-radius: var(--radius-regular);
+}
+
+.form-field--large {
+  grid-column: span 2;
+}

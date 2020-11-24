@@ -1,0 +1,70 @@
+---
+layout: layouts/default.njk
+title: Contact
+---
+
+<section class="[ hero ] [ bg-dark text-align-center ]">
+  <img src="/img/hero/about.jpg" class="hero__background" alt="Office">
+  <div class="wrapper">
+    <div class="measure-short">
+      <h1>{{ "Contact Us" | i18n(locale) }}</h1>
+      <p>{{ "At GEOLYTIX we help retailers make informed decisions about how many stores, who to acquire, where to open, which format, how to optimise home delivery and click & collect operations." | i18n(locale) }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="pad-bottom-900">
+  <div class="wrapper wrapper--short">
+    <form class="card card-form">
+      <div class="[ card-form__inner ] [ pad-800 ]">
+        <div class="form-field">
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name">
+        </div>
+        <div class="form-field">
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name">
+        </div>
+        <div class="form-field">
+          <label for="email_address">Email Address</label>
+          <input type="email" id="email_address">
+        </div>
+        <div class="form-field">
+          <label for="telephone">Telephone</label>
+          <input type="tel" id="telephone">
+        </div>
+        <div class="form-field form-field--large">
+          <label for="message">Message</label>
+          <textarea id="message"></textarea>
+        </div>
+      </div>
+      <div class="[ card-form__actions ] [ bg-regular-gray pad-400 ]">
+        <div class="checkbox-field">
+          <input type="checkbox" id="marketing">
+          <label for="marketing" class="text-300 weight-light">We’d love to let you know when we release new open data and update you with new stuff we’re working on. We won’t email often and you can unsubscribe at any time.</label>
+        </div>
+        <button type="submit" class="button">Send Enquiry</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="wrapper">
+    <h2 class="eyebrow text-align-center color-primary-mid">Or choose an office</h2>
+
+    <div class="tabs">
+      <div class="text-align-center">
+        <ul class="segment-control" role="tablist">
+          {% for office in offices.locations %}
+            <li><button data-tab="{{ office.title | slug }}" role="tab" aria-selected="true">{{ office.title }}</button></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      {% for office in offices.locations %}
+        <div data-tab-id="{{ office.title | slug }}" class="window" role="tabpanel" aria-hidden="false" aria-label="{{ office.title }}">
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

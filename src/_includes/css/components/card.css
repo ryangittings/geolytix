@@ -2,7 +2,6 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: var(--radius-regular);
   overflow: hidden;
-  text-align: center;
   flex: 1;
   background: var(--color-light);
 }
@@ -13,6 +12,7 @@
 
 .card__inner {
   padding: var(--size-400);
+  text-align: center;
 }
 
 .card__inner *:last-child {

@@ -9,6 +9,8 @@
   color: var(--button-foreground);
   border-radius: var(--radius-regular);
   transition: var(--transition-standard);
+  border: none;
+  cursor: pointer;
 }
 
 .button:hover {

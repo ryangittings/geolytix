@@ -1,0 +1,30 @@
+.card-form {
+  position: relative;
+  z-index: 2;
+  transform: translateY(calc(var(--size-900) * -1));
+}
+
+.card-form__inner {
+  --card-form-gap: var(--size-600);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(50% - var(--card-form-gap)), 1fr));
+  grid-gap: var(--card-form-gap);
+}
+
+.card-form__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-form__actions .checkbox-field {
+  min-width: 18rem;
+  flex: 1;
+}
+
+.card-form__actions .button {
+  flex-shrink: 0;
+  margin: 1rem;
+}

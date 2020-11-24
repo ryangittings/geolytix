@@ -79,6 +79,10 @@ module.exports = {
       },
       property: 'max-width',
     },
+    pad: {
+      items: theme.sizeScale,
+      property: 'padding',
+    },
     'pad-top': {
       items: theme.sizeScale,
       property: 'padding-top',
