@@ -1,23 +1,40 @@
-.nav {
+ul.nav {
+  --nav-padding: var(--size-400);
+
   display: flex;
   align-items: center;
-}
-
-.nav li a:not(.button) {
-  display: block;
-  text-decoration: none;
-  color: currentColor;
-  padding: 0.25rem var(--size-400);
+  flex-wrap: wrap;
+  margin: 0 calc(var(--nav-padding) * -1);
   line-height: 1;
 }
 
-.nav li a img,
-.nav li a svg {
-  display: inline-block;
+.nav li a:not(.button):not(.flag) {
+  display: block;
+  text-decoration: none;
+  color: currentColor;
+  padding: var(--nav-padding);
+  line-height: 1;
+}
+
+.nav li a:not(.flag) img,
+.nav li a:not(.flag) svg {
+  display: block;
   height: 1rem;
   width: auto;
 }
 
 .nav li.divider {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav .flag {
+  margin: var(--size-400) 0;
+}
+
+ul.nav--vertical {
+  flex-direction: column;
+}
+
+ul.nav--vertical li.divider {
+  border: none;
 }

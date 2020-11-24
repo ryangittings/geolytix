@@ -14,6 +14,13 @@
 }
 
 .site-header__navigation {
+  display: none;
   margin-left: auto;
   font-size: var(--size-300);
+}
+
+@media (min-width: 48em) {
+  .site-header__navigation {
+    display: block;
+  }
 }

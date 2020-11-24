@@ -4,10 +4,13 @@
   color: var(--color-light);
 }
 
+.site-footer__image {
+  margin: 0.5rem auto 0.5rem 0;
+}
+
 .site-footer__section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 

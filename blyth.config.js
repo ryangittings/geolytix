@@ -26,7 +26,7 @@ const theme = {
     600: 'var(--step-2)',
     700: 'var(--step-4)',
     800: 'var(--step-6)',
-    900: 'calc(4rem + var(--size-800))',
+    900: 'var(--step-8)',
   },
 };
 
@@ -73,8 +73,8 @@ module.exports = {
     measure: {
       items: {
         long: '75ch',
-        short: '50ch',
-        compact: '40ch',
+        short: '60ch',
+        compact: '44ch',
       },
       property: 'max-width',
     },

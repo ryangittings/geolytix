@@ -1,0 +1,24 @@
+.expanded-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--color-dark);
+  color: var(--color-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-standard);
+}
+
+.expanded-navigation[data-status='closed'] {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.expanded-navigation[data-status='open'] {
+  visibility: visible;
+  opacity: 1;
+}

@@ -16,6 +16,6 @@
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-normal);
   font-weight: var(--weight-mid);
-  font-size: var(--size-300);
+  font-size: var(--size-200);
   margin-bottom: 0;
 }

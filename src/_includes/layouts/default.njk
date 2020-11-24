@@ -13,14 +13,17 @@
   {% include '../css/global/site-header.css' %}
   {% include '../css/global/type.css' %}
   {% include '../css/components/button.css' %}
+  {% include '../css/components/button-group.css' %}
   {% include '../css/components/card.css' %}
   {% include '../css/components/checklist.css' %}
   {% include '../css/components/grid-block.css' %}
+  {% include '../css/components/expanded-navigation.css' %}
   {% include '../css/components/flag.css' %}
   {% include '../css/components/hero.css' %}
   {% include '../css/components/hex-background.css' %}
   {% include '../css/components/image-panel.css' %}
   {% include '../css/components/logo-grid.css' %}
+  {% include '../css/components/menu-toggle.css' %}
   {% include '../css/components/nav.css' %}
   {% include '../css/components/stat-block.css' %}
   {% include '../css/components/window.css' %}
@@ -57,8 +60,25 @@
               <li><a href="#"><span class="flag">{% include "../../img/locales/" + locale + ".svg" %}</span></a></li>
             </ul>
           </nav>
+
+          <button class="menu-toggle" data-header-menu-toggle aria-haspopup="true" aria-expanded="false"></button>
         </div>
       </div>
+
+      <div class="expanded-navigation" data-status="closed">
+        <nav class="expanded-navigation" aria-label="Expanded navigation">
+          <ul class="nav nav--vertical">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">GeoData</a></li>
+            <li><a href="#">MAPP</a></li>
+            <li class="divider"><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#" class="button button--outline">Enquire</a></li>
+            <li><a href="#" class="flag">{% include "../../img/locales/" + locale + ".svg" %}</a></li>
+          </ul>
+        </nav>
+      </div>
+      <script src="/js/components/menu-toggle.js" type="module" defer></script>
     </header>
 
     <main>
@@ -79,7 +99,7 @@
     <footer class="site-footer">
       <div class="wrapper">
         <div class="site-footer__section site-footer__primary">
-          {% include '../../img/logo.svg' %}
+          <span class="site-footer__image">{% include '../../img/logo.svg' %}</span>
 
           <nav class="site-footer__navigation">
             <ul class="nav">
@@ -94,7 +114,7 @@
           </nav>
         </div>
         <div class="site-footer__section site-footer__secondary">
-          <a href="#" class="flag">{% include "../../img/locales/" + locale + ".svg" %}</a>
+          <span class="site-footer__image"><a href="#" class="flag">{% include "../../img/locales/" + locale + ".svg" %}</a></span>
 
           <nav class="[ site-footer__navigation ] [ text-300 ]">
             <ul class="nav">
