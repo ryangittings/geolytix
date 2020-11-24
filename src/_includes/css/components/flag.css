@@ -1,0 +1,11 @@
+.flag {
+  display: inline-block;
+  width: 2rem;
+  padding: 0;
+}
+
+.flag svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}

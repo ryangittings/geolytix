@@ -1,0 +1,18 @@
+.site-footer {
+  background: var(--color-dark);
+  padding: var(--size-800) 0;
+  color: var(--color-light);
+}
+
+.site-footer__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site-footer__secondary {
+  margin-top: var(--size-600);
+  padding-top: var(--size-600);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

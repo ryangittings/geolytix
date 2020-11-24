@@ -11,6 +11,13 @@
   line-height: 1;
 }
 
+.nav li a img,
+.nav li a svg {
+  display: inline-block;
+  height: 1rem;
+  width: auto;
+}
+
 .nav li.divider {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
 }

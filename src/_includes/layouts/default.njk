@@ -9,17 +9,22 @@
   {% include '../css/utility/wrapper.css' %}
   {% include '../css/global/bg.css' %}
   {% include '../css/global/global.css' %}
+  {% include '../css/global/site-footer.css' %}
   {% include '../css/global/site-header.css' %}
   {% include '../css/global/type.css' %}
   {% include '../css/components/button.css' %}
+  {% include '../css/components/card.css' %}
   {% include '../css/components/checklist.css' %}
   {% include '../css/components/grid-block.css' %}
+  {% include '../css/components/flag.css' %}
   {% include '../css/components/hero.css' %}
   {% include '../css/components/hex-background.css' %}
   {% include '../css/components/image-panel.css' %}
+  {% include '../css/components/logo-grid.css' %}
   {% include '../css/components/nav.css' %}
   {% include '../css/components/stat-block.css' %}
   {% include '../css/components/window.css' %}
+  {% include '../css/vendor/tiny-slider.css' %}
 {% endset %}
 <!doctype html>
 <html class="no-js" lang="{{ locale }}">
@@ -41,7 +46,7 @@
         <div class="site-header__inner">
           {% include '../../img/logo.svg' %}
 
-          <nav class="site-header__navigation">
+          <nav class="site-header__navigation" aria-label="Primary navigation">
             <ul class="nav">
               <li><a href="#">Services</a></li>
               <li><a href="#">GeoData</a></li>
@@ -49,6 +54,7 @@
               <li class="divider"><a href="#">About</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#" class="button button--outline">Enquire</a></li>
+              <li><a href="#"><span class="flag">{% include "../../img/locales/" + locale + ".svg" %}</span></a></li>
             </ul>
           </nav>
         </div>
@@ -58,5 +64,46 @@
     <main>
       {{ content | safe }}
     </main>
+
+    <aside class="bg-light pad-top-300 pad-bottom-300">
+      <ul class="[ logo-grid ] [ auto-grid ]">
+        <li><img src="/img/awards/dataiq.png" alt="DataIQ Awards 2020 Winner"></li>
+        <li><img src="/img/awards/fsb.jpg" alt="FSB London Business Awards Runner Up"></li>
+        <li><img src="/img/awards/geoawesome.png" alt="GEO awesomeness"></li>
+        <li><img src="/img/awards/nba.jpg" alt="National Business Awards UK Finalist 2014"></li>
+        <li><img src="/img/awards/qa.jpg" alt="The Queen's Awards for Enterprise: Innovation 2016"></li>
+        <li><img src="/img/awards/sla.jpg" alt="The Society for Location Analysis"></li>
+      </ul>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="wrapper">
+        <div class="site-footer__section site-footer__primary">
+          {% include '../../img/logo.svg' %}
+
+          <nav class="site-footer__navigation">
+            <ul class="nav">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">GeoData</a></li>
+              <li><a href="#">MAPP</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li class="divider"><a href="#">{% include "../../img/icons/linkedin.svg" %}</a></li>
+              <li><a href="#">{% include "../../img/icons/twitter.svg" %}</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="site-footer__section site-footer__secondary">
+          <a href="#" class="flag">{% include "../../img/locales/" + locale + ".svg" %}</a>
+
+          <nav class="[ site-footer__navigation ] [ text-300 ]">
+            <ul class="nav">
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

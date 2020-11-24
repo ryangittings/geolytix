@@ -4,3 +4,7 @@
   max-width: var(--wrapper-max-width, 80rem);
   padding: 0 1rem;
 }
+
+.wrapper--short {
+  --wrapper-max-width: 56rem;
+}
