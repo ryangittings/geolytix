@@ -5,16 +5,16 @@ layout: layouts/base.njk
 <header class="site-header">
   <div class="wrapper">
     <div class="site-header__inner">
-      {% include '../../img/logo.svg' %}
+      <a href="{{ "/" | link(locale.code) }}">{% include '../../img/logo.svg' %}</a>
 
       <nav class="site-header__navigation" aria-label="Primary navigation">
         <ul class="nav">
-          <li><a href="{{ "/#services" | link }}">Services</a></li>
-          <li><a href="{{ "/#geodata" | link }}">GeoData</a></li>
-          <li><a href="{{ "/#mapp" | link }}">MAPP</a></li>
+          <li><a href="{{ "/#services" | link(locale.code) }}">Services</a></li>
+          <li><a href="{{ "/#geodata" | link(locale.code) }}">GeoData</a></li>
+          <li><a href="{{ "/#mapp" | link(locale.code) }}">MAPP</a></li>
           <li class="divider"><a href="#">About</a></li>
           <li><a href="https://blog.geolytix.net/" target="_blank" rel="noopener noreferrer">Blog</a></li>
-          <li><a href="{{ "/conact/" | link }}" class="button button--outline">Enquire</a></li>
+          <li><a href="{{ "/contact/" | link(locale.code) }}" class="button button--outline">Enquire</a></li>
 
           {% if locale.code %}
             <li>{% include '../partials/flag.njk' %}</li>

@@ -1,7 +1,7 @@
 const cssMinFilter = require('./src/filters/css-min.js');
 const globalFilter = require('./src/filters/global.js');
 const i18nFilter = require('./src/filters/i18n.js');
-const linkFilter = require('./src/filters/i18n.js');
+const linkFilter = require('./src/filters/link.js');
 
 module.exports = (config) => {
   // Minify filters

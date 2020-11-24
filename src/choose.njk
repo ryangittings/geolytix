@@ -17,9 +17,8 @@ title: Choose
     <ul class="auto-grid">
       {% for locale in locales.languages %}
         <li class="country-list">
-          <a href="{{ locale.root }}"></a>
           {% include './_includes/partials/flag.njk' %}
-          {{ locale.title }}
+          <a href="{{ locale.root }}">{{ locale.title }}</a>
         </li>
       {% endfor %}
     </ul>

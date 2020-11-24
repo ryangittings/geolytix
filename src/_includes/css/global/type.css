@@ -40,6 +40,10 @@ p {
   margin-bottom: var(--size-400);
 }
 
+a {
+  color: currentColor;
+}
+
 .eyebrow {
   font-size: var(--size-300);
   text-transform: uppercase;
