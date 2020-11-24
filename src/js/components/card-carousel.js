@@ -1,5 +1,5 @@
 var slider = tns({
-  container: '.carousel',
+  container: '.card-carousel',
   autoplay: true,
   gutter: 32,
   nav: false,

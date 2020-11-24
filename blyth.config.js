@@ -98,6 +98,13 @@ module.exports = {
       property: 'border-radius',
       variable: true,
     },
+    shadow: {
+      items: {
+        standard: '0px 4px 4px rgba(0, 0, 0, 0.05)',
+      },
+      property: 'box-shadow',
+      variable: true,
+    },
     size: {
       items: theme.sizeScale,
       variable: true,

@@ -104,7 +104,7 @@ title: Home
 
 <section class="pad-top-900">
   <div class="wrapper">
-    <div class="text-align-center gap-bottom-800">
+    <div class="text-align-center gap-bottom-700">
       <div class="measure-compact">
         <h2 class="eyebrow">{{ "GeoData" | i18n(locale) }}</h2>
         <h3 class="text-700">{{ "Where people live, work, study and shop." | i18n(locale) }}</h3>
@@ -114,16 +114,52 @@ title: Home
   </div>
 
   <div class="wrapper wrapper--short">
-    <div class="window">
-      <div class="window__toolbar">
-        <span class="window__toolbar-item"></span>
-        <span class="window__toolbar-item"></span>
-        <span class="window__toolbar-item"></span>
+    <div class="tabs">
+      <div class="text-align-center">
+        <ul class="segment-control" role="tablist">
+          <li><button data-tab="uk" role="tab" aria-selected="true">United Kingdom</button></li>
+          <li><button data-tab="europe" role="tab">Europe</button></li>
+          <li><button data-tab="asia-pacific" role="tab">Asia Pacific</button></li>
+        </ul>
       </div>
-      <div class="window__inner">
-        {% include '../_includes/partials/geodata.njk' %}
+
+      <div data-tab-id="uk" class="window" role="tabpanel" aria-hidden="false" aria-label="United Kingdom">
+        <div class="window__toolbar">
+          <span class="window__toolbar-item"></span>
+          <span class="window__toolbar-item"></span>
+          <span class="window__toolbar-item"></span>
+        </div>
+        <div class="window__inner">
+          <p>UK</p>
+          {% include '../_includes/partials/geodata.njk' %}
+        </div>
+      </div>
+
+      <div data-tab-id="europe" class="window" role="tabpanel" aria-hidden="true" aria-label="Europe">
+        <div class="window__toolbar">
+          <span class="window__toolbar-item"></span>
+          <span class="window__toolbar-item"></span>
+          <span class="window__toolbar-item"></span>
+        </div>
+        <div class="window__inner">
+          <p>Europe</p>
+          {% include '../_includes/partials/geodata.njk' %}
+        </div>
+      </div>
+
+      <div data-tab-id="asia-pacific" class="window" role="tabpanel" aria-hidden="true" aria-label="Asia Pacific">
+        <div class="window__toolbar">
+          <span class="window__toolbar-item"></span>
+          <span class="window__toolbar-item"></span>
+          <span class="window__toolbar-item"></span>
+        </div>
+        <div class="window__inner">
+          <p>Asia</p>
+          {% include '../_includes/partials/geodata.njk' %}
+        </div>
       </div>
     </div>
+    <script src="/js/components/tabs.js" defer></script>
   </div>
 </section>
 
@@ -199,7 +235,7 @@ title: Home
     </div>
   </div>
 
-  <ul class="carousel">
+  <ul class="card-carousel">
     {% for i in range(1, 10) %}
       <li>
         <div class="card">
@@ -214,7 +250,7 @@ title: Home
   </ul>
 
   <script src="/js/vendor/tiny-slider.js" defer></script>
-  <script src="/js/components/success-carousel.js" defer></script>
+  <script src="/js/components/card-carousel.js" defer></script>
 
   <div class="wrapper wrapper--short">
     <div class="text-align-center gap-top-800">

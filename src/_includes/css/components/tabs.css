@@ -1,0 +1,3 @@
+.tabs [role='tabpanel'][aria-hidden='true'] {
+  display: none;
+}

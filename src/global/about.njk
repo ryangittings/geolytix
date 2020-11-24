@@ -61,7 +61,7 @@ title: About
 <section class="bg-cream-light pad-top-900">
   <div class="wrapper">
     <div class="split-pair">
-      <div>
+      <div class="measure-compact">
         <h2>{{ "Global Projects" | i18n(locale) }}</h2>
         <p>{{ "We can help you wherever you are or are planning to go. From sharing our gold standard approaches across territories, through planning a new market entry, to crafting consistent global benchmarks. With offices in seven countries we are small but global." | i18n(locale) }}</p>
       </div>
@@ -70,8 +70,116 @@ title: About
       </div>
     </div>
 
-    <ul class="">
+    <div class="gap-top-800">
+      <ul class="[ location-list ] [ color-primary text-500 weight-mid ]">
+        <li>London</li>
+        <li>Leeds</li>
+        <li>Warsaw</li>
+        <li>Shanghai</li>
+        <li>Guangzhou</li>
+        <li>Tokyo</li>
+        <li>Johannesburg</li>
+        <li>Melbourne</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    </ul>
+<section class="pad-top-900 pad-bottom-900">
+  <div class="wrapper">
+    <div class="text-align-center gap-bottom-800">
+      <div class="measure-compact">
+        <h2 class="eyebrow">{{ "Company Background" | i18n(locale) }}</h2>
+        <h3 class="text-700">{{ "Born in 2011." | i18n(locale) }}</h3>
+        <p>{{ "Geolytix was born in 2011 by Blair Freebairn and Sarah Hitchcock.The people who work at Geolytix share our vision and values. We’re driven by our belief that the best work is born from a happy, dedicated and trusted team. " | i18n(locale) }}</p>
+      </div>
+    </div>
+  </div>
+  
+  <ul class="card-carousel">
+    {% for entry in history.timeline %}
+      <li>
+        <div class="card">
+          <div class="card__inner">
+            <h3 class="text-800">{{ entry.year }}</h3>
+            <p>{{ entry.overview | i18n(locale) }}</p>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <script src="/js/vendor/tiny-slider.js" defer></script>
+  <script src="/js/components/card-carousel.js" defer></script>
+</section>
+
+
+<section class="bg-cream-light pad-top-900 pad-bottom-900">
+  <div class="wrapper">
+    <div class="text-align-center gap-bottom-800">
+      <div class="measure-compact">
+        <h2 class="eyebrow">{{ "Meet The Teams" | i18n(locale) }}</h2>
+        <h3 class="text-700">{{ "Meet Our Teams" | i18n(locale) }}</h3>
+        <p>{{ "We understand the likely challenges you will face." | i18n(locale) }}</p>
+      </div>
+    </div>
+
+    <div class="flow">
+      <figure class="gallery-block">
+        <figcaption class="gallery-block__content">
+          <h2 class="eyebrow">{{ "Product Team" | i18n(locale) }}</h2>
+          <p>{{ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, ipsum quis venenatis mollis, dui justo tempor est, at interdum sapien ligula id tortor." | i18n(locale) }}</p>
+          <p>{{ "Duis sed mi sit amet purus lobortis congue at eu arcu. Nullam ullamcorper nulla pharetra metus accumsan luctus. Mauris dictum faucibus lacus, condimentum posuere quam aliquam id." | i18n(locale) }}</p>
+        </figcaption>
+
+        <img src="/img/about/product-team.jpg" class="gallery-block__media" alt="Product Team Photo">
+      </figure>
+
+      <figure class="gallery-block">
+        <figcaption class="gallery-block__content">
+          <h2 class="eyebrow">{{ "Asia Pacific Team" | i18n(locale) }}</h2>
+          <p>{{ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, ipsum quis venenatis mollis, dui justo tempor est, at interdum sapien ligula id tortor." | i18n(locale) }}</p>
+          <p>{{ "Duis sed mi sit amet purus lobortis congue at eu arcu. Nullam ullamcorper nulla pharetra metus accumsan luctus. Mauris dictum faucibus lacus, condimentum posuere quam aliquam id." | i18n(locale) }}</p>
+        </figcaption>
+
+        <img src="/img/about/product-team.jpg" class="gallery-block__media" alt="Asia Pacific Team">
+      </figure>
+
+      <figure class="gallery-block">
+        <figcaption class="gallery-block__content">
+          <h2 class="eyebrow">{{ "Location Planning Associates" | i18n(locale) }}</h2>
+          <p>{{ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, ipsum quis venenatis mollis, dui justo tempor est, at interdum sapien ligula id tortor." | i18n(locale) }}</p>
+          <p>{{ "Duis sed mi sit amet purus lobortis congue at eu arcu. Nullam ullamcorper nulla pharetra metus accumsan luctus. Mauris dictum faucibus lacus, condimentum posuere quam aliquam id." | i18n(locale) }}</p>
+        </figcaption>
+
+        <img src="/img/about/product-team.jpg" class="gallery-block__media" alt="Location Planning Associates">
+      </figure>
+
+      <figure class="gallery-block">
+        <figcaption class="gallery-block__content">
+          <h2 class="eyebrow">{{ "Data Scientists" | i18n(locale) }}</h2>
+          <p>{{ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, ipsum quis venenatis mollis, dui justo tempor est, at interdum sapien ligula id tortor." | i18n(locale) }}</p>
+          <p>{{ "Duis sed mi sit amet purus lobortis congue at eu arcu. Nullam ullamcorper nulla pharetra metus accumsan luctus. Mauris dictum faucibus lacus, condimentum posuere quam aliquam id." | i18n(locale) }}</p>
+        </figcaption>
+
+        <img src="/img/about/product-team.jpg" class="gallery-block__media" alt="Data Scientists">
+      </figure>
+    </div>
+
+    <div class="text-align-center gap-top-800 gap-bottom-800">
+      <div class="measure-compact">
+        <h3 class="text-700">{{ "Our Team" | i18n(locale) }}</h3>
+      </div>
+
+      <ul class="[ bio-grid ] [ auto-grid ]">
+        {% for in in range(0, 18) %}
+          <li class="bio">
+            <img src="/img/about/bio.jpg" class="bio__image" alt=""> 
+            <h3 class="bio__title">Blair Freebairn</h3>
+            <p class="bio__overview">Chief Executive</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>

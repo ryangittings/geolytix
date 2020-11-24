@@ -1,0 +1,25 @@
+.bio-grid {
+  --auto-grid-min: 10rem;
+
+  grid-gap: var(--size-600);
+}
+
+.bio {
+  text-align: center;
+}
+
+.bio__image {
+  display: inline-block;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+
+.bio__title {
+  font-size: var(--size-400);
+  margin-bottom: 0;
+}
+
+.bio__overview {
+  font-size: var(--size-300);
+  margin-bottom: 0;
+}

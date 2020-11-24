@@ -1,0 +1,8 @@
+.card-carousel {
+  display: flex;
+}
+
+.card-carousel.tns-horizontal.tns-subpixel > .tns-item {
+  display: inline-flex;
+  flex-direction: column;
+}

@@ -1,0 +1,20 @@
+.gallery-block {
+  --flow-space: var(--size-800);
+
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 48em) {
+  .gallery-block:nth-of-type(even) .gallery-block__media {
+    order: -1;
+  }
+}
+
+.gallery-block__media {
+  max-width: 40rem;
+}
+
+.gallery-block__content {
+  padding: var(--size-800);
+}

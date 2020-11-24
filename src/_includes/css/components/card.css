@@ -3,6 +3,8 @@
   border-radius: var(--radius-regular);
   overflow: hidden;
   text-align: center;
+  flex: 1;
+  background: var(--color-light);
 }
 
 .card__cover {
@@ -11,6 +13,10 @@
 
 .card__inner {
   padding: var(--size-400);
+}
+
+.card__inner *:last-child {
+  margin-bottom: 0;
 }
 
 .card__logo {
