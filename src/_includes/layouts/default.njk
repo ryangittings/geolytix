@@ -5,19 +5,19 @@ layout: layouts/base.njk
 <header class="site-header">
   <div class="wrapper">
     <div class="site-header__inner">
-      <a href="{{ "/" | link(locale.code) }}">{% include '../../img/logo.svg' %}</a>
+      <a href="{{ "/" | link(locale) }}">{% include '../../img/logo.svg' %}</a>
 
       <nav class="site-header__navigation" aria-label="Primary navigation">
         <ul class="nav">
-          <li><a href="{{ "/#services" | link(locale.code) }}">Services</a></li>
-          <li><a href="{{ "/#geodata" | link(locale.code) }}">GeoData</a></li>
-          <li><a href="{{ "/#mapp" | link(locale.code) }}">MAPP</a></li>
-          <li class="divider"><a href="#">About</a></li>
+          <li><a href="{{ "/#services" | link(locale) }}">Services</a></li>
+          <li><a href="{{ "/#geodata" | link(locale) }}">GeoData</a></li>
+          <li><a href="{{ "/#mapp" | link(locale) }}">MAPP</a></li>
+          <li class="divider"><a href="{{ "/about/" | link(locale) }}">About</a></li>
           <li><a href="https://blog.geolytix.net/" target="_blank" rel="noopener noreferrer">Blog</a></li>
-          <li><a href="{{ "/contact/" | link(locale.code) }}" class="button button--outline">Enquire</a></li>
+          <li><a href="{{ "/contact/" | link(locale) }}" class="button button--outline">Enquire</a></li>
 
-          {% if locale.code %}
-            <li>{% include '../partials/flag.njk' %}</li>
+          {% if locale %}
+            <li><a href="/choose/">{% include '../partials/flag.njk' %}</a></li>
           {% endif %}
         </ul>
       </nav>
@@ -79,7 +79,7 @@ layout: layouts/base.njk
     </div>
     <div class="site-footer__section site-footer__secondary">
       <span class="site-footer__image">
-        {% if locale.code %}
+        {% if locale %}
           {% include '../partials/flag.njk' %}
         {% endif %}
       </span>

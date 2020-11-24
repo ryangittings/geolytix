@@ -1,0 +1,77 @@
+---
+layout: layouts/default.njk
+title: About
+---
+
+<section class="[ hero ] [ bg-dark ]">
+  <img src="/img/hero/about.jpg" class="hero__background" alt="Office">
+  <div class="wrapper">
+    <div class="measure-short">
+      <h1>{{ "About Us" | i18n(locale) }}</h1>
+      <p>{{ "At GEOLYTIX we help retailers make informed decisions about how many stores, who to acquire, where to open, which format, how to optimise home delivery and click & collect operations." | i18n(locale) }}</p>
+
+      <div class="button-group">
+        <a href="#" class="button">{{ "What We Do" | i18n(locale) }}</a>
+        <a href="#" class="button button--outline">{{ "View our team" | i18n(locale) }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="[ hex-background ] [ pad-top-900 pad-bottom-900 ]">
+  <canvas class="hex-background__canvas"></canvas>
+  <script src="/js/components/hex-background.js" defer></script>
+  <div class="wrapper">
+    <div class="gap-bottom-800">
+      <div class="measure-short">
+        <h2 class="eyebrow">{{ "What We Do" | i18n(locale) }}</h2>
+        <h3 class="text-700">{{ "The people who work at Geolytix share our vision and our values." | i18n(locale) }}</h3>
+
+        <div class="measure-compact">
+          <p>{{ "Geolytix was born in 2011 by Blair Freebairn and Sarah Hitchcock. Our vision remains the same today:" | i18n(locale) }}</p>
+          <p><strong>{{ "When location matters, organisations turn to us first." | i18n(locale) }}</strong></p>
+          <p>{{ "The people who work at Geolytix share our vision and values. We’re driven by our belief that the best work is born from a happy, dedicated and trusted team." | i18n(locale) }}</p>
+        </div>
+      </div>
+    </div>
+
+    <ul class="[ numbered-grid-block ] [ auto-grid ]">
+      <li class="grid-block">
+        <h3 class="grid-block__title">{{ "People" | i18n(locale) }}</h3>
+        <p>{{ "Geolytix is our people. Relationships really matter to us, we are a team of individuals and love getting to know our clients." | i18n(locale) }}</p>
+      </li>
+      <li class="grid-block">
+        <h3 class="grid-block__title">{{ "Trust" | i18n(locale) }}</h3>
+        <p>{{ "We believe people do business with people. Investment in physical and online networks is costly. Our customers trust us to provide the best strategy." | i18n(locale) }}</p>
+      </li>
+      <li class="grid-block">
+        <h3 class="grid-block__title">{{ "Innovate" | i18n(locale) }}</h3>
+        <p>{{ "We’re passionate about finding new ways to solve client problems and unlock geospatial-insights. Our Data Scientists are the best in the business." | i18n(locale) }}</p>
+      </li>
+      <li class="grid-block">
+        <h3 class="grid-block__title">{{ "Be the Best" | i18n(locale) }}</h3>
+        <p>{{ "We have the best people. We look after ourselves and each other, we learn from each other’s varied experience and set high standards." | i18n(locale) }}</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<img src="/img/about/team.jpg" class="width-full" alt="">
+
+<section class="bg-cream-light pad-top-900">
+  <div class="wrapper">
+    <div class="split-pair">
+      <div>
+        <h2>{{ "Global Projects" | i18n(locale) }}</h2>
+        <p>{{ "We can help you wherever you are or are planning to go. From sharing our gold standard approaches across territories, through planning a new market entry, to crafting consistent global benchmarks. With offices in seven countries we are small but global." | i18n(locale) }}</p>
+      </div>
+      <div>
+        <img src="/img/about/map.svg" class="width-full" alt="Map">
+      </div>
+    </div>
+
+    <ul class="">
+
+    </ul>
+  </div>
+</section>

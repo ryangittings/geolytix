@@ -15,10 +15,11 @@ title: Choose
 <section class="pad-top-900 pad-bottom-900">
   <div class="wrapper wrapper--short">
     <ul class="auto-grid">
-      {% for locale in locales.languages %}
+      {% for language in locales.languages %}
         <li class="country-list">
+          {% set locale = language.code %}
           {% include './_includes/partials/flag.njk' %}
-          <a href="{{ locale.root }}">{{ locale.title }}</a>
+          <a href="{{ language.root }}" class="breakout-button">{{ language.title }}</a>
         </li>
       {% endfor %}
     </ul>

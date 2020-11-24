@@ -1,4 +1,11 @@
-.grid-block {
+.numbered-grid-block {
+  counter-reset: numberedgrid;
+}
+
+.grid-block:before {
+  counter-increment: numberedgrid;
+  content: '0' counter(numberedgrid);
+  font-size: var(--size-700);
 }
 
 .grid-block__title {

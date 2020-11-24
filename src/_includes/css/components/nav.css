@@ -16,8 +16,7 @@ ul.nav {
   line-height: 1;
 }
 
-.nav li a:not(.flag) img,
-.nav li a:not(.flag) svg {
+.nav li a .icon {
   display: block;
   height: 1rem;
   width: auto;

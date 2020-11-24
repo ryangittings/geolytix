@@ -12,6 +12,7 @@ const theme = {
     light: '#ffffff',
     dark: '#003D57',
     cream: '#E3D2C1',
+    'cream-light': '#F5F2EE',
     'light-gray': '#F7F8FA',
     'regular-gray': '#F0F0F0',
   },
@@ -128,6 +129,12 @@ module.exports = {
       },
       property: 'font-weight',
       variable: true,
+    },
+    width: {
+      items: {
+        full: '100%',
+      },
+      property: 'width',
     },
   },
 };
