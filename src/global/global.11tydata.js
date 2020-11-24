@@ -6,6 +6,6 @@ module.exports = {
     size: 1,
     alias: 'locale',
   },
-  locales: languages.languages.map((language) => language.code),
-  permalink: '{{ locale }}/{{ page.filePathStem | global }}.html',
+  locales: languages.languages,
+  permalink: '{{ locale.root }}{{ page.filePathStem | global }}.html',
 };

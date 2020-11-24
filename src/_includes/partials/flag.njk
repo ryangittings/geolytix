@@ -1,0 +1,3 @@
+{% if locale.code %}
+  <a href="{{ "/choose/" | link }}" class="flag">{% include "../../img/locales/" + locale.code + ".svg" %}</a>
+{% endif %}

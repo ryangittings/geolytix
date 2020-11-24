@@ -1,129 +1,95 @@
-{% set css %}
-  {% include '../css/utility/auto-grid.css' %}
-  {% include '../css/utility/breakout.css' %}
-  {% include '../css/utility/measure.css' %}
-  {% include '../css/utility/reset.css' %}
-  {% include '../css/utility/split-pair.css' %}
-  {% include '../css/utility/tokens.css' %}
-  {% include '../css/utility/type-scale.css' %}
-  {% include '../css/utility/wrapper.css' %}
-  {% include '../css/global/bg.css' %}
-  {% include '../css/global/global.css' %}
-  {% include '../css/global/site-footer.css' %}
-  {% include '../css/global/site-header.css' %}
-  {% include '../css/global/type.css' %}
-  {% include '../css/components/button.css' %}
-  {% include '../css/components/button-group.css' %}
-  {% include '../css/components/card.css' %}
-  {% include '../css/components/checklist.css' %}
-  {% include '../css/components/grid-block.css' %}
-  {% include '../css/components/expanded-navigation.css' %}
-  {% include '../css/components/flag.css' %}
-  {% include '../css/components/hero.css' %}
-  {% include '../css/components/hex-background.css' %}
-  {% include '../css/components/image-panel.css' %}
-  {% include '../css/components/logo-grid.css' %}
-  {% include '../css/components/menu-toggle.css' %}
-  {% include '../css/components/nav.css' %}
-  {% include '../css/components/stat-block.css' %}
-  {% include '../css/components/window.css' %}
-  {% include '../css/vendor/tiny-slider.css' %}
-{% endset %}
-<!doctype html>
-<html class="no-js" lang="{{ locale }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% include 'partials/meta.njk' %}
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-      {{ css | cssmin | safe }}
-    </style>
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="wrapper">
-        <div class="site-header__inner">
-          {% include '../../img/logo.svg' %}
+---
+layout: layouts/base.njk
+---
 
-          <nav class="site-header__navigation" aria-label="Primary navigation">
-            <ul class="nav">
-              <li><a href="#">Services</a></li>
-              <li><a href="#">GeoData</a></li>
-              <li><a href="#">MAPP</a></li>
-              <li class="divider"><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#" class="button button--outline">Enquire</a></li>
-              <li><a href="#"><span class="flag">{% include "../../img/locales/" + locale + ".svg" %}</span></a></li>
-            </ul>
-          </nav>
+<header class="site-header">
+  <div class="wrapper">
+    <div class="site-header__inner">
+      {% include '../../img/logo.svg' %}
 
-          <button class="menu-toggle" data-header-menu-toggle aria-haspopup="true" aria-expanded="false"></button>
-        </div>
-      </div>
+      <nav class="site-header__navigation" aria-label="Primary navigation">
+        <ul class="nav">
+          <li><a href="{{ "/#services" | link }}">Services</a></li>
+          <li><a href="{{ "/#geodata" | link }}">GeoData</a></li>
+          <li><a href="{{ "/#mapp" | link }}">MAPP</a></li>
+          <li class="divider"><a href="#">About</a></li>
+          <li><a href="https://blog.geolytix.net/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+          <li><a href="{{ "/conact/" | link }}" class="button button--outline">Enquire</a></li>
 
-      <div class="expanded-navigation" data-status="closed">
-        <nav class="expanded-navigation" aria-label="Expanded navigation">
-          <ul class="nav nav--vertical">
-            <li><a href="#">Services</a></li>
-            <li><a href="#">GeoData</a></li>
-            <li><a href="#">MAPP</a></li>
-            <li class="divider"><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#" class="button button--outline">Enquire</a></li>
-            <li><a href="#" class="flag">{% include "../../img/locales/" + locale + ".svg" %}</a></li>
-          </ul>
-        </nav>
-      </div>
-      <script src="/js/components/menu-toggle.js" type="module" defer></script>
-    </header>
+          {% if locale.code %}
+            <li>{% include '../partials/flag.njk' %}</li>
+          {% endif %}
+        </ul>
+      </nav>
 
-    <main>
-      {{ content | safe }}
-    </main>
+      <button class="menu-toggle" data-header-menu-toggle aria-haspopup="true" aria-expanded="false"></button>
+    </div>
+  </div>
 
-    <aside class="bg-light pad-top-300 pad-bottom-300">
-      <ul class="[ logo-grid ] [ auto-grid ]">
-        <li><img src="/img/awards/dataiq.png" alt="DataIQ Awards 2020 Winner"></li>
-        <li><img src="/img/awards/fsb.jpg" alt="FSB London Business Awards Runner Up"></li>
-        <li><img src="/img/awards/geoawesome.png" alt="GEO awesomeness"></li>
-        <li><img src="/img/awards/nba.jpg" alt="National Business Awards UK Finalist 2014"></li>
-        <li><img src="/img/awards/qa.jpg" alt="The Queen's Awards for Enterprise: Innovation 2016"></li>
-        <li><img src="/img/awards/sla.jpg" alt="The Society for Location Analysis"></li>
+  <div class="expanded-navigation" data-status="closed">
+    <nav class="expanded-navigation" aria-label="Expanded navigation">
+      <ul class="nav nav--vertical">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">GeoData</a></li>
+        <li><a href="#">MAPP</a></li>
+        <li class="divider"><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#" class="button button--outline">Enquire</a></li>
+
+        {% if locale %}
+          <li>{% include '../partials/flag.njk' %}</li>
+        {% endif %}
       </ul>
-    </aside>
+    </nav>
+  </div>
+  <script src="/js/components/menu-toggle.js" type="module" defer></script>
+</header>
 
-    <footer class="site-footer">
-      <div class="wrapper">
-        <div class="site-footer__section site-footer__primary">
-          <span class="site-footer__image">{% include '../../img/logo.svg' %}</span>
+<main>
+  {{ content | safe }}
+</main>
 
-          <nav class="site-footer__navigation">
-            <ul class="nav">
-              <li><a href="#">Services</a></li>
-              <li><a href="#">GeoData</a></li>
-              <li><a href="#">MAPP</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-              <li class="divider"><a href="#">{% include "../../img/icons/linkedin.svg" %}</a></li>
-              <li><a href="#">{% include "../../img/icons/twitter.svg" %}</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="site-footer__section site-footer__secondary">
-          <span class="site-footer__image"><a href="#" class="flag">{% include "../../img/locales/" + locale + ".svg" %}</a></span>
+<aside class="bg-light pad-top-300 pad-bottom-300">
+  <ul class="[ logo-grid ] [ auto-grid ]">
+    <li><img src="/img/awards/dataiq.png" alt="DataIQ Awards 2020 Winner"></li>
+    <li><img src="/img/awards/fsb.jpg" alt="FSB London Business Awards Runner Up"></li>
+    <li><img src="/img/awards/geoawesome.png" alt="GEO awesomeness"></li>
+    <li><img src="/img/awards/nba.jpg" alt="National Business Awards UK Finalist 2014"></li>
+    <li><img src="/img/awards/qa.jpg" alt="The Queen's Awards for Enterprise: Innovation 2016"></li>
+    <li><img src="/img/awards/sla.jpg" alt="The Society for Location Analysis"></li>
+  </ul>
+</aside>
 
-          <nav class="[ site-footer__navigation ] [ text-300 ]">
-            <ul class="nav">
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="site-footer__section site-footer__primary">
+      <span class="site-footer__image">{% include '../../img/logo.svg' %}</span>
+
+      <nav class="site-footer__navigation">
+        <ul class="nav">
+          <li><a href="#">Services</a></li>
+          <li><a href="#">GeoData</a></li>
+          <li><a href="#">MAPP</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li class="divider"><a href="#">{% include "../../img/icons/linkedin.svg" %}</a></li>
+          <li><a href="#">{% include "../../img/icons/twitter.svg" %}</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="site-footer__section site-footer__secondary">
+      <span class="site-footer__image">
+        {% if locale.code %}
+          {% include '../partials/flag.njk' %}
+        {% endif %}
+      </span>
+
+      <nav class="[ site-footer__navigation ] [ text-300 ]">
+        <ul class="nav">
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>

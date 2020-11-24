@@ -1,0 +1,8 @@
+.country-list {
+  display: flex;
+  align-items: center;
+}
+
+.country-list .flag {
+  margin-right: 1rem;
+}

@@ -8,11 +8,11 @@ ul.nav {
   line-height: 1;
 }
 
-.nav li a:not(.button):not(.flag) {
+.nav li a:not(.button) {
   display: block;
   text-decoration: none;
   color: currentColor;
-  padding: var(--nav-padding);
+  padding: 0 var(--nav-padding);
   line-height: 1;
 }
 
@@ -37,4 +37,8 @@ ul.nav--vertical {
 
 ul.nav--vertical li.divider {
   border: none;
+}
+
+ul.nav--vertical li a:not(.button) {
+  padding: var(--nav-padding);
 }

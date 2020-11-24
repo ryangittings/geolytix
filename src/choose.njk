@@ -1,0 +1,27 @@
+---
+layout: layouts/default.njk
+title: Choose
+---
+
+<section class="[ hero ] [ bg-dark ]">
+  <img src="/img/hero/home.jpg" class="hero__background" alt="Office">
+  <div class="wrapper text-align-center">
+    <div class="measure-short">
+      <h1>{{ "Choose Your Country or Region" | i18n(en) }}</h1>
+    </div>
+  </div>
+</section>
+
+<section class="pad-top-900 pad-bottom-900">
+  <div class="wrapper wrapper--short">
+    <ul class="auto-grid">
+      {% for locale in locales.languages %}
+        <li class="country-list">
+          <a href="{{ locale.root }}"></a>
+          {% include './_includes/partials/flag.njk' %}
+          {{ locale.title }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
