@@ -29,6 +29,16 @@ const theme = {
     800: 'var(--step-6)',
     900: 'var(--step-8)',
   },
+  spacingScale: {
+    200: 'var(--step--2)',
+    300: 'var(--step--1)',
+    400: 'var(--step-0)',
+    500: 'var(--step-2)',
+    600: 'var(--step-4)',
+    700: 'var(--step-6)',
+    800: 'var(--step-8)',
+    900: 'var(--step-10)',
+  },
 };
 
 module.exports = {
@@ -80,19 +90,19 @@ module.exports = {
       property: 'max-width',
     },
     pad: {
-      items: theme.sizeScale,
+      items: theme.spacingScale,
       property: 'padding',
     },
     'pad-top': {
-      items: theme.sizeScale,
+      items: theme.spacingScale,
       property: 'padding-top',
     },
     'pad-bottom': {
-      items: theme.sizeScale,
+      items: theme.spacingScale,
       property: 'padding-bottom',
     },
     'pad-left': {
-      items: theme.sizeScale,
+      items: theme.spacingScale,
       property: 'padding-left',
     },
     radius: {
@@ -110,13 +120,14 @@ module.exports = {
       variable: true,
     },
     size: {
-      items: theme.sizeScale,
+      items: theme.spacingScale,
       variable: true,
     },
     text: {
       items: theme.sizeScale,
       responsive: true,
       property: 'font-size',
+      variable: true,
     },
     'text-align': {
       items: {

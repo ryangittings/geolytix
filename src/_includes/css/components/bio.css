@@ -15,11 +15,11 @@
 }
 
 .bio__title {
-  font-size: var(--size-400);
+  font-size: var(--text-400);
   margin-bottom: 0;
 }
 
 .bio__overview {
-  font-size: var(--size-300);
+  font-size: var(--text-300);
   margin-bottom: 0;
 }

@@ -17,27 +17,27 @@ h5 {
 }
 
 h1 {
-  font-size: var(--size-800);
+  font-size: var(--text-800);
 }
 
 h2 {
-  font-size: var(--size-700);
+  font-size: var(--text-700);
 }
 
 h3 {
-  font-size: var(--size-500);
+  font-size: var(--text-500);
 }
 
 h4 {
-  font-size: var(--size-300);
+  font-size: var(--text-300);
 }
 
 h5 {
-  font-size: var(--size-200);
+  font-size: var(--text-200);
 }
 
 p {
-  margin-bottom: var(--size-400);
+  margin-bottom: var(--text-400);
 }
 
 a {
@@ -45,7 +45,7 @@ a {
 }
 
 .eyebrow {
-  font-size: var(--size-300);
+  font-size: var(--text-300);
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-normal);
 }

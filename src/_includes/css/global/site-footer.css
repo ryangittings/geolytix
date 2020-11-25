@@ -4,7 +4,11 @@
 }
 
 .site-footer__image {
-  margin: var(--size-700) auto var(--size-700) 0;
+  margin: var(--size-500) auto var(--size-500) 0;
+}
+
+.site-footer__image svg {
+  display: block;
 }
 
 .site-footer__section {
@@ -19,5 +23,5 @@
 
 .site-footer__navigation {
   margin: var(--size-600) 0;
-  font-size: var(--size-300);
+  font-size: var(--text-300);
 }
