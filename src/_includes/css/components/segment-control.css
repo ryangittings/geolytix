@@ -9,12 +9,8 @@ ul.segment-control {
   overflow-x: auto;
 }
 
-.segment-control li {
-  margin: 0 var(--size-200);
-}
-
 .segment-control li button {
-  padding: var(--size-200);
+  padding: var(--size-200) var(--size-400);
   line-height: 1;
   background: none;
   border: none;

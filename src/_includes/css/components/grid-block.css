@@ -2,7 +2,7 @@
   counter-reset: numberedgrid;
 }
 
-.grid-block:before {
+.numbered-grid-block .grid-block:before {
   counter-increment: numberedgrid;
   content: '0' counter(numberedgrid);
   font-size: var(--size-700);
@@ -15,4 +15,8 @@
 
 .grid-block__icon {
   margin-bottom: 1rem;
+}
+
+.grid-block p {
+  font-size: var(--size-300);
 }

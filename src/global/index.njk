@@ -120,6 +120,7 @@ title: Home
           <li role="tab" aria-selected="true" data-tab="uk"><button>United Kingdom</button></li>
           <li role="tab" data-tab="europe"><button>Europe</button></li>
           <li role="tab" data-tab="asia-pacific"><button>Asia Pacific</button></li>
+          <li role="tab" data-tab="americas"><button>Americas</button></li>
         </ul>
       </div>
 
@@ -155,6 +156,18 @@ title: Home
         </div>
         <div class="window__inner">
           <p>Asia</p>
+          {% include '../_includes/partials/geodata.njk' %}
+        </div>
+      </div>
+
+      <div data-tab-id="americas" class="window" role="tabpanel" aria-hidden="true" aria-label="Americas">
+        <div class="window__toolbar">
+          <span class="window__toolbar-item"></span>
+          <span class="window__toolbar-item"></span>
+          <span class="window__toolbar-item"></span>
+        </div>
+        <div class="window__inner">
+          <p>Americas</p>
           {% include '../_includes/partials/geodata.njk' %}
         </div>
       </div>
