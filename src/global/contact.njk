@@ -55,16 +55,18 @@ title: Contact
       <div class="text-align-center">
         <ul class="segment-control" role="tablist">
           {% for office in offices.locations %}
-            <li><button data-tab="{{ office.title | slug }}" role="tab" aria-selected="true">{{ office.title }}</button></li>
+            <li><button data-tab="{{ office.title | slug }}" role="tab"{% if loop.first %} aria-selected="true"{% endif %}>{{ office.title }}</button></li>
           {% endfor %}
         </ul>
       </div>
 
       {% for office in offices.locations %}
-        <div data-tab-id="{{ office.title | slug }}" class="window" role="tabpanel" aria-hidden="false" aria-label="{{ office.title }}">
+        <div data-tab-id="{{ office.title | slug }}" class="window" role="tabpanel"{% if loop.first %} aria-hidden="false"{% else %}aria-hidden="true"{% endif %} aria-label="{{ office.title }}">
 
         </div>
       {% endfor %}
     </div>
+
+    <script src="/js/components/tabs.js" defer></script>
   </div>
 </section>
