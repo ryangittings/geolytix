@@ -1,5 +1,5 @@
 .bio-grid {
-  --auto-grid-min: 10rem;
+  --auto-grid-min: 12rem;
 
   grid-gap: var(--size-600);
 }
@@ -11,7 +11,8 @@
 .bio__image {
   display: inline-block;
   border-radius: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  max-width: 8rem;
 }
 
 .bio__title {
