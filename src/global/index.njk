@@ -64,7 +64,7 @@ title: Home
   </div>
 </section>
 
-<section class="[ hex-background ] [ pad-top-900 pad-bottom-900 bg-dark color-primary-light ]">
+<section id="services" class="[ hex-background ] [ pad-top-900 pad-bottom-900 bg-dark color-primary-light ]">
   <canvas class="hex-background__canvas"></canvas>
   <script src="/js/components/hex-background.js" defer></script>
 
@@ -102,7 +102,7 @@ title: Home
   </div>
 </section>
 
-<section class="pad-top-900">
+<section id="geodata" class="pad-top-900">
   <div class="wrapper">
     <div class="text-align-center gap-bottom-700">
       <div class="measure-compact">
@@ -117,9 +117,9 @@ title: Home
     <div class="tabs">
       <div class="text-align-center">
         <ul class="segment-control" role="tablist">
-          <li><button data-tab="uk" role="tab" aria-selected="true">United Kingdom</button></li>
-          <li><button data-tab="europe" role="tab">Europe</button></li>
-          <li><button data-tab="asia-pacific" role="tab">Asia Pacific</button></li>
+          <li role="tab" aria-selected="true" data-tab="uk"><button>United Kingdom</button></li>
+          <li role="tab" data-tab="europe"><button>Europe</button></li>
+          <li role="tab" data-tab="asia-pacific"><button>Asia Pacific</button></li>
         </ul>
       </div>
 
@@ -163,7 +163,7 @@ title: Home
   </div>
 </section>
 
-<section class="bg-secondary color-secondary-dark pad-top-900">
+<section id="mapp" class="bg-secondary color-secondary-dark pad-top-900">
   <div class="wrapper">
     <div class="text-align-center gap-bottom-800">
       <div class="measure-compact">

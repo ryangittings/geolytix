@@ -55,7 +55,7 @@ title: Contact
       <div class="text-align-center">
         <ul class="segment-control" role="tablist">
           {% for office in offices.locations %}
-            <li><button data-tab="{{ office.title | slug }}" role="tab"{% if loop.first %} aria-selected="true"{% endif %}>{{ office.title }}</button></li>
+            <li role="tab"{% if loop.first %} aria-selected="true"{% endif %} data-tab="{{ office.title | slug }}"><button>{{ office.title }}</button></li>
           {% endfor %}
         </ul>
       </div>
@@ -70,7 +70,7 @@ title: Contact
             </div>
             <div>
               <div class="embed">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9929.455676655673!2d-0.1071502!3d51.5248847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45737b134d5eb2fe!2sThe%20Finsbury%20Business%20Centre!5e0!3m2!1sen!2suk!4v1606318596284!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9929.455676655673!2d-0.1071502!3d51.5248847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45737b134d5eb2fe!2sThe%20Finsbury%20Business%20Centre!5e0!3m2!1sen!2suk!4v1606318596284!5m2!1sen!2suk" title="Maps" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
               </div>
             </div>
           </div>

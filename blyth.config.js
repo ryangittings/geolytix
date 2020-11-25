@@ -6,7 +6,7 @@ const theme = {
   colors: {
     primary: '#401505',
     'primary-light': '#9AABBC',
-    'primary-mid': '#5d7186',
+    'primary-mid': '#4d5e71',
     secondary: '#EC602D',
     'secondary-dark': '#401505',
     light: '#ffffff',

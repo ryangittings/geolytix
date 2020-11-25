@@ -1,0 +1,11 @@
+<li><a href="{{ "/#services" | link(locale) }}">Services</a></li>
+<li><a href="{{ "/#geodata" | link(locale) }}">GeoData</a></li>
+<li><a href="{{ "/#mapp" | link(locale) }}">MAPP</a></li>
+<li class="divider"><a href="{{ "/about/" | link(locale) }}">About</a></li>
+<li><a href="{{ "/stories/" | link(locale) }}">Success Stories</a></li>
+<li><a href="https://blog.geolytix.net/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+<li><a href="{{ "/contact/" | link(locale) }}" class="button button--outline">Enquire</a></li>
+
+{% if locale %}
+  <li><a href="/choose/">{% include '../partials/flag.njk' %}</a></li>
+{% endif %}

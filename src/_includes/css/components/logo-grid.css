@@ -1,5 +1,6 @@
 .logo-grid {
   --auto-grid-min: 5rem;
+  --auto-grid-method: auto-fit;
 }
 
 .logo-grid img {

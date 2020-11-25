@@ -1,11 +1,10 @@
 .site-footer {
   background: var(--color-dark);
-  padding: var(--size-800) 0;
   color: var(--color-light);
 }
 
 .site-footer__image {
-  margin: 0.5rem auto 0.5rem 0;
+  margin: var(--size-700) auto var(--size-700) 0;
 }
 
 .site-footer__section {
@@ -15,7 +14,9 @@
 }
 
 .site-footer__secondary {
-  margin-top: var(--size-600);
-  padding-top: var(--size-600);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-footer__navigation {
+  margin: var(--size-600) 0;
 }

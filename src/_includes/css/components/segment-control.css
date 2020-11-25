@@ -4,6 +4,9 @@ ul.segment-control {
   box-shadow: var(--shadow-standard);
   margin-bottom: var(--size-700);
   border-radius: var(--radius-regular);
+  white-space: nowrap;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .segment-control li {
@@ -21,6 +24,6 @@ ul.segment-control {
   cursor: pointer;
 }
 
-.segment-control li button[aria-selected='true'] {
+.segment-control li[aria-selected='true'] {
   color: var(--color-dark);
 }

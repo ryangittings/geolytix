@@ -1,18 +1,21 @@
-const header = document.querySelector('.expanded-navigation');
+const expandedNav = document.querySelector('.expanded-navigation');
 const toggle = document.querySelector('[data-header-menu-toggle]');
+const items = expandedNav.querySelectorAll('.nav li a');
 
-toggle.addEventListener(
-  'click',
-  () => {
-    const open = header.getAttribute('data-status') == 'open';
+const toggleMenu = () => {
+  const open = expandedNav.getAttribute('data-status') == 'open';
 
-    if (open) {
-      toggle.setAttribute('aria-expanded', false);
-      header.setAttribute('data-status', 'closed');
-    } else {
-      toggle.setAttribute('aria-expanded', true);
-      header.setAttribute('data-status', 'open');
-    }
-  },
-  false
-);
+  if (open) {
+    toggle.setAttribute('aria-expanded', false);
+    expandedNav.setAttribute('data-status', 'closed');
+  } else {
+    toggle.setAttribute('aria-expanded', true);
+    expandedNav.setAttribute('data-status', 'open');
+  }
+};
+
+toggle.addEventListener('click', toggleMenu, false);
+
+items.forEach((item) => {
+  item.addEventListener('click', toggleMenu);
+});

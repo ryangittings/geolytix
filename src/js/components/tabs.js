@@ -1,8 +1,8 @@
 const tabs = document.querySelector('.tabs');
-const segments = tabs.querySelectorAll('button[role="tab"]');
+const segments = tabs.querySelectorAll('[role="tab"]');
 
 const resetSegment = () => {
-  tabs.querySelector('button[role="tab"][aria-selected="true"]').removeAttribute('aria-selected');
+  tabs.querySelector('[role="tab"][aria-selected="true"]').removeAttribute('aria-selected');
 };
 
 const setActiveSegment = (segment) => {
@@ -25,7 +25,7 @@ segments.forEach((segment) => {
   segment.addEventListener('click', (e) => {
     e.preventDefault();
 
-    setActiveSegment(e.target);
-    setActiveTab(e.target.getAttribute('data-tab'));
+    setActiveSegment(e.currentTarget);
+    setActiveTab(e.currentTarget.getAttribute('data-tab'));
   });
 });

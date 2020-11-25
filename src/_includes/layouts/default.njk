@@ -9,17 +9,7 @@ layout: layouts/base.njk
 
       <nav class="site-header__navigation" aria-label="Primary navigation">
         <ul class="nav">
-          <li><a href="{{ "/#services" | link(locale) }}">Services</a></li>
-          <li><a href="{{ "/#geodata" | link(locale) }}">GeoData</a></li>
-          <li><a href="{{ "/#mapp" | link(locale) }}">MAPP</a></li>
-          <li class="divider"><a href="{{ "/about/" | link(locale) }}">About</a></li>
-          <li><a href="{{ "/stories/" | link(locale) }}">Success Stories</a></li>
-          <li><a href="https://blog.geolytix.net/" target="_blank" rel="noopener noreferrer">Blog</a></li>
-          <li><a href="{{ "/contact/" | link(locale) }}" class="button button--outline">Enquire</a></li>
-
-          {% if locale %}
-            <li><a href="/choose/">{% include '../partials/flag.njk' %}</a></li>
-          {% endif %}
+          {% include '../partials/menu.njk' %}
         </ul>
       </nav>
 
@@ -30,16 +20,7 @@ layout: layouts/base.njk
   <div class="expanded-navigation" data-status="closed">
     <nav class="expanded-navigation" aria-label="Expanded navigation">
       <ul class="nav nav--vertical">
-        <li><a href="#">Services</a></li>
-        <li><a href="#">GeoData</a></li>
-        <li><a href="#">MAPP</a></li>
-        <li class="divider"><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#" class="button button--outline">Enquire</a></li>
-
-        {% if locale %}
-          <li>{% include '../partials/flag.njk' %}</li>
-        {% endif %}
+        {% include '../partials/menu.njk' %}
       </ul>
     </nav>
   </div>
@@ -51,14 +32,16 @@ layout: layouts/base.njk
 </main>
 
 <aside class="bg-light pad-top-300 pad-bottom-300">
-  <ul class="[ logo-grid ] [ auto-grid ]">
-    <li><img src="/img/awards/dataiq.png" alt="DataIQ Awards 2020 Winner"></li>
-    <li><img src="/img/awards/fsb.jpg" alt="FSB London Business Awards Runner Up"></li>
-    <li><img src="/img/awards/geoawesome.png" alt="GEO awesomeness"></li>
-    <li><img src="/img/awards/nba.jpg" alt="National Business Awards UK Finalist 2014"></li>
-    <li><img src="/img/awards/qa.jpg" alt="The Queen's Awards for Enterprise: Innovation 2016"></li>
-    <li><img src="/img/awards/sla.jpg" alt="The Society for Location Analysis"></li>
-  </ul>
+  <div class="wrapper">
+    <ul class="[ logo-grid ] [ auto-grid ]">
+      <li><img src="/img/awards/dataiq.png" alt="DataIQ Awards 2020 Winner"></li>
+      <li><img src="/img/awards/fsb.jpg" alt="FSB London Business Awards Runner Up"></li>
+      <li><img src="/img/awards/geoawesome.png" alt="GEO awesomeness"></li>
+      <li><img src="/img/awards/nba.jpg" alt="National Business Awards UK Finalist 2014"></li>
+      <li><img src="/img/awards/qa.jpg" alt="The Queen's Awards for Enterprise: Innovation 2016"></li>
+      <li><img src="/img/awards/sla.jpg" alt="The Society for Location Analysis"></li>
+    </ul>
+  </div>
 </aside>
 
 <footer class="site-footer">
@@ -66,15 +49,9 @@ layout: layouts/base.njk
     <div class="site-footer__section site-footer__primary">
       <span class="site-footer__image">{% include '../../img/logo.svg' %}</span>
 
-      <nav class="site-footer__navigation">
+      <nav class="site-footer__navigation" aria-label="Footer navigation">
         <ul class="nav">
-          <li><a href="#">Services</a></li>
-          <li><a href="#">GeoData</a></li>
-          <li><a href="#">MAPP</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li class="divider"><a href="#">{% include "../../img/icons/linkedin.svg" %}</a></li>
-          <li><a href="#">{% include "../../img/icons/twitter.svg" %}</a></li>
+          {% include '../partials/menu.njk' %}
         </ul>
       </nav>
     </div>
@@ -85,7 +62,7 @@ layout: layouts/base.njk
         {% endif %}
       </span>
 
-      <nav class="[ site-footer__navigation ] [ text-300 ]">
+      <nav class="[ site-footer__navigation ] [ text-300 ]" aria-label="Secondary navigation">
         <ul class="nav">
           <li><a href="#">Terms & Conditions</a></li>
           <li><a href="#">Privacy Policy</a></li>
