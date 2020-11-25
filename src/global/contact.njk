@@ -18,38 +18,38 @@ title: Contact
     <form class="card card-form">
       <div class="[ card-form__inner ] [ pad-800 ]">
         <div class="form-field">
-          <label for="first_name">First Name</label>
+          <label for="first_name">{{ "First Name" | i18n(locale) }}</label>
           <input type="text" id="first_name">
         </div>
         <div class="form-field">
-          <label for="last_name">Last Name</label>
+          <label for="last_name">{{ "Last Name" | i18n(locale) }}</label>
           <input type="text" id="last_name">
         </div>
         <div class="form-field">
-          <label for="email_address">Email Address</label>
+          <label for="email_address">{{ "Email Address" | i18n(locale) }}</label>
           <input type="email" id="email_address">
         </div>
         <div class="form-field">
-          <label for="telephone">Telephone</label>
+          <label for="telephone">{{ "Telephone" | i18n(locale) }}</label>
           <input type="tel" id="telephone">
         </div>
         <div class="form-field form-field--large">
-          <label for="message">Message</label>
+          <label for="message">{{ "Message" | i18n(locale) }}</label>
           <textarea id="message"></textarea>
         </div>
       </div>
       <div class="[ card-form__actions ] [ bg-regular-gray pad-400 ]">
         <div class="checkbox-field">
           <input type="checkbox" id="marketing">
-          <label for="marketing" class="text-300 weight-light">We’d love to let you know when we release new open data and update you with new stuff we’re working on. We won’t email often and you can unsubscribe at any time.</label>
+          <label for="marketing" class="text-300 weight-light">{{ "We’d love to let you know when we release new open data and update you with new stuff we’re working on. We won’t email often and you can unsubscribe at any time." | i18n(locale) }}</label>
         </div>
-        <button type="submit" class="button">Send Enquiry</button>
+        <button type="submit" class="button">{{ "Send Enquiry" | i18n(locale) }}</button>
       </div>
     </form>
   </div>
 
   <div class="wrapper">
-    <h2 class="eyebrow text-align-center color-primary-mid">Or choose an office</h2>
+    <h2 class="eyebrow text-align-center color-primary-mid">{{ "Or choose an office" | i18n(locale) }}</h2>
 
     <div class="tabs">
       <div class="text-align-center">
@@ -61,8 +61,19 @@ title: Contact
       </div>
 
       {% for office in offices.locations %}
-        <div data-tab-id="{{ office.title | slug }}" class="window" role="tabpanel"{% if loop.first %} aria-hidden="false"{% else %}aria-hidden="true"{% endif %} aria-label="{{ office.title }}">
-
+        <div data-tab-id="{{ office.title | slug }}" role="tabpanel"{% if loop.first %} aria-hidden="false"{% else %}aria-hidden="true"{% endif %} aria-label="{{ office.title }}">
+          <div class="split-pair">
+            <div class="measure-compact">
+              <p class="text-500">{{ office.address | i18n(locale) }}</p>
+              <p class="text-500"><a href="tel:{{ office.telephone }}">{{ office.telephone }}</a></p>
+              <p class="text-500"><a href="mailto:{{ office.email }}">{{ office.email }}</a></p>
+            </div>
+            <div>
+              <div class="embed">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9929.455676655673!2d-0.1071502!3d51.5248847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45737b134d5eb2fe!2sThe%20Finsbury%20Business%20Centre!5e0!3m2!1sen!2suk!4v1606318596284!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
+          </div>
         </div>
       {% endfor %}
     </div>

@@ -1,0 +1,30 @@
+---
+layout: layouts/default.njk
+---
+
+<section class="[ hero ] [ bg-dark ]">
+  <img src="/img/case-studies/{{ image }}" class="hero__background" alt="Office">
+  <div class="wrapper">
+    <div class="measure-short">
+      <h1 class="eyebrow color-light">{{ title | i18n(locale) }} Case Study</h1>
+      <h2 class="text-800">{{ headline | i18n(locale) }}</h2>
+      <p class="text-500 weight-mid">{{ overview | i18n(locale) }}</p>
+
+      <div class="button-group">
+        <a href="#" class="button">{{ "What We Do" | i18n(locale) }}</a>
+        <a href="#" class="button button--outline">{{ "View our team" | i18n(locale) }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pad-top-900 pad-bottom-900">
+  <div class="wrapper">
+    <div class="split-pair">
+      <div class="measure-short">
+        {{ content | safe }}
+      </div>
+      <div>
+      </div>
+    </div>
+  </div>
+</section>

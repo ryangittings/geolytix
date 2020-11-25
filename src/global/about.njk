@@ -167,11 +167,11 @@ title: About
       </div>
 
       <ul class="[ bio-grid ] [ auto-grid ]">
-        {% for in in range(0, 18) %}
+        {% for bio in team.members %}
           <li class="bio">
-            <img src="/img/about/bio.jpg" class="bio__image" alt=""> 
-            <h3 class="bio__title">Blair Freebairn</h3>
-            <p class="bio__overview">Chief Executive</p>
+            <img src="/img/about/bio.jpg" class="bio__image" alt="Photo of "> 
+            <h3 class="bio__title">{{ bio.name }}</h3>
+            <p class="bio__overview">{{ bio.position }}</p>
           </li>
         {% endfor %}
       </ul>

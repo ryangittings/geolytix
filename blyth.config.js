@@ -6,7 +6,7 @@ const theme = {
   colors: {
     primary: '#401505',
     'primary-light': '#9AABBC',
-    'primary-mid': '#566575',
+    'primary-mid': '#5d7186',
     secondary: '#EC602D',
     'secondary-dark': '#401505',
     light: '#ffffff',
@@ -26,7 +26,7 @@ const theme = {
     500: 'var(--step-1)',
     600: 'var(--step-2)',
     700: 'var(--step-4)',
-    800: 'var(--step-6)',
+    800: 'var(--step-5)',
     900: 'var(--step-8)',
   },
 };

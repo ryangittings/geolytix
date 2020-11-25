@@ -1,5 +1,11 @@
-.checklist {
-  line-height: 2;
+ul.checklist {
+  margin-bottom: var(--size-400);
+}
+
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
 }
 
 .checklist li:before {
@@ -9,4 +15,5 @@
   height: 1rem;
   background: url('/img/icons/check.svg') center / contain;
   margin-right: 0.5rem;
+  flex-shrink: 0;
 }

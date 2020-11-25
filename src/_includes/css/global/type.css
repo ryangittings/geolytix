@@ -49,3 +49,8 @@ a {
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-normal);
 }
+
+blockquote cite {
+  font-style: normal;
+  font-weight: var(--weight-mid);
+}

@@ -7,7 +7,7 @@ module.exports = {
     alias: 'locale',
   },
   locales: locales.languages.map((lang) => lang.root),
-  permalink: '{{ locale }}{{ page.fileSlug | global }}/index.html',
+  permalink: '{{ locale }}{{ page.filePathStem | global | replace("index", "") }}/index.html',
   eleventyComputed: {
     locale: (data) => {
       return locales.languages.filter((lang) => lang.root == data.locale)[0].code;
