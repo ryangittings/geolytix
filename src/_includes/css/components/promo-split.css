@@ -1,0 +1,9 @@
+.promo-split {
+  --split-pair-align: flex-start;
+  --split-pair-space: var(--size-900);
+}
+
+.promo-split__sidebar {
+  position: sticky;
+  top: 1rem;
+}

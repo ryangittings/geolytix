@@ -1,0 +1,33 @@
+---
+layout: layouts/default.njk
+title: About
+---
+
+<section class="[ hero ] [ bg-dark ]">
+  <img src="/img/hero/about.jpg" class="hero__background" alt="Office">
+  <div class="wrapper">
+    <div class="measure-short">
+      <h1>{{ "Success Stories" | i18n(locale) }}</h1>
+      <p>{{ "At GEOLYTIX we help retailers make informed decisions about how many stores, who to acquire, where to open, which format, how to optimise home delivery and click & collect operations." | i18n(locale) }}</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="pad-top-900 pad-bottom-900">
+  <div class="wrapper">
+    <ul class="auto-grid">
+      {% for story in collections.success %}
+        <li>
+          <div class="card">
+            <img src="/img/stories/{{ story.data.image }}" class="card__cover" alt="Photo of {{ story.data.title }}">
+            <div class="card__inner">
+              <a href="{{ story.url }}" class="breakout-button"><img src="/img/stories/{{ story.data.logo }}" class="card__logo" alt="{{ story.data.title }} Logo"></a>
+              <p>{{ story.data.overview }}</p>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

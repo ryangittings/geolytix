@@ -3,7 +3,7 @@ layout: layouts/default.njk
 ---
 
 <section class="[ hero ] [ bg-dark ]">
-  <img src="/img/case-studies/{{ image }}" class="hero__background" alt="Office">
+  <img src="/img/stories/{{ image }}" class="hero__background" alt="Office">
   <div class="wrapper">
     <div class="measure-short">
       <h1 class="eyebrow color-light">{{ title | i18n(locale) }} Case Study</h1>
@@ -14,11 +14,16 @@ layout: layouts/default.njk
 </section>
 <section class="pad-top-900 pad-bottom-900">
   <div class="wrapper">
-    <div class="split-pair">
-      <div class="measure-short">
+    <div class="[ promo-split ] [ split-pair ]">
+      <div class="measure-long">
         {{ content | safe }}
       </div>
-      <div>
+      <div class="promo-split__sidebar">
+        <div class="bg-dark color-primary-light pad-800">
+          <h2>Want to know more?</h2>
+          <p>The people who work at Geolytix share our vision and values. We’re driven by our belief that the best work is born from a happy, dedicated and trusted team.</p>
+          <a href="{{ "/contact/" | link(locale) }}" class="button">Contact us</a>
+        </div>
       </div>
     </div>
   </div>

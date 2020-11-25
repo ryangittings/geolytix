@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  border-radius: 8px;
+  border-top-left-radius: var(--radius-regular);
+  border-top-right-radius: var(--radius-regular);
   overflow: hidden;
   background: var(--color-regular-gray);
 }

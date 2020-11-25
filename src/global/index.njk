@@ -236,13 +236,13 @@ title: Home
   </div>
 
   <ul class="card-carousel">
-    {% for i in range(1, 10) %}
+    {% for story in collections.success %}
       <li>
         <div class="card">
-          <img src="/img/stories/cover.jpg" class="card__cover" alt="Photo of John Lewis">
+          <img src="/img/stories/{{ story.data.image }}" class="card__cover" alt="Photo of {{ story.data.title }}">
           <div class="card__inner">
-            <img src="/img/stories/john-lewis.svg" class="card__logo" alt="John Lewis Logo">
-            <p>Our job was to focus on the process, rather than the modelling which John Lewis carry out in-house.</p>
+            <a href="{{ story.url }}" class="breakout-button"><img src="/img/stories/{{ story.data.logo }}" class="card__logo" alt="{{ story.data.title }} Logo"></a>
+            <p>{{ story.data.overview }}</p>
           </div>
         </div>
       </li>
