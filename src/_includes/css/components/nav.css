@@ -1,19 +1,24 @@
 ul.nav {
-  --nav-padding: var(--size-400);
+  --nav-padding: var(--size-300);
 
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin: 0 calc(var(--nav-padding) * -1);
   line-height: 1;
+  min-width: 18rem;
 }
 
 .nav li a:not(.button) {
   display: block;
   text-decoration: none;
   color: currentColor;
-  padding: 0 var(--nav-padding);
+  padding: 0.5rem var(--nav-padding);
   line-height: 1;
+}
+
+.nav li .button {
+  margin: 0 var(--nav-padding);
 }
 
 .nav li a .icon {
@@ -22,12 +27,12 @@ ul.nav {
   width: auto;
 }
 
-.nav li.divider {
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.nav .flag {
-  margin: var(--size-400) 0;
+@media (min-width: 48em) {
+  .nav li.divider {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: var(--nav-padding);
+    padding-left: var(--nav-padding);
+  }
 }
 
 ul.nav--vertical {
@@ -40,4 +45,8 @@ ul.nav--vertical li.divider {
 
 ul.nav--vertical li a:not(.button) {
   padding: var(--nav-padding);
+}
+
+ul.nav--vertical .flag {
+  margin: var(--size-400) 0;
 }

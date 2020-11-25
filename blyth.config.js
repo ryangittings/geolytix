@@ -26,7 +26,7 @@ const theme = {
     500: 'var(--step-1)',
     600: 'var(--step-2)',
     700: 'var(--step-4)',
-    800: 'var(--step-5)',
+    800: 'var(--step-6)',
     900: 'var(--step-8)',
   },
 };

@@ -10,6 +10,10 @@ layout: layouts/base.njk
       <nav class="site-header__navigation" aria-label="Primary navigation">
         <ul class="nav">
           {% include '../partials/menu.njk' %}
+
+          {% if locale %}
+            <li><a href="/choose/">{% include '../partials/flag.njk' %}</a></li>
+          {% endif %}
         </ul>
       </nav>
 
@@ -21,6 +25,10 @@ layout: layouts/base.njk
     <nav class="expanded-navigation" aria-label="Expanded navigation">
       <ul class="nav nav--vertical">
         {% include '../partials/menu.njk' %}
+
+        {% if locale %}
+          <li><a href="/choose/">{% include '../partials/flag.njk' %}</a></li>
+        {% endif %}
       </ul>
     </nav>
   </div>

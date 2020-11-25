@@ -19,4 +19,5 @@
 
 .site-footer__navigation {
   margin: var(--size-600) 0;
+  font-size: var(--size-300);
 }

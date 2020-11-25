@@ -16,12 +16,14 @@
   text-align: center;
 }
 
-.card__inner *:last-child {
+.card__inner > *:last-child {
   margin-bottom: 0;
 }
 
 .card__logo {
   display: inline-block;
   max-width: 8rem;
+  height: 3rem;
+  object-fit: contain;
   margin-bottom: var(--size-400);
 }

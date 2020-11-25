@@ -3,6 +3,7 @@
   --button-foreground: var(--color-secondary-dark);
 
   display: inline-block;
+  white-space: nowrap;
   padding: var(--size-200) var(--size-400);
   text-decoration: none;
   background: var(--button-background);
@@ -11,24 +12,29 @@
   transition: var(--transition-standard);
   border: none;
   cursor: pointer;
+  margin: 0;
 }
 
 .button:hover {
   --button-background: var(--color-secondary-dark);
   --button-foreground: var(--color-secondary);
+
+  box-shadow: none;
+  color: var(--button-foreground);
 }
 
 .button--outline {
-  background: none;
-  box-shadow: 0 0 0 2px var(--button-background) inset;
+  --button-background: none;
+
+  box-shadow: 0 0 0 2px currentColor inset;
   color: currentColor;
 }
 
-.bg-secondary .button {
+.button--dark {
   --button-background: var(--color-secondary-dark);
-  --button-foreground: var(--color-light);
+  --button-foreground: var(--color-secondary);
 }
 
-.bg-secondary .button:hover {
-  --button-foreground: var(--color-secondary);
+.button--dark:hover {
+  --button-background: var(--color-dark);
 }
