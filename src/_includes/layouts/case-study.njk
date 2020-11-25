@@ -6,7 +6,7 @@ layout: layouts/default.njk
   <img src="/img/stories/{{ image }}" class="hero__background" alt="Office">
   <div class="wrapper">
     <div class="measure-short">
-      <h1 class="eyebrow color-light">{{ title | i18n(locale) }} Case Study</h1>
+      <h1 class="eyebrow color-light">{{ title | i18n(locale) }} {{ "Case Study" | i18n(locale) }}</h1>
       <h2 class="text-800">{{ headline | i18n(locale) }}</h2>
       <p class="text-500 weight-mid">{{ overview | i18n(locale) }}</p>
     </div>
@@ -20,9 +20,9 @@ layout: layouts/default.njk
       </div>
       <div class="promo-split__sidebar">
         <div class="bg-dark color-primary-light pad-800">
-          <h2>Want to know more?</h2>
-          <p>The people who work at Geolytix share our vision and values. We’re driven by our belief that the best work is born from a happy, dedicated and trusted team.</p>
-          <a href="{{ "/contact/" | link(locale) }}" class="button">Contact us</a>
+          <h2>{{ "Want to know more?" | i18n(locale) }}</h2>
+          <p>{{ "The people who work at Geolytix share our vision and values. We’re driven by our belief that the best work is born from a happy, dedicated and trusted team." | i18n(locale) }}</p>
+          <a href="{{ "/contact/" | link(locale) }}" class="button">{{ "Contact us" | i18n(locale) }}</a>
         </div>
       </div>
     </div>

@@ -251,13 +251,7 @@ title: Home
   <ul class="card-carousel">
     {% for story in collections.success %}
       <li>
-        <div class="card">
-          <img src="/img/stories/{{ story.data.image }}" class="card__cover" alt="Photo of {{ story.data.title }}">
-          <div class="card__inner">
-            <a href="{{ story.url }}" class="breakout-button"><img src="/img/stories/{{ story.data.logo }}" class="card__logo" alt="{{ story.data.title }} Logo"></a>
-            <p>{{ story.data.overview }}</p>
-          </div>
-        </div>
+        {% include '../_includes/partials/case-study-card.njk' %}
       </li>
     {% endfor %}
   </ul>

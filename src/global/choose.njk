@@ -18,7 +18,7 @@ title: Choose
       {% for language in locales.languages %}
         <li class="country-list">
           {% set locale = language.code %}
-          {% include './_includes/partials/flag.njk' %}
+          {% include '../_includes/partials/flag.njk' %}
           <a href="{{ language.root }}" class="breakout-button">{{ language.title }}</a>
         </li>
       {% endfor %}

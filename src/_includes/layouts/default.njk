@@ -12,7 +12,7 @@ layout: layouts/base.njk
           {% include '../partials/menu.njk' %}
 
           {% if locale %}
-            <li><a href="/choose/">{% include '../partials/flag.njk' %}</a></li>
+            <li><a href="{{ "/choose/" | link(locale) }}">{% include '../partials/flag.njk' %}</a></li>
           {% endif %}
         </ul>
       </nav>
@@ -64,11 +64,9 @@ layout: layouts/base.njk
       </nav>
     </div>
     <div class="site-footer__section site-footer__secondary">
-      <span class="site-footer__image">
-        {% if locale %}
-          {% include '../partials/flag.njk' %}
-        {% endif %}
-      </span>
+      {% if locale %}
+        <a href="{{ "/choose/" | link(locale) }}" class="site-footer__image">{% include '../partials/flag.njk' %}</a>
+      {% endif %}
 
       <nav class="[ site-footer__navigation ] [ text-300 ]" aria-label="Secondary navigation">
         <ul class="nav">
