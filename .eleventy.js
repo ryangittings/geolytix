@@ -1,16 +1,16 @@
 const cssMinFilter = require('./src/filters/css-min.js');
 const globalFilter = require('./src/filters/global.js');
 const i18nFilter = require('./src/filters/i18n.js');
-const linkFilter = require('./src/filters/link.js');
 const firstWordFilter = require('./src/filters/first-word.js');
+const localisedURLFilter = require('./src/filters/localised-url.js');
 
 module.exports = (config) => {
   // Minify filters
   config.addFilter('cssmin', cssMinFilter);
   config.addFilter('global', globalFilter);
   config.addFilter('i18n', i18nFilter);
-  config.addFilter('link', linkFilter);
   config.addFilter('firstWord', firstWordFilter);
+  config.addFilter('localisedURL', localisedURLFilter);
 
   // Pass through
   config.addPassthroughCopy('./src/img/');

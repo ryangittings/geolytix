@@ -1,7 +1,7 @@
 {% set pageTitle = title + ' | ' + site.name %}
 {% set pageDesc = '' %}
 {% set siteTitle = site.name %}
-{% set currentUrl = site.url + page.url %}
+{% set currentUrl = page.url | localisedURL(page.locale)  %}
 
 {% if metaTitle %}
   {% set pageTitle = metaTitle %}
@@ -12,7 +12,11 @@
 {% endif %}
 
 <title>{{ pageTitle }}</title>
-<link rel="canonical" href="{{ currentUrl }}" />
+<link rel="canonical" href="{{ currentUrl}}" />
+
+{% for locale in locales.languages %}
+  <link rel="alternate"{% if locale.code == 'en' %} hreflang="x-default"{% endif %} hreflang="{{ locale.code }}" href="{{ page.url | localisedURL(locale) }}" />
+{% endfor %}
 
 <meta property="og:site_name" content="{{ siteTitle }}" />
 <meta property="og:title" content="{{ pageTitle }}" />

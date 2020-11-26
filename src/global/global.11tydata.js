@@ -6,11 +6,13 @@ module.exports = {
     size: 1,
     alias: 'locale',
   },
-  languages: locales.languages.map((lang) => lang.root),
+  languages: locales.languages.map((lang) => lang.code),
   permalink: '{{ locale }}{{ page.filePathStem | global | replace("index", "") }}/index.html',
   eleventyComputed: {
-    locale: (data) => {
-      return locales.languages.filter((lang) => lang.root == data.locale)[0].code;
+    page: {
+      locale: (data) => {
+        return locales.languages.filter((lang) => lang.code == data.locale)[0];
+      },
     },
   },
 };

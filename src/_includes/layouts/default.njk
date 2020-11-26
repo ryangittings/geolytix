@@ -5,14 +5,14 @@ layout: layouts/base.njk
 <header class="site-header">
   <div class="wrapper">
     <div class="site-header__inner">
-      <a href="{{ "/" | link(locale) }}">{% include '../../img/logo.svg' %}</a>
+      <a href="{{ "/" }}">{% include '../../img/logo.svg' %}</a>
 
       <nav class="site-header__navigation" aria-label="Primary navigation">
         <ul class="nav">
           {% include '../partials/menu.njk' %}
 
           {% if locale %}
-            <li><a href="{{ "/choose/" | link(locale) }}">{% include '../partials/flag.njk' %}</a></li>
+            <li><a href="{{ "/choose/" }}">{% include '../partials/flag.njk' %}</a></li>
           {% endif %}
         </ul>
       </nav>
@@ -64,8 +64,8 @@ layout: layouts/base.njk
       </nav>
     </div>
     <div class="site-footer__section site-footer__secondary">
-      {% if locale %}
-        <a href="{{ "/choose/" | link(locale) }}" class="site-footer__image">{% include '../partials/flag.njk' %}</a>
+      {% if pageLocale %}
+        <a href="{{ "/choose/" }}" class="site-footer__image">{% include '../partials/flag.njk' %}</a>
       {% endif %}
 
       <nav class="[ site-footer__navigation ] [ text-300 ]" aria-label="Secondary navigation">
