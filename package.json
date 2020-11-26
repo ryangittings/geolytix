@@ -9,7 +9,7 @@
   "scripts": {
     "blyth": "npm run blyth",
     "dev": "npm run serve",
-    "serve": "ELEVENTY_ENV=development npx eleventy --serve",
+    "serve": "LOCALE=en ELEVENTY_ENV=development npx eleventy --serve",
     "production": "npx eleventy"
   },
   "bin": {

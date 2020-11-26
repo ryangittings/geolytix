@@ -7,8 +7,8 @@ title: About
   <img src="/img/hero/about.jpg" class="hero__background" alt="Office">
   <div class="wrapper">
     <div class="measure-short">
-      <h1>{{ "Success Stories" | i18n(locale) }}</h1>
-      <p>{{ "At GEOLYTIX we help retailers make informed decisions about how many stores, who to acquire, where to open, which format, how to optimise home delivery and click & collect operations." | i18n(locale) }}</p>
+      <h1>{{ "Success Stories" | i18n }}</h1>
+      <p>{{ "At GEOLYTIX we help retailers make informed decisions about how many stores, who to acquire, where to open, which format, how to optimise home delivery and click & collect operations." | i18n }}</p>
     </div>
   </div>
 </section>
@@ -19,7 +19,7 @@ title: About
     <ul class="auto-grid auto-grid--fill">
       {% for story in collections.success %}
         <li>
-          {% include '../_includes/partials/case-study-card.njk' %}
+          {% include './_includes/partials/case-study-card.njk' %}
         </li>
       {% endfor %}
     </ul>

@@ -7,8 +7,8 @@ title: Contact
   <img src="/img/hero/about.jpg" class="hero__background" alt="Office">
   <div class="wrapper">
     <div class="measure-short">
-      <h1>{{ "Contact Us" | i18n(locale) }}</h1>
-      <p>{{ "At GEOLYTIX we help retailers make informed decisions about how many stores, who to acquire, where to open, which format, how to optimise home delivery and click & collect operations." | i18n(locale) }}</p>
+      <h1>{{ "Contact Us" | i18n }}</h1>
+      <p>{{ "At GEOLYTIX we help retailers make informed decisions about how many stores, who to acquire, where to open, which format, how to optimise home delivery and click & collect operations." | i18n }}</p>
     </div>
   </div>
 </section>
@@ -18,38 +18,38 @@ title: Contact
     <form class="card card-form">
       <div class="[ card-form__inner ] [ pad-800 ]">
         <div class="form-field">
-          <label for="first_name">{{ "First Name" | i18n(locale) }}</label>
+          <label for="first_name">{{ "First Name" | i18n }}</label>
           <input type="text" id="first_name">
         </div>
         <div class="form-field">
-          <label for="last_name">{{ "Last Name" | i18n(locale) }}</label>
+          <label for="last_name">{{ "Last Name" | i18n }}</label>
           <input type="text" id="last_name">
         </div>
         <div class="form-field">
-          <label for="email_address">{{ "Email Address" | i18n(locale) }}</label>
+          <label for="email_address">{{ "Email Address" | i18n }}</label>
           <input type="email" id="email_address">
         </div>
         <div class="form-field">
-          <label for="telephone">{{ "Telephone" | i18n(locale) }}</label>
+          <label for="telephone">{{ "Telephone" | i18n }}</label>
           <input type="tel" id="telephone">
         </div>
         <div class="form-field form-field--large">
-          <label for="message">{{ "Message" | i18n(locale) }}</label>
+          <label for="message">{{ "Message" | i18n }}</label>
           <textarea id="message"></textarea>
         </div>
       </div>
       <div class="[ card-form__actions ] [ bg-regular-gray pad-400 ]">
         <div class="checkbox-field">
           <input type="checkbox" id="marketing">
-          <label for="marketing" class="text-300 weight-light">{{ "We’d love to let you know when we release new open data and update you with new stuff we’re working on. We won’t email often and you can unsubscribe at any time." | i18n(locale) }}</label>
+          <label for="marketing" class="text-300 weight-light">{{ "We’d love to let you know when we release new open data and update you with new stuff we’re working on. We won’t email often and you can unsubscribe at any time." | i18n }}</label>
         </div>
-        <button type="submit" class="button">{{ "Send Enquiry" | i18n(locale) }}</button>
+        <button type="submit" class="button">{{ "Send Enquiry" | i18n }}</button>
       </div>
     </form>
   </div>
 
   <div class="wrapper">
-    <h2 class="eyebrow text-align-center color-primary-mid">{{ "Or choose an office" | i18n(locale) }}</h2>
+    <h2 class="eyebrow text-align-center color-primary-mid">{{ "Or choose an office" | i18n }}</h2>
 
     <div class="tabs">
       <div class="text-align-center">
@@ -64,7 +64,7 @@ title: Contact
         <div data-tab-id="{{ office.title | slug }}" role="tabpanel"{% if loop.first %} aria-hidden="false"{% else %}aria-hidden="true"{% endif %} aria-label="{{ office.title }}">
           <div class="split-pair">
             <div class="measure-compact">
-              <p class="text-500">{{ office.address | i18n(locale) }}</p>
+              <p class="text-500">{{ office.address | i18n }}</p>
               <p class="text-500"><a href="tel:{{ office.telephone }}">{{ office.telephone }}</a></p>
               <p class="text-500"><a href="mailto:{{ office.email }}">{{ office.email }}</a></p>
             </div>

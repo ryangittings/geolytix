@@ -7,7 +7,7 @@ title: Choose
   <img src="/img/hero/home.jpg" class="hero__background" alt="Office">
   <div class="wrapper text-align-center">
     <div class="measure-short">
-      <h1>{{ "Choose Your Country or Region" | i18n(en) }}</h1>
+      <h1>{{ "Choose Your Country or Region" | i18n }}</h1>
     </div>
   </div>
 </section>
@@ -15,9 +15,9 @@ title: Choose
 <section class="pad-top-900 pad-bottom-900">
   <div class="wrapper wrapper--short">
     <ul class="auto-grid">
-      {% for locale in locales.languages %}
+      {% for locale in locales %}
         <li class="country-list">
-          <span class="flag">{% include "../img/locales/" + locale.code + ".svg" %}</span>
+          <span class="flag">{% include "./img/locales/" + locale.code + ".svg" %}</span>
           <a href="{{ language.root }}" class="breakout-button">{{ locale.title }}</a>
         </li>
       {% endfor %}
