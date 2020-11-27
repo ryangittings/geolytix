@@ -18,7 +18,7 @@ title: Choose
       {% for locale in locales %}
         <li class="country-list">
           <span class="flag">{% include "./img/locales/" + locale.code + ".svg" %}</span>
-          <a href="{{ language.root }}" class="breakout-button">{{ locale.title }}</a>
+          <a href="{{ locale.root }}" class="breakout-button">{{ locale.title }}</a>
         </li>
       {% endfor %}
     </ul>

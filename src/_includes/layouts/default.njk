@@ -11,7 +11,7 @@ layout: layouts/base.njk
         <ul class="nav">
           {% include '../partials/menu.njk' %}
 
-          {% if locale %}
+          {% if site.locale %}
             <li><a href="{{ "/choose/" }}">{% include '../partials/flag.njk' %}</a></li>
           {% endif %}
         </ul>
@@ -26,7 +26,7 @@ layout: layouts/base.njk
       <ul class="nav nav--vertical">
         {% include '../partials/menu.njk' %}
 
-        {% if locale %}
+        {% if site.locale %}
           <li><a href="/choose/">{% include '../partials/flag.njk' %}</a></li>
         {% endif %}
       </ul>
@@ -64,7 +64,7 @@ layout: layouts/base.njk
       </nav>
     </div>
     <div class="site-footer__section site-footer__secondary">
-      {% if pageLocale %}
+      {% if site.locale %}
         <a href="{{ "/choose/" }}" class="site-footer__image">{% include '../partials/flag.njk' %}</a>
       {% endif %}
 

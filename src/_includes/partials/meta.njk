@@ -15,7 +15,7 @@
 <link rel="canonical" href="{{ currentUrl }}" />
 
 {% for locale in locales %}
-  <link rel="alternate"{% if locale.code == 'en' %} hreflang="x-default"{% endif %} hreflang="{{ locale.code }}" href="{{ page.url | localisedURL(site.locale) }}" />
+  <link rel="alternate"{% if locale.code == 'en' %} hreflang="x-default"{% endif %} hreflang="{{ locale.code }}" href="{{ page.url | localisedURL(locale) }}" />
 {% endfor %}
 
 <meta property="og:site_name" content="{{ siteTitle }}" />
