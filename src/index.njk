@@ -122,50 +122,61 @@ title: Home
         </ul>
       </div>
 
-      <div data-tab-id="uk" class="window" role="tabpanel" aria-hidden="false" aria-label="United Kingdom">
-        <div class="window__toolbar">
-          <span class="window__toolbar-item"></span>
-          <span class="window__toolbar-item"></span>
-          <span class="window__toolbar-item"></span>
+      <div data-tab-id="uk" role="tabpanel" aria-hidden="false" aria-label="United Kingdom">
+        <div class="[ window ] [ display-none md:display-block ]">
+          <div class="window__toolbar">
+            <span class="window__toolbar-item"></span>
+            <span class="window__toolbar-item"></span>
+            <span class="window__toolbar-item"></span>
+          </div>
+          <div class="window__inner">
+            <iframe src="https://geolytix.dev/geodata/view/embedded?locale=London" aria-label="UK GeoData"></iframe>
+          </div>
         </div>
-        <div class="window__inner">
-          <iframe src="https://geolytix.xyz/geodata?layers=Mapbox%20Baselayer,Mapbox%20Labels,Retail%20Points&locale=London" aria-label="UK GeoData"></iframe>
-        </div>
-      </div>
-
-      <div data-tab-id="europe" class="window" role="tabpanel" aria-hidden="true" aria-label="Europe">
-        <div class="window__toolbar">
-          <span class="window__toolbar-item"></span>
-          <span class="window__toolbar-item"></span>
-          <span class="window__toolbar-item"></span>
-        </div>
-        <div class="window__inner">
-          <p>Europe</p>
-          {% include './_includes/partials/geodata.njk' %}
+        <div class="text-align-center pad-bottom-400 display-block md:display-none">
+          <a href="https://geolytix.dev/geodata?locale=London" class="button" target="_blank" rel="noopener noreferrer">Open maps &rarr;</a>
         </div>
       </div>
 
-      <div data-tab-id="asia-pacific" class="window" role="tabpanel" aria-hidden="true" aria-label="Asia Pacific">
-        <div class="window__toolbar">
-          <span class="window__toolbar-item"></span>
-          <span class="window__toolbar-item"></span>
-          <span class="window__toolbar-item"></span>
-        </div>
-        <div class="window__inner">
-          <p>Asia</p>
-          {% include './_includes/partials/geodata.njk' %}
+      <div data-tab-id="europe" role="tabpanel" aria-hidden="true" aria-label="Europe">
+        <div class="window">
+          <div class="window__toolbar">
+            <span class="window__toolbar-item"></span>
+            <span class="window__toolbar-item"></span>
+            <span class="window__toolbar-item"></span>
+          </div>
+          <div class="window__inner">
+            <p>Europe</p>
+            {% include './_includes/partials/geodata.njk' %}
+          </div>
         </div>
       </div>
 
-      <div data-tab-id="americas" class="window" role="tabpanel" aria-hidden="true" aria-label="Americas">
-        <div class="window__toolbar">
-          <span class="window__toolbar-item"></span>
-          <span class="window__toolbar-item"></span>
-          <span class="window__toolbar-item"></span>
+      <div data-tab-id="asia-pacific" role="tabpanel" aria-hidden="true" aria-label="Asia Pacific">
+        <div class="window">
+          <div class="window__toolbar">
+            <span class="window__toolbar-item"></span>
+            <span class="window__toolbar-item"></span>
+            <span class="window__toolbar-item"></span>
+          </div>
+          <div class="window__inner">
+            <p>Asia</p>
+            {% include './_includes/partials/geodata.njk' %}
+          </div>
         </div>
-        <div class="window__inner">
-          <p>Americas</p>
-          {% include './_includes/partials/geodata.njk' %}
+      </div>
+
+      <div data-tab-id="americas" role="tabpanel" aria-hidden="true" aria-label="Americas">
+        <div class="window">
+          <div class="window__toolbar">
+            <span class="window__toolbar-item"></span>
+            <span class="window__toolbar-item"></span>
+            <span class="window__toolbar-item"></span>
+          </div>
+          <div class="window__inner">
+            <p>Americas</p>
+            {% include './_includes/partials/geodata.njk' %}
+          </div>
         </div>
       </div>
     </div>

@@ -53,6 +53,15 @@ module.exports = {
       property: 'color',
       variable: true,
     },
+    display: {
+      items: {
+        none: 'none',
+        block: 'block',
+        'inline-block': 'inline-block',
+      },
+      property: 'display',
+      responsive: true,
+    },
     font: {
       items: theme.fonts,
       property: 'font-family',
@@ -151,6 +160,14 @@ module.exports = {
       },
       property: 'font-weight',
       variable: true,
+    },
+    visibility: {
+      items: {
+        visible: 'visible',
+        invisible: 'hidden',
+      },
+      property: 'visibility',
+      responsive: true,
     },
     width: {
       items: {

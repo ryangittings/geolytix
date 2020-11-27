@@ -8,7 +8,6 @@ body {
 
 :focus {
   outline: 1px solid currentColor;
-  outline-offset: 0.25rem;
 }
 
 :hover:focus {

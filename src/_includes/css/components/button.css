@@ -32,7 +32,7 @@
 
 .button--dark {
   --button-background: var(--color-secondary-dark);
-  --button-foreground: var(--color-secondary);
+  --button-foreground: var(--color-light);
 }
 
 .button--dark:hover {
