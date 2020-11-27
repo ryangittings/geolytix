@@ -13,10 +13,22 @@
   align-items: center;
 }
 
+.site-header__logo {
+  max-width: 10rem;
+  flex-shrink: 1;
+  margin-right: var(--size-600);
+}
+
+.site-header__logo svg {
+  display: block;
+  width: 100%;
+}
+
 .site-header__navigation {
   display: none;
   margin-left: auto;
   font-size: var(--text-300);
+  flex-shrink: 0;
 }
 
 @media (min-width: 48em) {

@@ -55,9 +55,9 @@ module.exports = {
     },
     display: {
       items: {
-        none: 'none',
-        block: 'block',
-        'inline-block': 'inline-block',
+        none: 'none !important',
+        block: 'block !important',
+        'inline-block': 'inline-block !important',
       },
       property: 'display',
       responsive: true,
