@@ -112,8 +112,7 @@ title: About
   <div class="wrapper">
     <div class="text-align-center gap-bottom-800">
       <div class="measure-compact">
-        <h2 class="eyebrow">{{ "Meet The Teams" | i18n }}</h2>
-        <h3 class="text-700">{{ "Meet Our Teams" | i18n }}</h3>
+        <h2 class="text-700">{{ "Meet Our Teams" | i18n }}</h2>
         <p>{{ "We understand the likely challenges you will face." | i18n }}</p>
       </div>
     </div>
@@ -166,7 +165,7 @@ title: About
   <div class="wrapper">
     <div class="text-align-center gap-bottom-800">
       <div class="measure-compact">
-        <h3 class="text-700">{{ "Our Team" | i18n }}</h3>
+        <h3 class="text-700">{{ "Meet the Team" | i18n }}</h3>
       </div>
     </div>
 
@@ -174,8 +173,8 @@ title: About
       {% for bio in team.members %}
         <li class="bio">
           <img src="/img/team/{{ bio.name | firstWord }}.jpg" class="bio__image" alt="{{ "Photo of" | i18n }} {{ bio.name }}"> 
-          <h3 class="bio__title">{{ bio.name }}</h3>
-          <p class="bio__overview">{{ bio.position }}</p>
+          <h3 class="bio__title">{{ bio.name | i18n }}</h3>
+          <p class="bio__overview">{{ bio.position | i18n }}</p>
         </li>
       {% endfor %}
     </ul>
