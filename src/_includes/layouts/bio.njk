@@ -1,0 +1,23 @@
+---
+layout: layouts/default.njk
+tags:
+  - bio
+---
+
+<section class="[ bio-block ] [ pad-top-900 pad-bottom-900 bg-dark color-primary-light ]">
+  <div class="wrapper wrapper--short">
+      <img src="/img/team/{{ name | firstWord }}.jpg" class="bio-block__image" alt="{{ "Photo of" | i18n }} {{ name }}"> 
+    
+      <div class="bio-block__overview">
+        <h1>{{ name }}</h1>
+        <h2 class="text-400 color-primary-light">{{ position }}</h2>
+
+        <ul class="nav">
+          <li><a href="{{ linkedin }}" target="_blank" rel="noopener noreferrer">{% include '../../img/icons/linkedin.svg' %}</a></li>
+        </ul>
+      </div>
+
+      {{ content | i18n | safe }}
+    </div>
+  </div>
+</section>

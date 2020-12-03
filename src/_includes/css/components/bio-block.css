@@ -1,0 +1,23 @@
+.bio-block {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-block__overview {
+  padding-bottom: var(--size-400);
+  margin-bottom: var(--size-400);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bio-block .split-pair {
+  --split-pair-space: var(--size-900);
+}
+
+.bio-block__image {
+  max-width: 10rem;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: var(--size-700);
+}

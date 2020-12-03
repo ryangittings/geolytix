@@ -56,8 +56,6 @@ title: About
   </div>
 </section>
 
-<img src="/img/about/team.jpg" class="width-full" alt="">
-
 <section class="bg-cream-light pad-top-900">
   <div class="wrapper">
     <div class="split-pair">
@@ -79,6 +77,8 @@ title: About
     </div>
   </div>
 </section>
+
+<img src="/img/about/team.jpg" class="width-full" alt="">
 
 <section class="pad-top-900 pad-bottom-900">
   <div class="wrapper">
@@ -170,11 +170,10 @@ title: About
     </div>
 
     <ul class="[ bio-grid ] [ auto-grid ]">
-      {% for bio in team.members %}
+      {% for bio in collections.bio %}
         <li class="bio">
-          <img src="/img/team/{{ bio.name | firstWord }}.jpg" class="bio__image" alt="{{ "Photo of" | i18n }} {{ bio.name }}"> 
-          <h3 class="bio__title">{{ bio.name | i18n }}</h3>
-          <p class="bio__overview">{{ bio.position | i18n }}</p>
+          <img src="/img/team/{{ bio.data.name | firstWord }}.jpg" class="bio__image" alt="{{ "Photo of" | i18n }} {{ bio.data.name }}"> 
+          <h3 class="bio__title"><a href="{{ bio.url }}" class="breakout-button">{{ bio.data.name | i18n }}</a></h3>
         </li>
       {% endfor %}
     </ul>

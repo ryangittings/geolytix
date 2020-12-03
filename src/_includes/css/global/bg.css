@@ -1,7 +1,7 @@
-[class*='bg-dark'] h1,
-[class*='bg-dark'] h2,
-[class*='bg-dark'] h3,
-[class*='bg-dark'] h4,
-[class*='bg-dark'] h5 {
+[class*='bg-dark'] h1:not([class*='color-']),
+[class*='bg-dark'] h2:not([class*='color-']),
+[class*='bg-dark'] h3:not([class*='color-']),
+[class*='bg-dark'] h4:not([class*='color-']),
+[class*='bg-dark'] h5:not([class*='color-']) {
   color: var(--color-cream);
 }
