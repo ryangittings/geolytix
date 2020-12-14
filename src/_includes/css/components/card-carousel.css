@@ -6,3 +6,7 @@
   display: inline-flex;
   flex-direction: column;
 }
+
+.card-carousel .tns-item[aria-hidden] .card a {
+  display: none;
+}
