@@ -1,8 +1,11 @@
 <div class="card">
-  <a href="{{ story.url }}" class="breakout-button"><img src="/img/stories/{{ story.data.image }}" class="card__cover" alt="{{ "Photo of" | i18n }} {{ story.data.title }}"></a>
+  {% set image = '/stories/' ~ story.data.image %}
+  {% set logo = '/stories/' ~ story.data.logo %}
+
+  <img src="{% cloudinary image, 'w_354,f_auto' %}" srcset="{% cloudinary image, 'w_354,f_auto,dpr_2.0' %}" width="708" height="404" class="card__cover" alt="{{ "Photo of" | i18n }} {{ story.data.title }}">
   
   <div class="card__inner">
-    <img src="/img/stories/{{ story.data.logo }}" class="card__logo" alt="{{ story.data.title | i18n }} {{ "Logo" | i18n }}">
+    <a href="{{ story.url }}" class="breakout-button"><img src="{% cloudinary logo %}" class="card__logo" width="48" height="48" alt="{{ story.data.title | i18n }} {{ "Logo" | i18n }}"></a>
     <p>{{ story.data.overview | i18n }}</p>
   </div>
 </div>

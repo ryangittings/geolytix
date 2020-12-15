@@ -3,7 +3,8 @@ layout: layouts/default.njk
 ---
 
 <section class="[ hero ] [ bg-dark ]">
-  <img src="/img/stories/{{ image }}" class="hero__background" alt="Office">
+  {% set background = '/stories/' ~ image %}
+  <img src="{% cloudinary background, 'w_1400,f_auto' %}" class="hero__background" alt="Office">
   <div class="wrapper">
     <div class="measure-short">
       <h1 class="eyebrow color-light">{{ title | i18n }} {{ "Case Study" | i18n }}</h1>

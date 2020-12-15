@@ -4,7 +4,7 @@ title: About
 ---
 
 <section class="[ hero ] [ bg-dark ]">
-  <img src="/img/hero/about.jpg" class="hero__background" alt="Office">
+  <img src="{% cloudinary '/hero/about.jpg', 'w_1400,f_auto' %}" class="hero__background" alt="About Us Background">
   <div class="wrapper">
     <div class="measure-short">
       <h1>{{ "About Us" | i18n }}</h1>
@@ -64,7 +64,7 @@ title: About
         <p>{{ "We can help you wherever you are or are planning to go. From sharing our gold standard approaches across territories, through planning a new market entry, to crafting consistent global benchmarks. With offices in seven countries we are small but global." | i18n }}</p>
       </div>
       <div>
-        <img src="/img/about/map.svg" class="width-full" alt="Map">
+        <img src="{% cloudinary '/about/map.svg' %}" class="width-full" alt="Map">
       </div>
     </div>
 
@@ -78,7 +78,7 @@ title: About
   </div>
 </section>
 
-<img src="/img/about/team.jpg" class="width-full" alt="">
+<img src="{% cloudinary '/about/team.jpg', 'w_1400,f_auto' %}" srcset="{% cloudinary '/about/team.jpg', 'w_1400,f_auto,dpr_2.0' %} 2x" class="width-full" alt="Team Photo">
 
 <section class="pad-top-900 pad-bottom-900">
   <div class="wrapper">
@@ -125,7 +125,7 @@ title: About
           <p>{{ "Duis sed mi sit amet purus lobortis congue at eu arcu. Nullam ullamcorper nulla pharetra metus accumsan luctus. Mauris dictum faucibus lacus, condimentum posuere quam aliquam id." | i18n }}</p>
         </figcaption>
 
-        <img src="/img/about/product-team.jpg" class="gallery-block__media" alt="Product Team Photo">
+        <img src="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto' %}" srcset="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Product Team Photo">
       </figure>
 
       <figure class="gallery-block">
@@ -135,7 +135,7 @@ title: About
           <p>{{ "Duis sed mi sit amet purus lobortis congue at eu arcu. Nullam ullamcorper nulla pharetra metus accumsan luctus. Mauris dictum faucibus lacus, condimentum posuere quam aliquam id." | i18n }}</p>
         </figcaption>
 
-        <img src="/img/about/product-team.jpg" class="gallery-block__media" alt="Asia Pacific Team">
+        <img src="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto' %}" srcset="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Product Team Photo">
       </figure>
 
       <figure class="gallery-block">
@@ -145,7 +145,7 @@ title: About
           <p>{{ "Duis sed mi sit amet purus lobortis congue at eu arcu. Nullam ullamcorper nulla pharetra metus accumsan luctus. Mauris dictum faucibus lacus, condimentum posuere quam aliquam id." | i18n }}</p>
         </figcaption>
 
-        <img src="/img/about/product-team.jpg" class="gallery-block__media" alt="Location Planning Associates">
+        <img src="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto' %}" srcset="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Product Team Photo">
       </figure>
 
       <figure class="gallery-block">
@@ -155,7 +155,7 @@ title: About
           <p>{{ "Duis sed mi sit amet purus lobortis congue at eu arcu. Nullam ullamcorper nulla pharetra metus accumsan luctus. Mauris dictum faucibus lacus, condimentum posuere quam aliquam id." | i18n }}</p>
         </figcaption>
 
-        <img src="/img/about/product-team.jpg" class="gallery-block__media" alt="Data Scientists">
+        <img src="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto' %}" srcset="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Product Team Photo">
       </figure>
     </div>
   </div>
@@ -171,8 +171,9 @@ title: About
 
     <ul class="[ bio-grid ] [ auto-grid ]">
       {% for bio in collections.bio %}
+        {% set image = '/team/' ~ bio.data.name | firstWord ~ '.jpg' %}
         <li class="bio">
-          <img src="/img/team/{{ bio.data.name | firstWord }}.jpg" class="bio__image" alt="{{ "Photo of" | i18n }} {{ bio.data.name }}"> 
+          <img src="{% cloudinary image, 'w_128,h_128,c_crop,g_face' %}" srcset="{% cloudinary image, 'w_128,h_128,c_fill,dpr_2.0' %} 2x" class="bio__image" alt="{{ "Photo of" | i18n }} {{ bio.data.name }}"> 
           <h3 class="bio__title"><a href="{{ bio.url }}" class="breakout-button">{{ bio.data.name | i18n }}</a></h3>
           <p class="bio__overview">{{ bio.data.position }}</p>
         </li>

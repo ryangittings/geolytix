@@ -14,6 +14,7 @@
 .card__cover {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .card__inner {
@@ -27,6 +28,7 @@
 
 .card__logo {
   display: inline-block;
+  width: auto;
   max-width: 8rem;
   height: 3rem;
   object-fit: contain;

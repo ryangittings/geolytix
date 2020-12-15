@@ -4,7 +4,7 @@ title: Home
 ---
 
 <section class="[ hero ] [ bg-dark ]">
-  <img src="/img/hero/home.jpg" class="hero__background" alt="Office">
+  <img src="{% cloudinary '/hero/home.jpg', 'w_2000,f_auto' %}" class="hero__background" alt="Office">
   <div class="wrapper">
     <div class="measure-short">
       <h1>{{ "Make better decisions where location matters." | i18n }}</h1>
@@ -29,7 +29,7 @@ title: Home
       </div>
     </div>
 
-    <img src="/img/home/about.jpg" class="image-panel__image" alt="The Team">
+    <img src="{% cloudinary '/home/about.jpg', 'w_732,f_auto' %}" srcset="{% cloudinary '/home/about.jpg', 'w_732,f_auto,dpr_2.0' %} 2x" width="732" height="605" class="image-panel__image" alt="The Team">
   </div>
 </section>
 
@@ -79,22 +79,22 @@ title: Home
 
     <ul class="auto-grid">
       <li class="grid-block">
-        <img src="/img/icons/network.svg" alt="Network icon" class="grid-block__icon">
+        <img src="/img/icons/network.svg" width="48" height="48" alt="Network icon" class="grid-block__icon">
         <h3 class="grid-block__title">{{ "Network Strategy" | i18n }}</h3>
         <p>{{ "It’s never been more important for a retailer to understand how to optimise its store network. Whether you want to understand the potential number of stores you can open, how new formats will work together or how many stores you should close, given your growth in online sales, we can help." | i18n }}</p>
       </li>
       <li class="grid-block">
-        <img src="/img/icons/location.svg" alt="Location icon" class="grid-block__icon">
+        <img src="/img/icons/location.svg" width="48" height="48" alt="Location icon" class="grid-block__icon">
         <h3 class="grid-block__title">{{ "Location Planning" | i18n }}</h3>
         <p>{{ "Many of us have worked as Location Planners for major retailers. Over the years we have had experience in all industries and the public sector across the world.  Whether you need to understand how much a new store will take, sales cannibalisation or your online and offline customer profiles we can help." | i18n }}</p>
       </li>
       <li class="grid-block">
-        <img src="/img/icons/omnichannel.svg" alt="Omnichannel icon" class="grid-block__icon">
+        <img src="/img/icons/omnichannel.svg" width="48" height="48" alt="Omnichannel icon" class="grid-block__icon">
         <h3 class="grid-block__title">{{ "Omnichannel Retailing" | i18n }}</h3>
         <p>{{ "GEOLYTIX believe many businesses are missing a trick by not better combining their demographic, spatial and customer data. Whether its loyalty card, online, banking or mobility data we would love the opportunity to help you drive out more insight and get the right mix of Bricks and Clicks." | i18n }}</p>
       </li>
       <li class="grid-block">
-        <img src="/img/icons/spatial.svg" alt="Spatial icon" class="grid-block__icon">
+        <img src="/img/icons/spatial.svg" width="48" height="48" alt="Spatial icon" class="grid-block__icon">
         <h3 class="grid-block__title">{{ "Spatial Modelling" | i18n }}</h3>
         <p>{{ "Spatial is different. GEOLYTIX understand when a simple scorecard will suffice, or when  a customised gravity model or machine learning techniques will drive added value. We understand businesses don’t just need a model, but a framework that will improve your processes & management reporting." | i18n }}</p>
       </li>
@@ -269,7 +269,7 @@ title: Home
 
       <ul class="[ logo-grid ] [ auto-grid ]">
         {% for i in range(0, 16) %}
-          <li><img src="/img/stories/john-lewis.svg" alt="Logo"></li>
+          <li><img src="{% cloudinary "/stories/john-lewis.svg" %}" width="64" height="64" alt="Logo"></li>
         {% endfor %}
       </ul>
     </div>

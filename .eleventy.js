@@ -1,18 +1,21 @@
-const cloudinaryFilter = require('./src/filters/cloudinary.js');
 const cssMinFilter = require('./src/filters/css-min.js');
 const globalFilter = require('./src/filters/global.js');
 const i18nFilter = require('./src/filters/i18n.js');
 const firstWordFilter = require('./src/filters/first-word.js');
 const localisedURLFilter = require('./src/filters/localised-url.js');
 
+const cloudinaryShortcode = require('./src/shortcodes/cloudinary.js');
+
 module.exports = (config) => {
-  // Minify filters
+  // Filters
   config.addFilter('cssmin', cssMinFilter);
-  config.addFilter('cloudinary', cloudinaryFilter);
   config.addFilter('global', globalFilter);
   config.addFilter('i18n', i18nFilter);
   config.addFilter('firstWord', firstWordFilter);
   config.addFilter('localisedURL', localisedURLFilter);
+
+  // Shortcodes
+  config.addShortcode('cloudinary', cloudinaryShortcode);
 
   // Pass through
   config.addPassthroughCopy('./src/img/');
