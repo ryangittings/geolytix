@@ -61,7 +61,7 @@ title: About
     <div class="split-pair">
       <div class="measure-compact">
         <h2>{{ "Global Projects" | i18n }}</h2>
-        <p>{{ "We can help you wherever you are or are planning to go. From sharing our gold standard approaches across territories, through planning a new market entry, to crafting consistent global benchmarks. With offices in seven countries we are small but global." | i18n }}</p>
+        <p>{{ "We can help you wherever you are or are planning to go. From sharing our gold standard approaches across territories, through planning a new market entry, to crafting consistent global benchmarks. With offices in eight countries we are small but global." | i18n }}</p>
       </div>
       <div>
         <img src="{% cloudinary '/about/map.svg' %}" class="width-full" alt="Map">
@@ -161,14 +161,8 @@ title: About
   </div>
 </section>
 
-<section class="pad-top-900 pad-bottom-900">
+<section id="team" class="bg-cream-light pad-bottom-900">
   <div class="wrapper">
-    <div class="text-align-center gap-bottom-800">
-      <div class="measure-compact">
-        <h3 class="text-700">{{ "Meet the Team" | i18n }}</h3>
-      </div>
-    </div>
-
     <ul class="[ bio-grid ] [ auto-grid ]">
       {% for bio in collections.bio %}
         {% set image = '/team/' ~ bio.data.name | firstWord ~ '.jpg' %}

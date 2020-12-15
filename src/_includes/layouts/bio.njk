@@ -1,5 +1,7 @@
 ---
 layout: layouts/default.njk
+eleventyComputed:
+  title: "{{ name }}"
 tags:
   - bio
 ---
@@ -14,11 +16,17 @@ tags:
         <h2 class="text-400 color-primary-light">{{ position }}</h2>
 
         <ul class="nav">
-          <li><a href="{{ linkedin }}" target="_blank" rel="noopener noreferrer">{% include '../../img/icons/linkedin.svg' %}</a></li>
+          {% if linkedin %}<li><a href="{{ linkedin }}" target="_blank" rel="noopener noreferrer">{% include '../../img/icons/linkedin.svg' %}</a></li>{% endif %}
+          {% if stackexchange %}<li><a href="{{ stackexchange }}" target="_blank" rel="noopener noreferrer">{% include '../../img/icons/stackexchange.svg' %}</a></li>{% endif %}
+          {% if github %}<li><a href="{{ github }}" target="_blank" rel="noopener noreferrer">{% include '../../img/icons/github.svg' %}</a></li>{% endif %}
+          {% if medium %}<li><a href="{{ medium }}" target="_blank" rel="noopener noreferrer">{% include '../../img/icons/medium.svg' %}</a></li>{% endif %}
+          {% if twitter %}<li><a href="{{ linkedin }}" target="_blank" rel="noopener noreferrer">{% include '../../img/icons/twitter.svg' %}</a></li>{% endif %}
         </ul>
       </div>
 
       {{ content | i18n | safe }}
+
+      <a href="/about/#team" class="button">Back to Team</a>
     </div>
   </div>
 </section>
