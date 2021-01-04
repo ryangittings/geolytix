@@ -3,19 +3,25 @@
     {
       "title": "London",
       "address": "Office 117, The Finsbury Business, 40 Bowling Green Lane, London, EC1R 0NE",
-      "telephone": "+44 (0)20 74 15 70 43",
+      "telephone": "+44 (0) 207 415 7043",
       "email": "info@geolytix.com"
     },
     {
       "title": "Leeds",
       "address": "Avenue HQ, 10-12 East Parade, Leeds, LS1 2BH",
-      "telephone": "+44 (0)20 72 39 49 77",
+      "telephone": "+44 (0) 207 415 7043",
       "email": "info@geolytix.com"
     },
     {
       "title": "Warsaw",
       "address": "Aleja Jana Pawła II 80, 00-175 Warszawa, Babka Tower, wejście H, piętro 5",
       "telephone": "+48 506 001 805",
+      "email": "info@geolytix.com"
+    },
+    {
+      "title": "Tokyo",
+      "address": "15F Cerulean Tower, 26-1 Sakuragaoka cho, Shibuya-ku, Tokyo, 150-8512",
+      "telephone": "+81 (0) 3 5456 7954",
       "email": "info@geolytix.com"
     },
     {
@@ -31,21 +37,9 @@
       "email": "info@geolytix.com"
     },
     {
-      "title": "Tokyo",
-      "address": "15F Cerulean Tower, 26-1 Sakuragaoka cho, Shibuya-ku, Tokyo, 150-8512",
-      "telephone": "+81 (0) 3 5456 7954",
-      "email": "info@geolytix.com"
-    },
-    {
-      "title": "Johannesburg",
-      "address": "Spaces, 377 Rivonia Blvd, Rivonia, Johannesburg, 2128, South Africa",
-      "telephone": "+44 (0)20 72 39 49 77",
-      "email": "info@geolytix.com"
-    },
-    {
       "title": "Melbourne",
       "address": "Level 22, 120 Spencer Street, Melbourne, Victoria, 3000, Australia",
-      "telephone": "+61 (0) 40 99 35 425",
+      "telephone": "+44 (0) 207 415 7043",
       "email": "info@geolytix.com"
     }
   ]
