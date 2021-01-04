@@ -9,4 +9,4 @@ twitter: https://twitter.com/DBauszus
 date: 2020-01-12
 ---
 
-{{ "Dennis has previously worked as a project manager for Cadcorp and joins GEOLYTIX as a web developer from Argeomatica in Mexico City. His 20 years of professional experience in the spatial information sector have seen many transitions; From field work and paper maps to digital, from desktop to cloud, and most recently from proprietary to open source technologies." | i18n }}
+Dennis has previously worked as a project manager for Cadcorp and joins GEOLYTIX as a web developer from Argeomatica in Mexico City. His 20 years of professional experience in the spatial information sector have seen many transitions; From field work and paper maps to digital, from desktop to cloud, and most recently from proprietary to open source technologies.

@@ -5,4 +5,4 @@ linkedin: https://www.linkedin.com/in/christoph-mülligann-a8a76194
 date: 2020-01-10
 ---
 
-{{ "Christoph has an education in Geoinformatics from the University of Munster, Germany. Having worked at on-geo in Dortmund creating a flagship website for property valuation, he is an expert in programming for the web. At GEOLYTIX Christoph writes code that crunches big data sets for our spatial models and GeoData range." | i18n }}
+Christoph has an education in Geoinformatics from the University of Munster, Germany. Having worked at on-geo in Dortmund creating a flagship website for property valuation, he is an expert in programming for the web. At GEOLYTIX Christoph writes code that crunches big data sets for our spatial models and GeoData range.
