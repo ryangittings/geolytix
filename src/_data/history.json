@@ -2,31 +2,58 @@
   "timeline": [
     {
       "year": "2011",
-      "overview": "Founded 2011 in London"
+      "title": "The Beginning.",
+      "overview": "Geolytix is born."
     },
     {
       "year": "2012",
-      "overview": "Created Retail Places UK and other core datasets"
+      "title": "Finding our Feet.",
+      "overview": "Geolytix wins their first major projects with retailers they still support today."
+    },
+    {
+      "year": "2013",
+      "title": "GeoData.",
+      "overview": "We realise the data we are building is valuable for everyone. Retail Places, a labour of love is finalised."
     },
     {
       "year": "2014",
-      "overview": "Won Open Data Award 2014"
+      "title": "Recognition.",
+      "overview": "The Open Data Institute notice our contribution to the Open Data world at the ODI Awards. Without Open Data we wouldn't exist."
     },
     {
-      "year": "2014",
-      "overview": "Produced European datasets and deployed first webtool for Europe and US markets"
+      "year": "2015",
+      "title": "Venturing outside the UK.",
+      "overview": "Our first Europe wide projects are completed. We also test out the water with our first online mapping tool."
     },
     {
       "year": "2016",
-      "overview": "Won The Queen’s Award for Enterprise: Innovation 2016"
+      "title": "Innovation & Double Digits.",
+      "overview": "Geolytix reaches 10 people. Blair and Sarah visit Buckingham Palace after GEOLYTIX proudly wins the Queens Award for Innovation; for our world class omnichannel forecasting model."
     },
     {
       "year": "2017",
-      "overview": "2017 focus on Asia Pacific with offices opening in Shanghai and Tokyo. Second UK office in Leeds."
+      "title": "Asia Pacific.",
+      "overview": "Exciting times as we focus on APAC with offices opening in Shanghai and Tokyo. Second UK office in Leeds."
     },
     {
-      "year": "2011",
-      "overview": "Founded 2011 in London"
+      "year": "2018",
+      "title": "GEOLYTIX MAPP.",
+      "overview": "We enter the online mapping market with a platform that enables an easy way to interrogate, analyse and visualise and our customers love it. Warsaw becomes our home for the Geolytix Central Europe Office."
+    },
+    {
+      "year": "2019",
+      "title": "Retail Activity Index.",
+      "overview": "Geolytix have used mobility and banking data since the beginning but 2019 is the year it takes off. We build our first mobility data product. We relish the added depth and the understanding of channel preference & competitors it provides."
+    },
+    {
+      "year": "2020",
+      "title": "Global.",
+      "overview": "We've been busy building data across the globe and delivering projects in over 50 countries so we decide to shout about it! We open down under in Melbourne. We're Data IQ winners in the Data for Wellness and Data for Envirnoment categories"
+    },
+    {
+      "year": "2021",
+      "title": "What next?",
+      "overview": "Now a team of 35 spread across the globe. Our aim is to help more customers in more industries in more countries - watch this space!"
     }
   ]
 }

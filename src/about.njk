@@ -11,8 +11,7 @@ title: About
       <p>{{ "At GEOLYTIX we help retailers make informed decisions about how many stores, who to acquire, where to open, which format, how to optimise home delivery and click & collect operations." | i18n }}</p>
 
       <div class="button-group">
-        <a href="#" class="button">{{ "What We Do" | i18n }}</a>
-        <a href="#" class="button button--outline">{{ "View our team" | i18n }}</a>
+        <a href="#team" class="button">{{ "View Our Team" | i18n }}</a>
       </div>
     </div>
   </div>
@@ -84,9 +83,8 @@ title: About
   <div class="wrapper">
     <div class="text-align-center gap-bottom-800">
       <div class="measure-compact">
-        <h2 class="eyebrow">{{ "Company Background" | i18n }}</h2>
-        <h3 class="text-700">{{ "Born in 2011." | i18n }}</h3>
-        <p>{{ "Geolytix was born in 2011 by Blair Freebairn and Sarah Hitchcock.The people who work at Geolytix share our vision and values. We’re driven by our belief that the best work is born from a happy, dedicated and trusted team. " | i18n }}</p>
+        <h2>{{ "Company Background" | i18n }}</h2>
+        <p>{{ "Geolytix was born in 2011 by Blair Freebairn and Sarah Hitchcock.The people who work at Geolytix share our vision and values. We’re driven by our belief that the best work is born from a happy, dedicated and trusted team." | i18n }}</p>
       </div>
     </div>
   </div>
@@ -96,7 +94,8 @@ title: About
       <li>
         <div class="card">
           <div class="card__inner">
-            <h3 class="text-800">{{ entry.year }}</h3>
+            <h3 class="eyebrow color-primary-mid">{{ entry.year }}</h3>
+            <h4 class="text-600">{{ entry.title | i18n }}</h4>
             <p>{{ entry.overview | i18n }}</p>
           </div>
         </div>
@@ -113,7 +112,7 @@ title: About
     <div class="text-align-center gap-bottom-800">
       <div class="measure-compact">
         <h2 class="text-700">{{ "Meet Our Teams" | i18n }}</h2>
-        <p>{{ "We understand the likely challenges you will face." | i18n }}</p>
+        <p>{{ "This is our team, a lot of smiling happy people who work hard and understand the likely challenges you will face." | i18n }}</p>
       </div>
     </div>
 
@@ -121,18 +120,7 @@ title: About
       <figure class="gallery-block">
         <figcaption class="gallery-block__content">
           <h2 class="eyebrow">{{ "Product Team" | i18n }}</h2>
-          <p>{{ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, ipsum quis venenatis mollis, dui justo tempor est, at interdum sapien ligula id tortor." | i18n }}</p>
-          <p>{{ "Duis sed mi sit amet purus lobortis congue at eu arcu. Nullam ullamcorper nulla pharetra metus accumsan luctus. Mauris dictum faucibus lacus, condimentum posuere quam aliquam id." | i18n }}</p>
-        </figcaption>
-
-        <img src="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto' %}" srcset="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Product Team Photo">
-      </figure>
-
-      <figure class="gallery-block">
-        <figcaption class="gallery-block__content">
-          <h2 class="eyebrow">{{ "Asia Pacific Team" | i18n }}</h2>
-          <p>{{ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, ipsum quis venenatis mollis, dui justo tempor est, at interdum sapien ligula id tortor." | i18n }}</p>
-          <p>{{ "Duis sed mi sit amet purus lobortis congue at eu arcu. Nullam ullamcorper nulla pharetra metus accumsan luctus. Mauris dictum faucibus lacus, condimentum posuere quam aliquam id." | i18n }}</p>
+          <p>{{ "Our product team are passionate people. They pave the way for our success by creating simple and powerful geodata products and online mapping platforms. Creative doers that work very hard and have fun along the way." | i18n }}</p>
         </figcaption>
 
         <img src="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto' %}" srcset="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Product Team Photo">
@@ -141,8 +129,7 @@ title: About
       <figure class="gallery-block">
         <figcaption class="gallery-block__content">
           <h2 class="eyebrow">{{ "Location Planning Associates" | i18n }}</h2>
-          <p>{{ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, ipsum quis venenatis mollis, dui justo tempor est, at interdum sapien ligula id tortor." | i18n }}</p>
-          <p>{{ "Duis sed mi sit amet purus lobortis congue at eu arcu. Nullam ullamcorper nulla pharetra metus accumsan luctus. Mauris dictum faucibus lacus, condimentum posuere quam aliquam id." | i18n }}</p>
+          <p>{{ "We’re a curious bunch. What makes this place tick? Who would do well here? What are the risks? We’ve been around the world for some of the biggest brands. We’ve seen the impact of location decisions, we understand." | i18n }}</p>
         </figcaption>
 
         <img src="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto' %}" srcset="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Product Team Photo">
@@ -151,8 +138,7 @@ title: About
       <figure class="gallery-block">
         <figcaption class="gallery-block__content">
           <h2 class="eyebrow">{{ "Data Scientists" | i18n }}</h2>
-          <p>{{ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, ipsum quis venenatis mollis, dui justo tempor est, at interdum sapien ligula id tortor." | i18n }}</p>
-          <p>{{ "Duis sed mi sit amet purus lobortis congue at eu arcu. Nullam ullamcorper nulla pharetra metus accumsan luctus. Mauris dictum faucibus lacus, condimentum posuere quam aliquam id." | i18n }}</p>
+          <p>{{ "Our team of data scientists is the map making, terabyte crunching, cloud computing, query optimising, graph traversing, topology interrogating, drivetime decaying, hyperparameter tuning, tensor flowing, XG boosting innovation machine at the heart of GEOLYTIX’s analytical solutions. Read.... we love solving problems using computers" | i18n }}</p>
         </figcaption>
 
         <img src="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto' %}" srcset="{% cloudinary '/about/product-team.jpg', 'w_550,f_auto,dpr_2.0' %} 2x" class="gallery-block__media" alt="Product Team Photo">
