@@ -1,0 +1,15 @@
+.quote {
+  border-left: 2px solid var(--color-primary);
+  padding-left: var(--size-300);
+}
+
+.quote p {
+  quotes: '“' '”' '‘' '’';
+}
+.quote p:before {
+  content: open-quote;
+}
+
+.quote p:after {
+  content: close-quote;
+}
