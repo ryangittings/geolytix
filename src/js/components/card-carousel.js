@@ -8,7 +8,11 @@ var slider = tns({
   items: 1,
   edgePadding: 48,
   responsive: {
-    1024: {
+    768: {
+      items: 2,
+      edgePadding: 80,
+    },
+    1025: {
       items: 4,
       edgePadding: 80,
     },
