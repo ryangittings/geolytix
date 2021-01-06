@@ -16,32 +16,32 @@ metaDesc: Get in touch to see how GEOLYTIX can help you make better network stra
 
 <section class="pad-bottom-900">
   <div class="wrapper wrapper--short">
-    <form class="card card-form">
+    <form action="/api/post" method="post" class="card card-form">
       <div class="[ card-form__inner ] [ pad-800 ]">
         <div class="form-field">
           <label for="first_name">{{ "First Name" | i18n }}</label>
-          <input type="text" id="first_name">
+          <input type="text" id="firstname" name="firstname">
         </div>
         <div class="form-field">
           <label for="last_name">{{ "Last Name" | i18n }}</label>
-          <input type="text" id="last_name">
+          <input type="text" id="lastname" name="lastname">
         </div>
         <div class="form-field">
           <label for="email_address">{{ "Email Address" | i18n }}</label>
-          <input type="email" id="email_address">
+          <input type="email" id="email" name="email">
         </div>
         <div class="form-field">
           <label for="telephone">{{ "Telephone" | i18n }}</label>
-          <input type="tel" id="telephone">
+          <input type="tel" id="phone" name="phone">
         </div>
         <div class="form-field form-field--large">
           <label for="message">{{ "Message" | i18n }}</label>
-          <textarea id="message"></textarea>
+          <textarea id="message" name="message"></textarea>
         </div>
       </div>
       <div class="[ card-form__actions ] [ bg-regular-gray pad-400 ]">
         <div class="checkbox-field">
-          <input type="checkbox" id="marketing">
+          <input type="checkbox" name="marketing" id="marketing" value="true">
           <label for="marketing" class="text-300 weight-light">{{ "We’d love to let you know when we release new open data and update you with new stuff we’re working on. We won’t email often and you can unsubscribe at any time." | i18n }}</label>
         </div>
         <button type="submit" class="button">{{ "Send Enquiry" | i18n }}</button>
