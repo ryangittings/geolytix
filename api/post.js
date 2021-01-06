@@ -2,16 +2,23 @@ const fetch = require('isomorphic-fetch');
 
 module.exports = async (req, res) => {
   const { body } = req;
+  const { formID } = body;
 
-  // Create the new request
-  var url = 'https://api.hsforms.com/submissions/v3/integration/submit/7361526/75c9a40b-490c-4e20-9fa9-ffccf3cf0d40';
+  const url = `https://api.hsforms.com/submissions/v3/integration/submit/7361526/${formID}`;
 
-  // Example request JSON:
-  var payload = {
-    fields: Object.keys(body).map((key) => ({
-      name: key,
-      value: body[key],
-    })),
+  const fields = Object.keys(body)
+    .flatMap((key) => {
+      if (key !== 'formID') {
+        return {
+          name: key,
+          value: body[key],
+        };
+      }
+    })
+    .filter(Boolean);
+
+  const payload = {
+    fields,
     legalConsentOptions: {
       // Include this object when GDPR options are enabled
       consent: {
@@ -36,7 +43,8 @@ module.exports = async (req, res) => {
     },
   });
 
-  await data.json();
+  const json = await data.json();
+  // console.log(json);
 
   res.writeHead(302, {
     Location: '/thanks/',

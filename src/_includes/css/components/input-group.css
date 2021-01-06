@@ -1,0 +1,17 @@
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group__input {
+  border-radius: 0;
+  border-top-left-radius: var(--radius-regular);
+  border-bottom-left-radius: var(--radius-regular);
+}
+
+.input-group__button {
+  border-radius: 0;
+  border-top-right-radius: var(--radius-regular);
+  border-bottom-right-radius: var(--radius-regular);
+  border: 1px solid var(--button-background);
+}

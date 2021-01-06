@@ -1,0 +1,23 @@
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.newsletter-form__content {
+  margin-right: auto;
+  max-width: max(50%, 18rem);
+}
+
+.newsletter-form__content h2 {
+  margin-bottom: 0;
+}
+
+.newsletter-form__content p {
+  margin-bottom: 0;
+}
+
+.newsletter-form__form {
+  width: clamp(18rem, 100%, 32rem);
+  margin: var(--size-300) 0;
+}
