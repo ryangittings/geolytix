@@ -57,7 +57,9 @@ metaDesc: Get in touch to see how GEOLYTIX can help you make better network stra
       <div class="text-align-center">
         <ul class="segment-control" role="tablist">
           {% for office in offices.locations %}
-            <li role="tab"{% if loop.first %} aria-selected="true"{% endif %} data-tab="{{ office.title | slug }}"><button>{{ office.title }}</button></li>
+            {% if office.address %}
+              <li role="tab"{% if loop.first %} aria-selected="true"{% endif %} data-tab="{{ office.title | slug }}"><button>{{ office.title }}</button></li>
+            {% endif %}
           {% endfor %}
         </ul>
       </div>
