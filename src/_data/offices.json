@@ -15,25 +15,45 @@
       "title": "Leeds",
       "address": "Avenue HQ, 10-12 East Parade, Leeds, LS1 2BH",
       "telephone": "+44 (0) 207 415 7043",
-      "email": "info@geolytix.com"
+      "email": "info@geolytix.com",
+      "location": {
+        "lat": "53.79874768187361",
+        "lng": "-1.5495934282737742",
+        "zoom": "18"
+      }
     },
     {
       "title": "Warsaw",
       "address": "Aleja Jana Pawła II 80, 00-175 Warszawa, Babka Tower, wejście H, piętro 5",
       "telephone": "+48 506 001 805",
-      "email": "info@geolytix.com"
+      "email": "info@geolytix.com",
+      "location": {
+        "lat": "52.25453256711023",
+        "lng": "20.98403897008538",
+        "zoom": "18"
+      }
     },
     {
       "title": "Tokyo",
       "address": "15F Cerulean Tower, 26-1 Sakuragaoka cho, Shibuya-ku, Tokyo, 150-8512",
       "telephone": "+81 (0) 3 5456 7954",
-      "email": "info@geolytix.com"
+      "email": "info@geolytix.com",
+      "location": {
+        "lat": "35.65634814032404",
+        "lng": "139.69921152594185",
+        "zoom": "18"
+      }
     },
     {
       "title": "Shanghai",
       "address": "Room 334, 135 Yanping Road, Jing’an District, Shanghai",
       "telephone": "+86 21 6237 8013",
-      "email": "info@geolytix.com"
+      "email": "info@geolytix.com",
+      "location": {
+        "lat": "31.240771987060114",
+        "lng": "121.43703351043737",
+        "zoom": "13.05333337664604"
+      }
     },
     {
       "title": "Guangzhou",
@@ -45,7 +65,12 @@
       "title": "Melbourne",
       "address": "Level 22, 120 Spencer Street, Melbourne, Victoria, 3000, Australia",
       "telephone": "+44 (0) 207 415 7043",
-      "email": "info@geolytix.com"
+      "email": "info@geolytix.com",
+      "location": {
+        "lat": "37.81828650094941",
+        "lng": "144.95416857257294",
+        "zoom": "18"
+      }
     },
     {
       "title": "Johannesburg"
