@@ -13,7 +13,7 @@
 }
 
 .newsletter-form__content h2 {
-  margin-bottom: 0;
+  margin-bottom: var(--size-100);
 }
 
 .newsletter-form__content p {

@@ -1,4 +1,4 @@
-/* @link https://utopia.fyi/generator-mk-ii?c=320,16,1.125,1140,18,1.2,10,2, */
+/* @link https://utopia.fyi/generator-mk-ii?c=320,16,1.125,1140,18,1.2,10,3, */
 
 :root {
   --fluid-min-width: 320;
@@ -15,6 +15,10 @@
 }
 
 :root {
+  --f--3-min: 11.24;
+  --f--3-max: 10.42;
+  --step--3: calc(((var(--f--3-min) / 16) * 1rem) + (var(--f--3-max) - var(--f--3-min)) * var(--fluid-bp));
+
   --f--2-min: 12.64;
   --f--2-max: 12.5;
   --step--2: calc(((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) * var(--fluid-bp));

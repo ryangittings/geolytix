@@ -30,6 +30,7 @@ const theme = {
     900: 'var(--step-8)',
   },
   spacingScale: {
+    100: 'var(--step--3)',
     200: 'var(--step--2)',
     300: 'var(--step--1)',
     400: 'var(--step-0)',
