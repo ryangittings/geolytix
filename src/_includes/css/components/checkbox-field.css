@@ -4,4 +4,6 @@
 
 .checkbox-field input {
   margin-right: 1rem;
+  flex: 0 0 auto;
+  width: auto;
 }
