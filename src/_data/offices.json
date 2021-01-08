@@ -4,7 +4,12 @@
       "title": "London",
       "address": "Office 117, The Finsbury Business, 40 Bowling Green Lane, London, EC1R 0NE",
       "telephone": "+44 (0) 207 415 7043",
-      "email": "info@geolytix.com"
+      "email": "info@geolytix.com",
+      "location": {
+        "lat": "51.524983301928245",
+        "lng": "-0.10696368742459572",
+        "zoom": "18"
+      }
     },
     {
       "title": "Leeds",
