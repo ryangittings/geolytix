@@ -1,6 +1,6 @@
 ---
 name: Donna Kirton
-position: Office Support
+position: Office Executive
 linkedin: https://www.linkedin.com/in/donna-kirton-70369178
 twitter: https://twitter.com/Kit79
 date: 2020-01-14

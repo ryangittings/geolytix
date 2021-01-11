@@ -1,6 +1,6 @@
 ---
 name: Simon Dixon
-position: Commercial Director
+position: Technical Director
 linkedin: https://www.linkedin.com/in/simon-dixon-2b261761
 date: 2020-01-05
 ---
