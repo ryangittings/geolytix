@@ -56,10 +56,7 @@
       }
     },
     {
-      "title": "Guangzhou",
-      "address": "Office 117, The Finsbury Business, 40 Bowling Green Lane, London, EC1R 0NE",
-      "telephone": "+44 (0)20 74 15 70 43",
-      "email": "info@geolytix.com"
+      "title": "Guangzhou"
     },
     {
       "title": "Melbourne",
@@ -73,7 +70,15 @@
       }
     },
     {
-      "title": "Johannesburg"
+      "title": "Johannesburg",
+      "address": "Spaces, 377 Rivonia Blvd, Rivonia, Johannesburg, 2128, South Africa",
+      "telephone": "+44 (0) 207 415 7043",
+      "email": "info@geolytix.com",
+      "location": {
+        "lat": "-26.0491394",
+        "lng": "28.0592783",
+        "zoom": "18"
+      }
     }
   ]
 }
