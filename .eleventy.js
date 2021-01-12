@@ -10,6 +10,7 @@ const firstWordFilter = require('./src/filters/first-word.js');
 const localisedURLFilter = require('./src/filters/localised-url.js');
 
 const cloudinaryShortcode = require('./src/shortcodes/cloudinary.js');
+const cloudinaryFetchShortcode = require('./src/shortcodes/cloudinaryFetch.js');
 
 module.exports = (config) => {
   // Collections
@@ -25,6 +26,7 @@ module.exports = (config) => {
 
   // Shortcodes
   config.addShortcode('cloudinary', cloudinaryShortcode);
+  config.addShortcode('cloudinaryFetch', cloudinaryFetchShortcode);
 
   // Pass through
   config.addPassthroughCopy('./src/img/');

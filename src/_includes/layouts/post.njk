@@ -6,8 +6,7 @@ eleventyComputed:
 ---
 
 <section class="[ hero ] [ bg-dark ]">
-  {% set background = '/stories/covers/' ~ image %}
-  <img src="{{ post.feature_image }}" class="hero__background" alt="Background Image for {{ post.title | i18n }}">
+  <img src="{% cloudinaryFetch post.feature_image, 'w_2000,c_fill' %}" class="hero__background" alt="Background Image for {{ post.title | i18n }}">
   <div class="wrapper">
     <div class="measure-short">
       <h1 class="eyebrow color-light">Posted on {{ post.created_at | date }}</h1>
