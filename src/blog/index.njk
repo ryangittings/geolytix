@@ -3,7 +3,7 @@ layout: 'layouts/default.njk'
 title: Blog
 pagination:
   data: collections.posts
-  size: 9
+  size: 27
   alias: posts
 ---
 
@@ -21,7 +21,7 @@ pagination:
     <div class="[ card-grid ] [ auto-grid ]">
       {% for post in posts %}
         <div class="card">
-          <img class="card__image" src="{% cloudinaryFetch post.feature_image, 'w_406,h_270,c_fill' %}" srcset="{% cloudinaryFetch post.feature_image, 'w_406,h_270,c_fill,dpr_2.0' %} 2x" alt="{{ post.title }}">
+          <img class="card__image" src="{% cloudinaryFetch post.feature_image, 'w_406,h_270,c_fill' %}" srcset="{% cloudinaryFetch post.feature_image, 'w_406,h_270,c_fill,dpr_2.0' %} 2x" loading="lazy" alt="{{ post.title }}">
           <div class="card__inner">
             <h2 class="text-500 gap-bottom-100"><a href="{{ post.url }}" class="breakout-button">{{ post.title }}</a></h2>
             <p class="text-300 weight-mid">Posted on {{ post.created_at | date }}</p>
