@@ -1,3 +1,8 @@
+.card-grid {
+  --auto-grid-min: max(18rem, calc(33% - var(--size-200)));
+  --auto-grid-gap: var(--size-200);
+}
+
 .card {
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -21,6 +26,10 @@
 .card__inner {
   padding: var(--size-500);
   text-align: center;
+}
+
+.card__inner a {
+  text-decoration: none;
 }
 
 .card__inner > *:last-child {

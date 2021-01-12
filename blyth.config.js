@@ -69,11 +69,11 @@ module.exports = {
       variable: true,
     },
     'gap-top': {
-      items: theme.sizeScale,
+      items: theme.spacingScale,
       property: 'margin-top',
     },
     'gap-bottom': {
-      items: theme.sizeScale,
+      items: theme.spacingScale,
       property: 'margin-bottom',
     },
     leading: {

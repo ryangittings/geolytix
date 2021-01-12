@@ -1,15 +1,22 @@
 require('dotenv').config();
 
+const ghostCollection = require('./src/collections/ghost.js');
+
 const cssMinFilter = require('./src/filters/css-min.js');
 const globalFilter = require('./src/filters/global.js');
 const i18nFilter = require('./src/filters/i18n.js');
+const dateFilter = require('./src/filters/date.js');
 const firstWordFilter = require('./src/filters/first-word.js');
 const localisedURLFilter = require('./src/filters/localised-url.js');
 
 const cloudinaryShortcode = require('./src/shortcodes/cloudinary.js');
 
 module.exports = (config) => {
+  // Collections
+  config.addCollection('posts', ghostCollection);
+
   // Filters
+  config.addFilter('date', dateFilter);
   config.addFilter('cssmin', cssMinFilter);
   config.addFilter('global', globalFilter);
   config.addFilter('i18n', i18nFilter);

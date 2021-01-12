@@ -1,0 +1,32 @@
+---
+layout: layouts/default.njk
+eleventyComputed:
+  title: "{{ post.title }}"
+  socialImage: "{{ post.feature_image }}"
+---
+
+<section class="[ hero ] [ bg-dark ]">
+  {% set background = '/stories/covers/' ~ image %}
+  <img src="{{ post.feature_image }}" class="hero__background" alt="Background Image for {{ post.title | i18n }}">
+  <div class="wrapper">
+    <div class="measure-short">
+      <h1 class="eyebrow color-light">Posted on {{ post.created_at | date }}</h1>
+      <h2 class="text-800">{{ post.title | i18n }}</h2>
+    </div>
+  </div>
+</section>
+
+<section class="pad-top-900 pad-bottom-900">
+  <div class="wrapper wrapper--short">
+    {{ content | safe }}
+  </div>
+</section>
+
+{%- block head -%}
+    <!--Schema-->
+    <link rel="author" href="{{ post.primary_author.website }}">
+    <link rel="publisher" href="{{ site.url }}">
+    <meta itemprop="name" content="{{ title }} – {{ site.title }}">
+    <meta itemprop="description" content="{{ post.excerpt }}">
+    <meta itemprop="image" content="{{ post.feature_image }}">
+{%- endblock -%}
