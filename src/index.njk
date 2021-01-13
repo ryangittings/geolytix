@@ -116,68 +116,29 @@ metaDesc: Location Planning experts providing retail & demographic data worldwid
     <div class="tabs">
       <div class="text-align-center">
         <ul class="segment-control" role="tablist">
-          <li role="tab" aria-selected="true" data-tab="uk"><button>{{ "United Kingdom" | i18n }}</button></li>
-          <li role="tab" data-tab="europe"><button>{{ "Europe" | i18n }}</button></li>
-          <li role="tab" data-tab="asia-pacific"><button>{{ "Asia Pacific" | i18n }}</button></li>
-          <li role="tab" data-tab="americas"><button>{{ "Americas" | i18n }}</button></li>
+          {% for item in geodata.items %}
+            <li role="tab"{% if loop.first %} aria-selected="true"{% endif %} data-tab="{{ item.title | slug }}"><button>{{ item.title | i18n }}</button></li>
+          {% endfor %}
         </ul>
       </div>
 
-      <div data-tab-id="uk" role="tabpanel" aria-hidden="false" aria-label="United Kingdom">
-        <div class="[ window ] [ display-none md:display-block ]">
-          <div class="window__toolbar">
-            <span class="window__toolbar-item"></span>
-            <span class="window__toolbar-item"></span>
-            <span class="window__toolbar-item"></span>
+      {% for item in geodata.items %}
+        <div data-tab-id="{{ item.title | slug }}" role="tabpanel" aria-hidden="{% if loop.first %}false{% else %}true{% endif %}" aria-label="{{ item.title }}">
+          <div class="[ window ] [ display-none md:display-block ]">
+            <div class="window__toolbar">
+              <span class="window__toolbar-item"></span>
+              <span class="window__toolbar-item"></span>
+              <span class="window__toolbar-item"></span>
+            </div>
+            <div class="window__inner">
+              <iframe src="{{ item.iframe }}" aria-label="{{ item.title }} GeoData"></iframe>
+            </div>
           </div>
-          <div class="window__inner">
-            <iframe src="https://geolytix.dev/geodata/view/embedded?locale=London" aria-label="UK GeoData"></iframe>
-          </div>
-        </div>
-        <div class="text-align-center pad-bottom-400 display-block md:display-none">
-          <a href="https://geolytix.dev/geodata?locale=London" class="button" target="_blank" rel="noopener noreferrer">Open maps &rarr;</a>
-        </div>
-      </div>
-
-      <div data-tab-id="europe" role="tabpanel" aria-hidden="true" aria-label="Europe">
-        <div class="window">
-          <div class="window__toolbar">
-            <span class="window__toolbar-item"></span>
-            <span class="window__toolbar-item"></span>
-            <span class="window__toolbar-item"></span>
-          </div>
-          <div class="window__inner">
-            <p>Europe</p>
+          <div class="text-align-center pad-bottom-400 display-block md:display-none">
+            <a href="https://geolytix.dev/geodata?locale=London" class="button" target="_blank" rel="noopener noreferrer">Open maps &rarr;</a>
           </div>
         </div>
-      </div>
-
-      <div data-tab-id="asia-pacific" role="tabpanel" aria-hidden="true" aria-label="Asia Pacific">
-        <div class="window">
-          <div class="window__toolbar">
-            <span class="window__toolbar-item"></span>
-            <span class="window__toolbar-item"></span>
-            <span class="window__toolbar-item"></span>
-          </div>
-          <div class="window__inner">
-            <p>Asia</p>
-          </div>
-        </div>
-      </div>
-
-      <div data-tab-id="americas" role="tabpanel" aria-hidden="true" aria-label="Americas">
-        <div class="window">
-          <div class="window__toolbar">
-            <span class="window__toolbar-item"></span>
-            <span class="window__toolbar-item"></span>
-            <span class="window__toolbar-item"></span>
-          </div>
-          <div class="window__inner">
-            <p>Americas</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      {% endfor %}
     <script src="/js/components/tabs.js" defer></script>
   </div>
 </section>

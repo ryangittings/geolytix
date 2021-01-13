@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "title": "United Kingdom",
+      "iframe": "https://geolytix.dev/geodata/view/embedded?locale=London"
+    },
+    {
+      "title": "Europe",
+      "iframe": "https://geolytix.dev/geodata/view/embedded?layers=Mapbox%20Baselayer,European%20Indicators&locale=Europe&lat=48.238948518539445&lng=13.5&z=5.176215417214866"
+    },
+    {
+      "title": "Asia Pacific",
+      "iframe": "https://geolytix.dev/geodata/view/embedded?layers=Mapbox%20Baselayer,Chomoku&locale=APAC&lat=35.689856878629655&lng=139.76632294992652&z=12.136128988266032"
+    },
+    {
+      "title": "Americas",
+      "iframe": "https://geolytix.dev/geodata?layers=Mapbox%20Baselayer,Demography%20Grid&locale=Americas&lat=-22.88779495232143&lng=-43.366379830965336&z=11.67726100719164"
+    }
+  ]
+}
