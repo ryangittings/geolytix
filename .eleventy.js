@@ -1,5 +1,7 @@
 require('dotenv').config();
 
+const pluginRss = require('@11ty/eleventy-plugin-rss');
+
 const cssMinFilter = require('./src/filters/css-min.js');
 const globalFilter = require('./src/filters/global.js');
 const i18nFilter = require('./src/filters/i18n.js');
@@ -9,6 +11,9 @@ const localisedURLFilter = require('./src/filters/localised-url.js');
 const cloudinaryShortcode = require('./src/shortcodes/cloudinary.js');
 
 module.exports = (config) => {
+  // Add plugins
+  config.addPlugin(pluginRss);
+
   // Filters
   config.addFilter('cssmin', cssMinFilter);
   config.addFilter('global', globalFilter);
