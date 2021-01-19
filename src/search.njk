@@ -6,7 +6,7 @@ permalink: search.json
   {
     "url" : "{{ item.url }}",
     "title" : "{{ item.title }}",
-    "text" : "{{ (item.title + " " + item.html) | squash }}"
+    "text" : "{{ (item.title + " " + item.html) | lower | squash }}"
   }{% if not loop.last %},{% else %}{%- endif -%}
 {%- endfor -%}
 ]}
