@@ -18,6 +18,16 @@ pagination:
 
 <section class="pad-top-600 pad-bottom-600">
   <div class="wrapper">
+    <form id="search" action="https://www.google.co.uk/search" method="get" class="gap-bottom-600">
+      <div class="input-group">
+        <input type="hidden" name="q" id="q" value="site:{{ site.locale.root }}">
+        <label for="search-str" class="visually-hidden">Search</label>
+        <input type="text" name="q" id="search-str" placeholder="Search..." class="input-group__input">
+        <button type="submit" class="button input-group__button">{{ "Search" | i18n }}</button>
+      </div>
+    </form>
+    <script src="/js/components/blog-search.js" defer></script>
+
     <div class="[ card-grid ] [ auto-grid ]">
       {% for post in posts %}
         <div class="card">

@@ -8,6 +8,7 @@ const cssMinFilter = require('./src/filters/css-min.js');
 const globalFilter = require('./src/filters/global.js');
 const i18nFilter = require('./src/filters/i18n.js');
 const dateFilter = require('./src/filters/date.js');
+const squashFilter = require('./src/filters/squash.js');
 const firstWordFilter = require('./src/filters/first-word.js');
 const localisedURLFilter = require('./src/filters/localised-url.js');
 
@@ -28,6 +29,7 @@ module.exports = (config) => {
   config.addFilter('i18n', i18nFilter);
   config.addFilter('firstWord', firstWordFilter);
   config.addFilter('localisedURL', localisedURLFilter);
+  config.addFilter('squash', squashFilter);
 
   // Shortcodes
   config.addShortcode('cloudinary', cloudinaryShortcode);
