@@ -2,7 +2,7 @@ module.exports = [
   {
     title: 'English',
     code: 'en', // ISO 639-1
-    root: 'https://www.geolytix.co.uk',
+    root: 'https://www.geolytix.com',
   },
   {
     title: 'Deutsche',
