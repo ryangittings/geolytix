@@ -2,13 +2,13 @@
   "locations": [
     {
       "title": "London",
-      "address": "Office 117, The Finsbury Business, 40 Bowling Green Lane, London, EC1R 0NE",
+      "address": "Office 117, The Finsbury Business Centre, 40 Bowling Green Lane, London, EC1R 0NE",
       "telephone": "+44 (0) 207 415 7043",
       "email": "info@geolytix.com",
       "location": {
         "lat": "51.524983301928245",
         "lng": "-0.10696368742459572",
-        "zoom": "18"
+        "zoom": "16"
       }
     },
     {
@@ -19,7 +19,7 @@
       "location": {
         "lat": "53.79874768187361",
         "lng": "-1.5495934282737742",
-        "zoom": "18"
+        "zoom": "16"
       }
     },
     {
@@ -30,7 +30,7 @@
       "location": {
         "lat": "52.25453256711023",
         "lng": "20.98403897008538",
-        "zoom": "18"
+        "zoom": "16"
       }
     },
     {
@@ -41,7 +41,7 @@
       "location": {
         "lat": "35.65634814032404",
         "lng": "139.69921152594185",
-        "zoom": "18"
+        "zoom": "16"
       }
     },
     {
@@ -66,7 +66,7 @@
       "location": {
         "lat": "-37.81828650094941",
         "lng": "144.95416857257294",
-        "zoom": "18"
+        "zoom": "16"
       }
     },
     {
@@ -77,7 +77,7 @@
       "location": {
         "lat": "-26.0491394",
         "lng": "28.0592783",
-        "zoom": "18"
+        "zoom": "16"
       }
     }
   ]

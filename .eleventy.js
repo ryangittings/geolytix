@@ -2,6 +2,8 @@ require('dotenv').config();
 
 const ghostCollection = require('./src/collections/ghost.js');
 
+const pluginRss = require('@11ty/eleventy-plugin-rss');
+
 const cssMinFilter = require('./src/filters/css-min.js');
 const globalFilter = require('./src/filters/global.js');
 const i18nFilter = require('./src/filters/i18n.js');
@@ -15,6 +17,9 @@ const cloudinaryFetchShortcode = require('./src/shortcodes/cloudinaryFetch.js');
 module.exports = (config) => {
   // Collections
   config.addCollection('posts', ghostCollection);
+
+  // Add plugins
+  config.addPlugin(pluginRss);
 
   // Filters
   config.addFilter('date', dateFilter);
