@@ -96,6 +96,7 @@ module.exports = {
         long: '75ch',
         short: '60ch',
         compact: '44ch',
+        tiny: '30ch',
       },
       property: 'max-width',
     },

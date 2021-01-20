@@ -1,6 +1,7 @@
 require('dotenv').config();
 
-const ghostCollection = require('./src/collections/ghost.js');
+const postCollection = require('./src/collections/posts.js');
+const tagCollection = require('./src/collections/tags.js');
 
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 
@@ -11,13 +12,15 @@ const dateFilter = require('./src/filters/date.js');
 const squashFilter = require('./src/filters/squash.js');
 const firstWordFilter = require('./src/filters/first-word.js');
 const localisedURLFilter = require('./src/filters/localised-url.js');
+const tagFilter = require('./src/filters/tag.js');
 
 const cloudinaryShortcode = require('./src/shortcodes/cloudinary.js');
 const cloudinaryFetchShortcode = require('./src/shortcodes/cloudinaryFetch.js');
 
 module.exports = (config) => {
   // Collections
-  config.addCollection('posts', ghostCollection);
+  config.addCollection('posts', postCollection);
+  config.addCollection('tags', tagCollection);
 
   // Add plugins
   config.addPlugin(pluginRss);
@@ -30,6 +33,7 @@ module.exports = (config) => {
   config.addFilter('firstWord', firstWordFilter);
   config.addFilter('localisedURL', localisedURLFilter);
   config.addFilter('squash', squashFilter);
+  config.addFilter('tag', tagFilter);
 
   // Shortcodes
   config.addShortcode('cloudinary', cloudinaryShortcode);

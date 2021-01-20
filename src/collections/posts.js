@@ -25,7 +25,7 @@ module.exports = async function (collection) {
   collection.forEach((post) => {
     post.url = `/blog${stripDomain(post.url)}`;
     post.primary_author.url = stripDomain(post.primary_author.url);
-    post.tags.map((tag) => (tag.url = stripDomain(tag.url)));
+    post.tags = post.tags.map((tag) => tag.slug);
 
     // Convert publish date into a Date object
     post.published_at = new Date(post.published_at);

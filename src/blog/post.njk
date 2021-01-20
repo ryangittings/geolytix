@@ -4,8 +4,34 @@ pagination:
   size: 1
   alias: post
   addAllPagesToCollections: true
-layout: 'layouts/post.njk'
+layout: 'layouts/default.njk'
 permalink: '{{ post.url }}'
+eleventyComputed:
+  title: "{{ post.title }}"
+  socialImage: "{{ post.feature_image }}"
 ---
 
-{{ post.html | safe if post.html else "Post content not found" }}
+<section class="[ hero ] [ bg-dark ]">
+  <img src="{% cloudinaryFetch post.feature_image, 'w_2000,c_fill' %}" class="hero__background" alt="Background Image for {{ post.title | i18n }}">
+  <div class="wrapper wrapper--short">
+    <div class="text-align-center">
+      <h1 class="eyebrow color-light">Posted on {{ post.created_at | date }}</h1>
+      <h2 class="text-800">{{ post.title | i18n }}</h2>
+    </div>
+  </div>
+</section>
+
+<section class="pad-top-900 pad-bottom-900">
+  <div class="wrapper wrapper--short">
+    {{ post.html | safe }}
+  </div>
+</section>
+
+{%- block head -%}
+    <!--Schema-->
+    <link rel="author" href="{{ post.primary_author.website }}">
+    <link rel="publisher" href="{{ site.url }}">
+    <meta itemprop="name" content="{{ title }} – {{ site.title }}">
+    <meta itemprop="description" content="{{ post.excerpt }}">
+    <meta itemprop="image" content="{{ post.feature_image }}">
+{%- endblock -%}

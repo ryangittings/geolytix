@@ -1,6 +1,7 @@
 .card-grid {
   --auto-grid-min: max(18rem, calc(33% - var(--size-200)));
   --auto-grid-gap: var(--size-200);
+  --auto-grid-method: auto-fill;
 }
 
 .card {
