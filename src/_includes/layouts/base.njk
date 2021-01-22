@@ -57,13 +57,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% include 'partials/meta.njk' %}
     
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
       {{ css | cssmin | safe }}
     </style>
   </head>
   <body>
     {{ content | safe }}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMDZ83EXQ6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HMDZ83EXQ6');
+    </script>
   </body>
 </html>
