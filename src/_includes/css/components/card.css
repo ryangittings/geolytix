@@ -14,10 +14,6 @@
   background: var(--color-light);
 }
 
-.card:focus-within {
-  border-color: var(--color-primary);
-}
-
 .card__cover {
   display: block;
   width: 100%;

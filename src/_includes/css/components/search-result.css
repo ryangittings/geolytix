@@ -3,12 +3,17 @@
   border-bottom-right-radius: var(--radius-regular);
   overflow: hidden;
   margin-bottom: var(--size-600);
+  max-height: 22rem;
+  overflow-y: auto;
 }
 
 .search-result {
-  padding: var(--size-200);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .search-result a {
+  display: block;
+  padding: var(--size-200);
+  background: var(--color-light);
   text-decoration: none;
 }

@@ -10,7 +10,7 @@ const process = async (searchString) => {
       return response.json();
     })
     .then(function (response) {
-      for (var item in response.search.slice(0, 10)) {
+      for (var item in response.search) {
         const found = response.search[item].text.indexOf(searchString);
 
         if (found != -1) {
