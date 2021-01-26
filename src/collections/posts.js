@@ -31,8 +31,8 @@ module.exports = async function (collection) {
     post.published_at = new Date(post.published_at);
   });
 
-  // Bring featured post to the top of the list
-  collection.sort((post, nextPost) => nextPost.featured - post.featured);
+  // Sort by date
+  collection.sort((post, nextPost) => nextPost.published_at - post.published_at);
 
   return collection;
 };

@@ -20,12 +20,5 @@ eleventyComputed:
   </div>
 </section>
 
-<section class="pad-top-600 pad-bottom-600">
-  <div class="wrapper">
-    <ul class="[ card-grid ] [ auto-grid ]">
-      {% for post in collections.posts | tag(tag.slug) %}
-        {% include '../_includes/partials/post-card.njk' %}
-      {% endfor %}
-    </ul>
-  </div>
-</section>
+{% set posts = collections.posts | tag(tag.slug) %}
+{% include '../_includes/partials/posts.njk' %}

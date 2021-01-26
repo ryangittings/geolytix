@@ -19,35 +19,4 @@ pagination:
   </div>
 </section>
 
-<section class="pad-top-600 pad-bottom-600">
-  <div class="wrapper">
-    <ul class="tag-list">
-      {% for tag in collections.tags %}
-        <li><a href="{{ tag.url }}">{{ tag.name }}</a></li>
-      {% endfor %}
-    </ul>
-
-    <div class="[ card ] [ pad-400 gap-top-600 gap-bottom-600 ]">
-      <form id="search" action="https://www.google.co.uk/search" method="get">
-        <div class="input-group">
-          <input type="hidden" name="q" id="q" value="site:{{ site.locale.root }}">
-          <label for="search-str" class="visually-hidden">Search</label>
-          <input type="text" name="q" id="search-str" placeholder="Search..." class="input-group__input">
-          <button type="submit" class="button input-group__button">{{ "Search" | i18n }}</button>
-        </div>
-      </form>
-
-      <ul id="results" class="results"></ul>
-      <script src="/js/components/blog-search.js" defer></script>
-    </div>
-
-    <ul class="[ card-grid ] [ auto-grid ]">
-      {% for post in posts %}
-        {% include '../_includes/partials/post-card.njk' %}
-      {% endfor %}
-    </ul>
-    
-    {% include "partials/pagination.njk" %}
-    </div>
-  </div>
-</section>
+{% include '../_includes/partials/posts.njk' %}
