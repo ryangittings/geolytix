@@ -21,41 +21,33 @@ pagination:
 
 <section class="pad-top-600 pad-bottom-600">
   <div class="wrapper">
-    <div class="[ blog-split ] [ split-pair ]">
-      <div>
-        <div class="[ card ] [ pad-400 gap-bottom-600 ]">
-          <form id="search" action="https://www.google.co.uk/search" method="get">
-            <div class="input-group">
-              <input type="hidden" name="q" id="q" value="site:{{ site.locale.root }}">
-              <label for="search-str" class="visually-hidden">Search</label>
-              <input type="text" name="q" id="search-str" placeholder="Search..." class="input-group__input">
-              <button type="submit" class="button input-group__button">{{ "Search" | i18n }}</button>
-            </div>
-          </form>
+    <ul class="tag-list">
+      {% for tag in collections.tags %}
+        <li><a href="{{ tag.url }}">{{ tag.name }}</a></li>
+      {% endfor %}
+    </ul>
 
-          <ul id="results" class="results"></ul>
-          <script src="/js/components/blog-search.js" defer></script>
+    <div class="[ card ] [ pad-400 gap-top-600 gap-bottom-600 ]">
+      <form id="search" action="https://www.google.co.uk/search" method="get">
+        <div class="input-group">
+          <input type="hidden" name="q" id="q" value="site:{{ site.locale.root }}">
+          <label for="search-str" class="visually-hidden">Search</label>
+          <input type="text" name="q" id="search-str" placeholder="Search..." class="input-group__input">
+          <button type="submit" class="button input-group__button">{{ "Search" | i18n }}</button>
         </div>
+      </form>
 
-        <ul class="[ card-grid ] [ auto-grid ]">
-          {% for post in posts %}
-            {% include '../_includes/partials/post-card.njk' %}
-          {% endfor %}
-        </ul>
-        
-        {% include "partials/pagination.njk" %}
-      </div>
+      <ul id="results" class="results"></ul>
+      <script src="/js/components/blog-search.js" defer></script>
+    </div>
 
-      <div class="measure-tiny">
-        <div class="blog-split__tags">
-          <h2 class="text-400">Tags</h2>
-          <ul>
-            {% for tag in collections.tags %}
-              <li><a href="{{ tag.url }}">{{ tag.name }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
+    <ul class="[ card-grid ] [ auto-grid ]">
+      {% for post in posts %}
+        {% include '../_includes/partials/post-card.njk' %}
+      {% endfor %}
+    </ul>
+    
+    {% include "partials/pagination.njk" %}
     </div>
   </div>
 </section>
