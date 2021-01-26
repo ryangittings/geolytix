@@ -1,5 +1,5 @@
 .site-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -9,11 +9,6 @@
   display: flex;
   justify-content: center;
   transition: var(--transition-standard);
-}
-
-.site-header--fixed {
-  background: var(--color-dark);
-  padding: var(--size-300) 0;
 }
 
 .site-header__inner {
