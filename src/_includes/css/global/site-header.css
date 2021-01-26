@@ -1,16 +1,25 @@
 .site-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
   padding: var(--size-600) 0;
   color: var(--color-light);
+  display: flex;
+  justify-content: center;
+  transition: var(--transition-standard);
+}
+
+.site-header--fixed {
+  background: var(--color-dark);
+  padding: var(--size-300) 0;
 }
 
 .site-header__inner {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .site-header__logo {
