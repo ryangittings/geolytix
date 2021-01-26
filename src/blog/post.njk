@@ -32,6 +32,22 @@ eleventyComputed:
   </div>
 </section>
 
+{% set related = collections.posts | postsForTag(post.tags[0]) | excludePosts(post) | limit(3) %}
+
+{% if related %}
+  <section class="pad-top-900 pad-bottom-900 bg-cream-light">
+    <div class="wrapper">
+      <h2 class="text-align-center gap-bottom-600">Related Posts</h2>
+      <ul class="[ card-grid ] [ auto-grid ]">
+        {% for post in related %}
+          {% include '../_includes/partials/post-card.njk' %}
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
 {%- block head -%}
     <!--Schema-->
     <link rel="author" href="{{ post.primary_author.website }}">
