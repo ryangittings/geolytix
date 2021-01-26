@@ -15,6 +15,7 @@ const theme = {
     'cream-light': '#F5F2EE',
     'light-gray': '#F7F8FA',
     'regular-gray': '#F0F0F0',
+    red: 'red',
   },
   fonts: {
     base: 'Inter, sans-serif',

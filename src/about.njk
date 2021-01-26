@@ -5,7 +5,7 @@ metaDesc: When location matters, organisations turn to us first. We’re driven 
 ---
 
 <section class="[ hero ] [ bg-dark ]">
-  <img src="{% cloudinary '/hero/about.jpg', 'w_1400,f_auto' %}" class="hero__background" alt="About Us Background">
+  <img src="{% cloudinary '/hero/about.jpg', 'w_2000,f_auto' %}" class="hero__background" alt="About Us Background">
   <div class="wrapper">
     <div class="measure-short">
       <h1>{{ "About Us" | i18n }}</h1>
@@ -78,7 +78,7 @@ metaDesc: When location matters, organisations turn to us first. We’re driven 
   </div>
 </section>
 
-<img src="{% cloudinary '/about/team.jpg', 'w_1400,f_auto' %}" srcset="{% cloudinary '/about/team.jpg', 'w_1400,f_auto,dpr_2.0' %} 2x" class="width-full" alt="Team Photo">
+<img src="{% cloudinary '/about/team.jpg', 'w_2000,f_auto' %}" srcset="{% cloudinary '/about/team.jpg', 'w_2000,f_auto,dpr_2.0' %} 2x" class="width-full" alt="Team Photo">
 
 <section class="pad-top-900 pad-bottom-900">
   <div class="wrapper">
@@ -154,7 +154,7 @@ metaDesc: When location matters, organisations turn to us first. We’re driven 
       {% for bio in collections.bio %}
         {% set image = '/team/' ~ bio.data.name | firstWord ~ '.jpg' %}
         <li class="bio">
-          <img src="{% cloudinary image, 'w_128,h_128,c_fill' %}" srcset="{% cloudinary image, 'w_128,h_128,c_fill,dpr_2.0' %} 2x" class="bio__image" alt="{{ "Photo of" | i18n }} {{ bio.data.name }}"> 
+          <img src="{% cloudinary image, 'w_128,h_128,c_fill,d_avatar.svg' %}" srcset="{% cloudinary image, 'w_128,h_128,c_fill,dpr_2.0,d_avatar.svg' %} 2x" class="bio__image" alt="{{ "Photo of" | i18n }} {{ bio.data.name }}"> 
           <h3 class="bio__title"><a href="{{ bio.url }}" class="breakout-button">{{ bio.data.name }}</a></h3>
           <p class="bio__overview">{{ bio.data.position }}</p>
         </li>
