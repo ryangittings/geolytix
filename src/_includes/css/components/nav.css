@@ -1,12 +1,11 @@
 ul.nav {
   --nav-padding: var(--size-300);
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
   margin: 0 calc(var(--nav-padding) * -1);
   line-height: 1;
-  min-width: 18rem;
 }
 
 .nav li a:not(.button) {

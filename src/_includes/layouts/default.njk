@@ -35,8 +35,11 @@ layout: layouts/base.njk
   <script src="/js/components/menu-toggle.js" type="module" defer></script>
 </header>
 
+<script src="/js/components/header.js" type="module" defer></script>
+
 <main>
   {{ content | safe }}
+  <div id="top-of-site-pixel-anchor"></div>
 </main>
 
 <aside id="newsletter" class="bg-light pad-top-300 pad-bottom-300">
@@ -49,7 +52,7 @@ layout: layouts/base.njk
       <form action="/api/post" method="post" class="newsletter-form__form">
         <div class="input-group">
           <label for="email" class="visually-hidden">{{ "Email Address" | i18n }}</label>
-          <input type="email" id="email" class="input-group__input" placeholder="Your email address..." name="email">
+          <input type="email" id="email" class="input-group__input" placeholder="Your email address..." name="email" required>
 
           <input type="hidden" name="formID" value="22ee0c96-df43-46e4-bfe9-244a057e5e28">
           <button type="submit" class="button input-group__button">{{ "Sign Up" | i18n }}</button>
@@ -85,8 +88,9 @@ layout: layouts/base.njk
 
       <nav class="[ site-footer__navigation ] [ text-300 ]" aria-label="Secondary navigation">
         <ul class="nav">
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="https://twitter.com/geolytix" target="_blank" rel="noopener noreferrer">{% include '../../img/icons/twitter.svg' %}</a></li>
+          <li><a href="https://www.linkedin.com/company/geolytix" target="_blank" rel="noopener noreferrer">{% include '../../img/icons/linkedin.svg' %}</a></li>
+          <li><a href="https://docs.google.com/document/d/1ZyhEzxi0MCsMK3HnR6fGpBhNm725916AxmElkOsHFIY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
         </ul>
       </nav>
     </div>
