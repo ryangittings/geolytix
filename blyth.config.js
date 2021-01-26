@@ -148,6 +148,12 @@ module.exports = {
       responsive: true,
       property: 'text-align',
     },
+    'text-decoration': {
+      items: {
+        none: 'none',
+      },
+      property: 'text-decoration',
+    },
     transition: {
       items: {
         standard: '.4s ease-in-out',

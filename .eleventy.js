@@ -12,7 +12,9 @@ const dateFilter = require('./src/filters/date.js');
 const squashFilter = require('./src/filters/squash.js');
 const firstWordFilter = require('./src/filters/first-word.js');
 const localisedURLFilter = require('./src/filters/localised-url.js');
-const tagFilter = require('./src/filters/tag.js');
+const postsForTagFilter = require('./src/filters/postsForTag.js');
+const tagsForPostFilter = require('./src/filters/tagsForPost.js');
+const limitFilter = require('./src/filters/limit.js');
 
 const cloudinaryShortcode = require('./src/shortcodes/cloudinary.js');
 const cloudinaryFetchShortcode = require('./src/shortcodes/cloudinaryFetch.js');
@@ -33,7 +35,9 @@ module.exports = (config) => {
   config.addFilter('firstWord', firstWordFilter);
   config.addFilter('localisedURL', localisedURLFilter);
   config.addFilter('squash', squashFilter);
-  config.addFilter('tag', tagFilter);
+  config.addFilter('postsForTag', postsForTagFilter);
+  config.addFilter('tagsForPost', tagsForPostFilter);
+  config.addFilter('limit', limitFilter);
 
   // Shortcodes
   config.addShortcode('cloudinary', cloudinaryShortcode);

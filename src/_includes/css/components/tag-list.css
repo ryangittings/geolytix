@@ -1,4 +1,4 @@
-.tag-list {
+ul.tag-list {
   --tag-list-spacing: 0.25rem;
 
   display: flex;
@@ -10,6 +10,7 @@
 }
 
 .tag-list li {
+  flex-shrink: 0;
   margin: 0 var(--tag-list-spacing);
 }
 

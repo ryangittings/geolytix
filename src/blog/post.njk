@@ -14,9 +14,15 @@ eleventyComputed:
 <section class="[ hero hero--bright ] [ bg-dark ]">
   <img src="{% cloudinaryFetch post.feature_image, 'w_2000,c_fill' %}" class="hero__background" alt="Background Image for {{ post.title | i18n }}">
   <div class="wrapper wrapper--compact">
-    <h1 class="eyebrow color-light">{{ post.published_at | date }}</h1>
-    <h2 class="text-800">{{ post.title | i18n }}</h2>
+    {% if post.tags %}
+      {% for tag in collections.tags | tagsForPost(post) | limit(1) %}
+        <h3 class="eyebrow"><a href="{{ tag.url }}" class="text-decoration-none">{{ tag.name }}</a></h3>
+      {% endfor %}
+    {% endif %} 
+
+    <h1 class="text-800">{{ post.title | i18n }}</h1>
     <p>{{ post.excerpt }}</p>
+    <p class="eyebrow text-300">{{ post.published_at | date }}</p>
   </div>
 </section>
 

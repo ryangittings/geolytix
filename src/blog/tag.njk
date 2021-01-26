@@ -20,5 +20,5 @@ eleventyComputed:
   </div>
 </section>
 
-{% set posts = collections.posts | tag(tag.slug) %}
+{% set posts = collections.posts | postsForTag(tag.slug) %}
 {% include '../_includes/partials/posts.njk' %}
