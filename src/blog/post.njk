@@ -21,7 +21,9 @@ eleventyComputed:
     {% endif %} 
 
     <h1 class="text-800">{{ post.title | i18n }}</h1>
-    <p>{{ post.excerpt }}</p>
+    {% if post.custom_excerpt %}
+      <p>{{ post.custom_excerpt }}</p>
+    {% endif %}
     <p class="eyebrow text-300">{{ post.published_at | date }}</p>
   </div>
 </section>

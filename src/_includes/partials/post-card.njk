@@ -3,6 +3,9 @@
   <div class="card__inner">
     <h2 class="text-500 gap-bottom-100"><a href="{{ post.url }}" class="breakout-button">{{ post.title }}</a></h2>
     <p class="text-300 weight-mid">{{ post.published_at | date }}</p>
-    <p class="text-300">{{ post.excerpt }}</p>
+
+    {% if post.custom_excerpt %}
+      <p class="text-300">{{ post.excerpt }}</p>
+    {% endif %}
   </div>
 </li>
