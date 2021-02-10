@@ -27,7 +27,7 @@ layout: layouts/base.njk
         {% include '../partials/menu.njk' %}
 
         {% if site.locale %}
-          <li><a href="/choose/">{% include '../partials/flag.njk' %}</a></li>
+          <li class="color-primary-light gap-top-600"><a href="{{ "/choose/" }}">{{ site.locale.title }}</a></li>
         {% endif %}
       </ul>
     </nav>
