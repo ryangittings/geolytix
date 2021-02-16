@@ -27,7 +27,7 @@ layout: layouts/base.njk
         {% include '../partials/menu.njk' %}
 
         {% if site.locale %}
-          <li><a href="/choose/">{% include '../partials/flag.njk' %}</a></li>
+          <li class="color-primary-light gap-top-600"><a href="{{ "/choose/" }}">{{ site.locale.title }}</a></li>
         {% endif %}
       </ul>
     </nav>
@@ -43,8 +43,8 @@ layout: layouts/base.njk
   <div class="wrapper">
     <div class="newsletter-form">
       <div class="newsletter-form__content">
-        <h2 class="text-400">Stay Up to Date with Geolytix</h2>
-        <p class="text-300">We’d love to let you know when we release new open data and update you with new stuff we’re working on. We won’t email often and you can unsubscribe at any time.</p>
+        <h2 class="text-400">{{ "Stay Up to Date with Geolytix" | i18n}}</h2>
+        <p class="text-300">{{ "We’d love to let you know when we release new open data and update you with new stuff we’re working on. We won’t email often and you can unsubscribe at any time." | i18n }}</p>
       </div>
       <form action="/api/post" method="post" class="newsletter-form__form">
         <div class="input-group">
@@ -87,7 +87,7 @@ layout: layouts/base.njk
         <ul class="nav">
           <li><a href="https://twitter.com/geolytix" target="_blank" rel="noopener noreferrer">{% include '../../img/icons/twitter.svg' %}</a></li>
           <li><a href="https://www.linkedin.com/company/geolytix" target="_blank" rel="noopener noreferrer">{% include '../../img/icons/linkedin.svg' %}</a></li>
-          <li><a href="https://docs.google.com/document/d/1ZyhEzxi0MCsMK3HnR6fGpBhNm725916AxmElkOsHFIY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+          <li><a href="https://docs.google.com/document/d/1ZyhEzxi0MCsMK3HnR6fGpBhNm725916AxmElkOsHFIY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">{{ "Privacy Policy" | i18n }}</a></li>
         </ul>
       </nav>
     </div>

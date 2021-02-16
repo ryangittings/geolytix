@@ -20,7 +20,7 @@ module.exports = [
     root: 'https://geolytix.cn',
   },
   {
-    title: '日本人',
+    title: '日本語',
     code: 'ja', // ISO 639-1
     root: 'https://geolytix.jp',
   },
