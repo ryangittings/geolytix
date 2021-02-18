@@ -1,20 +1,28 @@
 require('dotenv').config();
 
+const ghostCollection = require('./src/collections/ghost.js');
+
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 
 const cssMinFilter = require('./src/filters/css-min.js');
 const globalFilter = require('./src/filters/global.js');
 const i18nFilter = require('./src/filters/i18n.js');
+const dateFilter = require('./src/filters/date.js');
 const firstWordFilter = require('./src/filters/first-word.js');
 const localisedURLFilter = require('./src/filters/localised-url.js');
 
 const cloudinaryShortcode = require('./src/shortcodes/cloudinary.js');
+const cloudinaryFetchShortcode = require('./src/shortcodes/cloudinaryFetch.js');
 
 module.exports = (config) => {
+  // Collections
+  config.addCollection('posts', ghostCollection);
+
   // Add plugins
   config.addPlugin(pluginRss);
 
   // Filters
+  config.addFilter('date', dateFilter);
   config.addFilter('cssmin', cssMinFilter);
   config.addFilter('global', globalFilter);
   config.addFilter('i18n', i18nFilter);
@@ -23,6 +31,7 @@ module.exports = (config) => {
 
   // Shortcodes
   config.addShortcode('cloudinary', cloudinaryShortcode);
+  config.addShortcode('cloudinaryFetch', cloudinaryFetchShortcode);
 
   // Pass through
   config.addPassthroughCopy('./src/img/');
