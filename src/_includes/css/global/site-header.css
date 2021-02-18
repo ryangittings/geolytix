@@ -6,11 +6,15 @@
   z-index: 10;
   padding: var(--size-600) 0;
   color: var(--color-light);
+  display: flex;
+  justify-content: center;
+  transition: var(--transition-standard);
 }
 
 .site-header__inner {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .site-header__logo {

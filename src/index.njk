@@ -30,7 +30,7 @@ metaDesc: Location Planning experts providing retail & demographic data worldwid
       </div>
     </div>
 
-    <img src="{% cloudinary '/home/about.jpg', 'w_732,f_auto' %}" srcset="{% cloudinary '/home/about.jpg', 'w_732,f_auto,dpr_2.0' %} 2x" width="732" height="605" class="image-panel__image" alt="The Team">
+    <img src="{% cloudinary '/home/about.jpg', 'w_732,f_auto' %}" srcset="{% cloudinary '/home/about.jpg', 'w_732,f_auto,dpr_2.0' %} 2x" width="672" height="605" class="image-panel__image" alt="The Team">
   </div>
 </section>
 
@@ -114,7 +114,7 @@ metaDesc: Location Planning experts providing retail & demographic data worldwid
     </div>
 
     <div class="tabs">
-      <div class="text-align-center">
+      <div class="text-align-center display-none md:display-block">
         <ul class="segment-control" role="tablist">
           {% for item in geodata.items %}
             <li role="tab"{% if loop.first %} aria-selected="true"{% endif %} data-tab="{{ item.title | slug }}"><button>{{ item.title | i18n }}</button></li>
@@ -143,12 +143,12 @@ metaDesc: Location Planning experts providing retail & demographic data worldwid
   </div>
 </section>
 
-<section id="mapp" class="bg-cream-light pad-top-900 pad-bottom-900">
+<section id="mapp" class="bg-cream-light pad-top-900">
   <div class="wrapper">
     <div class="text-align-center gap-bottom-800">
       <div class="measure-compact">
         <h2 class="eyebrow">{{ "MAPP" | i18n }}</h2>
-        <h3 class="text-700">{{ "Spatial intelligence customised for you." | i18n }}</h3>
+        <h3 class="text-700">{{ "Predictive location intelligence customised for you." | i18n }}</h3>
       </div>
     </div>
 
@@ -178,6 +178,17 @@ metaDesc: Location Planning experts providing retail & demographic data worldwid
           <li>{{ "Unlimited usage" | i18n }}</li>
           <li>{{ "Integrated data & modelling" | i18n }}</li>
         </ul>
+      </div>
+    </div>
+
+    <div class="window">
+      <div class="window__toolbar">
+        <span class="window__toolbar-item"></span>
+        <span class="window__toolbar-item"></span>
+        <span class="window__toolbar-item"></span>
+      </div>
+      <div class="window__video">
+        <video src="https://res.cloudinary.com/dvx8vwneg/video/upload/q_auto:eco/website/video/mapp.mp4" muted autoplay playsinline loop></video>
       </div>
     </div>
 
