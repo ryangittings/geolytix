@@ -4,8 +4,57 @@ pagination:
   size: 1
   alias: post
   addAllPagesToCollections: true
-layout: 'layouts/post.njk'
+layout: 'layouts/default.njk'
 permalink: '{{ post.url }}'
+eleventyComputed:
+  title: "{{ post.title }}"
+  socialImage: "{{ post.feature_image }}"
 ---
 
-{{ post.html | safe if post.html else "Post content not found" }}
+<section class="[ hero hero--bright ] [ bg-dark ]">
+  <img src="{% cloudinaryFetch post.feature_image, 'w_2000,c_fill' %}" class="hero__background" alt="Background Image for {{ post.title | i18n }}">
+  <div class="wrapper wrapper--compact">
+    {% if post.tags %}
+      {% for tag in collections.tags | tagsForPost(post) | limit(1) %}
+        <h3 class="eyebrow"><a href="{{ tag.url }}" class="text-decoration-none">{{ tag.name }}</a></h3>
+      {% endfor %}
+    {% endif %} 
+
+    <h1 class="text-800">{{ post.title | i18n }}</h1>
+    {% if post.custom_excerpt %}
+      <p class="weight-mid">{{ post.custom_excerpt }}</p>
+    {% endif %}
+    <p class="eyebrow text-300">{{ post.published_at | date }}</p>
+  </div>
+</section>
+
+<section class="pad-top-900 pad-bottom-900">
+  <div class="wrapper wrapper--compact">
+    {{ post.html | safe }}
+  </div>
+</section>
+
+{% set related = collections.posts | postsForTag(post.tags[0]) | excludePosts(post) | limit(3) %}
+
+{% if related %}
+  <section class="pad-top-900 pad-bottom-900 bg-cream-light">
+    <div class="wrapper">
+      <h2 class="text-align-center gap-bottom-600">Related Posts</h2>
+      <ul class="[ card-grid ] [ auto-grid ]">
+        {% for post in related %}
+          {% include '../_includes/partials/post-card.njk' %}
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+{%- block head -%}
+    <!--Schema-->
+    <link rel="author" href="{{ post.primary_author.website }}">
+    <link rel="publisher" href="{{ site.url }}">
+    <meta itemprop="name" content="{{ title }} – {{ site.title }}">
+    <meta itemprop="description" content="{{ post.excerpt }}">
+    <meta itemprop="image" content="{{ post.feature_image }}">
+{%- endblock -%}

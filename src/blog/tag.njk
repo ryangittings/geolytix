@@ -1,0 +1,24 @@
+---
+pagination:
+  data: collections.tags
+  size: 1
+  alias: tag
+  addAllPagesToCollections: true
+layout: 'layouts/default.njk'
+permalink: '{{ tag.url }}'
+eleventyComputed:
+  title: "{{ tag.name }}"
+---
+
+<section class="[ hero hex-background ] [ bg-dark text-align-center ]">
+  <canvas class="hex-background__canvas"></canvas>
+  <script src="/js/components/hex-background.js" defer></script>
+
+  <div class="wrapper">
+    <h2 class="text-800">{{ tag.name | i18n }}</h2>
+    <a href="/blog/">Back to all posts</a>
+  </div>
+</section>
+
+{% set posts = collections.posts | postsForTag(tag.slug) %}
+{% include '../_includes/partials/posts.njk' %}

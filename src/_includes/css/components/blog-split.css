@@ -1,0 +1,8 @@
+.blog-split {
+  --split-pair-align: flex-start;
+}
+
+.blog-split__tags {
+  position: sticky;
+  top: var(--size-200);
+}
