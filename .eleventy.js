@@ -1,6 +1,7 @@
 require('dotenv').config();
 
-const ghostCollection = require('./src/collections/ghost.js');
+const postCollection = require('./src/collections/posts.js');
+const tagCollection = require('./src/collections/tags.js');
 
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 
@@ -8,15 +9,21 @@ const cssMinFilter = require('./src/filters/css-min.js');
 const globalFilter = require('./src/filters/global.js');
 const i18nFilter = require('./src/filters/i18n.js');
 const dateFilter = require('./src/filters/date.js');
+const squashFilter = require('./src/filters/squash.js');
 const firstWordFilter = require('./src/filters/first-word.js');
 const localisedURLFilter = require('./src/filters/localised-url.js');
+const postsForTagFilter = require('./src/filters/posts-for-tag.js');
+const tagsForPostFilter = require('./src/filters/tags-for-post.js');
+const limitFilter = require('./src/filters/limit.js');
+const excludePostsFilter = require('./src/filters/exclude-posts.js');
 
 const cloudinaryShortcode = require('./src/shortcodes/cloudinary.js');
 const cloudinaryFetchShortcode = require('./src/shortcodes/cloudinaryFetch.js');
 
 module.exports = (config) => {
   // Collections
-  config.addCollection('posts', ghostCollection);
+  config.addCollection('posts', postCollection);
+  config.addCollection('tags', tagCollection);
 
   // Add plugins
   config.addPlugin(pluginRss);
@@ -28,6 +35,11 @@ module.exports = (config) => {
   config.addFilter('i18n', i18nFilter);
   config.addFilter('firstWord', firstWordFilter);
   config.addFilter('localisedURL', localisedURLFilter);
+  config.addFilter('squash', squashFilter);
+  config.addFilter('postsForTag', postsForTagFilter);
+  config.addFilter('tagsForPost', tagsForPostFilter);
+  config.addFilter('limit', limitFilter);
+  config.addFilter('excludePosts', excludePostsFilter);
 
   // Shortcodes
   config.addShortcode('cloudinary', cloudinaryShortcode);

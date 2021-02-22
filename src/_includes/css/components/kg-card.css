@@ -1,0 +1,14 @@
+.kg-card {
+  margin: var(--size-600) 0;
+  text-align: center;
+}
+
+.kg-card img {
+  display: inline-block;
+}
+
+.kg-card figcaption {
+  text-align: center;
+  opacity: 0.8;
+  font-size: var(--size-300);
+}

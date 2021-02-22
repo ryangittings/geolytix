@@ -15,3 +15,7 @@
   opacity: 0.2;
   z-index: -1;
 }
+
+.hero--bright .hero__background {
+  opacity: 0.6;
+}

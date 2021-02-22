@@ -8,3 +8,7 @@
 .wrapper--short {
   --wrapper-max-width: 56rem;
 }
+
+.wrapper--compact {
+  --wrapper-max-width: 44rem;
+}

@@ -1,0 +1,25 @@
+ul.tag-list {
+  --tag-list-spacing: 0.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 0 calc(var(--tag-list-spacing) * -1);
+}
+
+.tag-list li {
+  flex-shrink: 0;
+  margin: 0 var(--tag-list-spacing);
+}
+
+.tag-list li a {
+  display: inline-block;
+  white-space: nowrap;
+  padding: var(--size-100) var(--size-200);
+  text-decoration: none;
+  background: var(--color-cream-light);
+  border-radius: var(--radius-regular);
+  cursor: pointer;
+}

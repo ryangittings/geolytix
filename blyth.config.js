@@ -97,6 +97,7 @@ module.exports = {
         long: '75ch',
         short: '60ch',
         compact: '44ch',
+        tiny: '30ch',
       },
       property: 'max-width',
     },
@@ -146,6 +147,12 @@ module.exports = {
       },
       responsive: true,
       property: 'text-align',
+    },
+    'text-decoration': {
+      items: {
+        none: 'none',
+      },
+      property: 'text-decoration',
     },
     transition: {
       items: {

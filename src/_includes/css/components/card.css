@@ -1,6 +1,7 @@
 .card-grid {
   --auto-grid-min: max(18rem, calc(33% - var(--size-200)));
   --auto-grid-gap: var(--size-200);
+  --auto-grid-method: auto-fill;
 }
 
 .card {
@@ -11,10 +12,6 @@
   flex: 1;
   min-height: 100%;
   background: var(--color-light);
-}
-
-.card:focus-within {
-  border-color: var(--color-primary);
 }
 
 .card__cover {
