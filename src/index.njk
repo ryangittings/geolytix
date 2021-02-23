@@ -117,7 +117,9 @@ metaDesc: Location Planning experts providing retail & demographic data worldwid
       <div class="text-align-center display-none md:display-block">
         <ul class="segment-control" role="tablist">
           {% for item in geodata.items %}
-            <li role="tab"{% if loop.first %} aria-selected="true"{% endif %} data-tab="{{ item.title | slug }}"><button>{{ item.title | i18n }}</button></li>
+            <li role="tab"{% if loop.first %} aria-selected="true"{% endif %} data-tab="{{ item.title | slug }}">
+              <button>{{ item.title | i18n }}</button>
+            </li>
           {% endfor %}
         </ul>
       </div>
@@ -139,119 +141,120 @@ metaDesc: Location Planning experts providing retail & demographic data worldwid
           </div>
         </div>
       {% endfor %}
-    <script src="/js/components/tabs.js" defer></script>
-  </div>
-</section>
-
-<section id="mapp" class="bg-cream-light pad-top-900">
-  <div class="wrapper">
-    <div class="text-align-center gap-bottom-800">
-      <div class="measure-compact">
-        <h2 class="eyebrow">{{ "MAPP" | i18n }}</h2>
-        <h3 class="text-700">{{ "Predictive location intelligence customised for you." | i18n }}</h3>
-      </div>
+      <script src="/js/components/tabs.js" defer></script>
     </div>
+  </section>
 
-    <div class="auto-grid">
-      <div>
-        <h3 class="eyebrow">Overview</h3>
-        <p>{{ "MAPP is our online market intelligence and mapping tool which allows anybody to use location data for business decision-making." | i18n }}</p>
-        <p>{{ "We create bespoke, innovative solutions which work for you." | i18n }}</p>
-        <p>{{ "Visualise your stores, competitors, filter by performance and generate reports and dashboards in a matter of seconds..." | i18n }}</p>
+  <section id="mapp" class="bg-cream-light pad-top-900">
+    <div class="wrapper">
+      <div class="text-align-center gap-bottom-800">
+        <div class="measure-compact">
+          <h2 class="eyebrow">{{ "MAPP" | i18n }}</h2>
+          <h3 class="text-700">{{ "Predictive location intelligence customised for you." | i18n }}</h3>
+        </div>
       </div>
-      <div>
-        <h3 class="eyebrow">Key Features</h3>
-        <ul class="checklist">
-          <li>{{ "Catchment & demographic analysis" | i18n }}</li>
-          <li>{{ "Site feasibility assessments" | i18n }}</li>
-          <li>{{ "Gap analysis & hotspots" | i18n }}</li>
-          <li>{{ "Import & export data" | i18n }}</li>
-          <li>{{ "User roles" | i18n }}</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="eyebrow">Key Benefits</h3>
-        <ul class="checklist">
-          <li>{{ "Simple & easy-to-use" | i18n }}</li>
-          <li>{{ "Accessible anywhere" | i18n }}</li>
-          <li>{{ "Secure" | i18n }}</li>
-          <li>{{ "Unlimited usage" | i18n }}</li>
-          <li>{{ "Integrated data & modelling" | i18n }}</li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="window">
-      <div class="window__toolbar">
-        <span class="window__toolbar-item"></span>
-        <span class="window__toolbar-item"></span>
-        <span class="window__toolbar-item"></span>
+      <div class="auto-grid">
+        <div>
+          <h3 class="eyebrow">Overview</h3>
+          <p>{{ "MAPP is our online market intelligence and mapping tool which allows anybody to use location data for business decision-making." | i18n }}</p>
+          <p>{{ "We create bespoke, innovative solutions which work for you." | i18n }}</p>
+          <p>{{ "Visualise your stores, competitors, filter by performance and generate reports and dashboards in a matter of seconds..." | i18n }}</p>
+        </div>
+        <div>
+          <h3 class="eyebrow">Key Features</h3>
+          <ul class="checklist">
+            <li>{{ "Catchment & demographic analysis" | i18n }}</li>
+            <li>{{ "Site feasibility assessments" | i18n }}</li>
+            <li>{{ "Gap analysis & hotspots" | i18n }}</li>
+            <li>{{ "Import & export data" | i18n }}</li>
+            <li>{{ "User roles" | i18n }}</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="eyebrow">Key Benefits</h3>
+          <ul class="checklist">
+            <li>{{ "Simple & easy-to-use" | i18n }}</li>
+            <li>{{ "Accessible anywhere" | i18n }}</li>
+            <li>{{ "Secure" | i18n }}</li>
+            <li>{{ "Unlimited usage" | i18n }}</li>
+            <li>{{ "Integrated data & modelling" | i18n }}</li>
+          </ul>
+        </div>
       </div>
-      <div class="window__video">
-        <video src="https://res.cloudinary.com/dvx8vwneg/video/upload/q_auto:eco/website/video/mapp.mp4" muted autoplay playsinline loop></video>
-      </div>
-    </div>
 
-    {# <div class="[ button-group ] [ text-align-center gap-top-600 gap-bottom-600 ]">
+      <div class="window">
+        <div class="window__toolbar">
+          <span class="window__toolbar-item"></span>
+          <span class="window__toolbar-item"></span>
+          <span class="window__toolbar-item"></span>
+        </div>
+        <div class="window__video">
+          <video src="https://res.cloudinary.com/dvx8vwneg/video/upload/q_auto:eco/website/video/mapp.mp4" muted autoplay playsinline loop></video>
+        </div>
+      </div>
+
+      {# <div class="[ button-group ] [ text-align-center gap-top-600 gap-bottom-600 ]">
       <a href="https://geolytix.xyz/mapp" class="button" target="_blank" rel="noopener noreferrer">{{ "Try MAPP for free" | i18n }}</a>
     </div> #}
-  </div>
-</section>
+    </div>
+  </section>
 
-<section class="pad-top-900 pad-bottom-900">
-  <div class="wrapper">
-    <div class="text-align-center gap-bottom-800">
-      <div class="measure-compact">
-        <h3 class="text-700">{{ "Our products create success stories." | i18n }}</h3>
-        <p>{{ "We build close, on-going relationships with our customers and will become your trusted advisers" | i18n }}</p>
+  <section class="pad-top-900 pad-bottom-900">
+    <div class="wrapper">
+      <div class="text-align-center gap-bottom-800">
+        <div class="measure-compact">
+          <h3 class="text-700">{{ "Our products create success stories." | i18n }}</h3>
+          <p>{{ "We build close, on-going relationships with our customers and will become your trusted advisers" | i18n }}</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <ul class="card-carousel">
-    {% for story in collections.success %}
-      <li>
-        {% include './_includes/partials/case-study-card.njk' %}
-      </li>
-    {% endfor %}
-  </ul>
+    <ul class="card-carousel">
+      {% for story in collections.success %}
+        <li>
+          {% include './_includes/partials/case-study-card.njk' %}
+        </li>
+      {% endfor %}
+    </ul>
 
-  <script src="/js/vendor/tiny-slider.js" defer></script>
-  <script src="/js/components/card-carousel.js" defer></script>
+    <script src="/js/vendor/tiny-slider.js" defer></script>
+    <script src="/js/components/card-carousel.js" defer></script>
 
-  <div class="wrapper wrapper--short">
-    <div class="text-align-center gap-top-800">
-      <h3 class="eyebrow color-primary-mid gap-bottom-600">{{ "Our Customers also include:" | i18n }}</h3>
+    <div class="wrapper wrapper--short">
+      <div class="text-align-center gap-top-800">
+        <h3 class="eyebrow color-primary-mid gap-bottom-600">{{ "Our Customers also include:" | i18n }}</h3>
 
-      <ul class="[ logo-grid ] [ auto-grid ]">
-        <li><img src="{% cloudinary "/stories/logos/adidas.svg" %}" width="377" height="77" alt="Adidas Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/arco.svg" %}" width="3228" height="936" alt="Arco Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/asda.png" %}" width="2121" height="623" alt="Asda Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/camelot.png" %}" width="210" height="158" alt="Camelot Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/coles.svg" %}" width="440" height="143" alt="Coles Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/co-op.svg" %}" width="440" height="143" alt="Coop Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/costa.png" %}" width="2057" height="640" alt="Costa Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/currys.svg" %}" width="1587" height="1123" alt="Currys PC World Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/dominos.png" %}" width="288" height="60" alt="Dominos Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/dr-martens.png" %}" width="2000" height="1140" alt="Dr Martens Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/ee.png" %}" width="929" height="1607" alt="EE Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/gsttc.png" %}" width="1575" height="1575" alt="GSTTC Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/hbc.svg" %}" width="186" height="94" alt="HBC Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/john-lewis.svg" %}" width="2500" height="1577" alt="John Lewis Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/kfc.svg" %}" width="779" height="779" alt="KFC Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/mands.svg" %}" width="1773" height="1085" alt="M&S Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/mitchells.png" %}" width="1123" height="793" alt="Mitchells Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/on-the-market.svg" %}" width="1067" height="400" alt="On the Market Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/post-office.svg" %}" width="300" height="225" alt="Post Office Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/sainsburys.png" %}" width="995" height="399" alt="Sainsbury's Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/savills.svg" %}" width="500" height="500" alt="Savills Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/tesco.svg" %}" width="200" height="53" alt="Tesco Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/total-fitness.png" %}" width="399" height="126" alt="Total Fitness Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/waitrose.svg" %}" width="652" height="652" alt="Waitrose Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/walmart.svg" %}" width="2500" height="719" alt="Walmart Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/west-yorkshire-auth.png" %}" width="533" height="533" alt="West Yorkshire Auth Logo"></li>
-        <li><img src="{% cloudinary "/stories/logos/wickes.png" %}" width="5000" height="2690" alt="Wickes Logo"></li>
-      </ul>
+        <ul class="[ logo-grid ] [ auto-grid ]">
+          <li><img src="{% cloudinary "/stories/logos/adidas.svg" %}" width="377" height="77" alt="Adidas Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/arco.svg" %}" width="3228" height="936" alt="Arco Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/asda.png" %}" width="2121" height="623" alt="Asda Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/camelot.png" %}" width="210" height="158" alt="Camelot Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/coles.svg" %}" width="440" height="143" alt="Coles Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/co-op.svg" %}" width="440" height="143" alt="Coop Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/commercial-people.svg" %}" width="200" height="98" alt="Commercial People Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/costa.png" %}" width="2057" height="640" alt="Costa Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/currys.svg" %}" width="1587" height="1123" alt="Currys PC World Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/dominos.png" %}" width="288" height="60" alt="Dominos Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/dr-martens.png" %}" width="2000" height="1140" alt="Dr Martens Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/ee.png" %}" width="929" height="1607" alt="EE Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/gsttc.png" %}" width="1575" height="1575" alt="GSTTC Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/hbc.svg" %}" width="186" height="94" alt="HBC Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/john-lewis.svg" %}" width="2500" height="1577" alt="John Lewis Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/kfc.svg" %}" width="779" height="779" alt="KFC Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/mands.svg" %}" width="1773" height="1085" alt="M&S Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/mitchells.png" %}" width="1123" height="793" alt="Mitchells Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/on-the-market.svg" %}" width="1067" height="400" alt="On the Market Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/post-office.svg" %}" width="300" height="225" alt="Post Office Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/sainsburys.png" %}" width="995" height="399" alt="Sainsbury's Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/savills.svg" %}" width="500" height="500" alt="Savills Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/tesco.svg" %}" width="200" height="53" alt="Tesco Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/total-fitness.png" %}" width="399" height="126" alt="Total Fitness Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/waitrose.svg" %}" width="652" height="652" alt="Waitrose Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/walmart.svg" %}" width="2500" height="719" alt="Walmart Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/west-yorkshire-auth.png" %}" width="533" height="533" alt="West Yorkshire Auth Logo"></li>
+          <li><img src="{% cloudinary "/stories/logos/wickes.png" %}" width="5000" height="2690" alt="Wickes Logo"></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
