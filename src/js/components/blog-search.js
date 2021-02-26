@@ -10,13 +10,13 @@ const process = async (searchString) => {
       return response.json();
     })
     .then(function (response) {
-      for (var item in response.search) {
-        const found = response.search[item].text.indexOf(searchString);
+      response.search.forEach((item) => {
+        const found = item.text.indexOf(searchString);
 
         if (found != -1) {
-          results.push(response.search[item]);
+          results.push(item);
         }
-      }
+      });
 
       return results;
     });
