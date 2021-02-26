@@ -4,6 +4,7 @@ const resultList = document.querySelector('#results');
 
 const process = async (searchString) => {
   const results = [];
+  const lowercase = searchString.toLowerCase();
 
   return await fetch('/search.json')
     .then(function (response) {
@@ -11,7 +12,7 @@ const process = async (searchString) => {
     })
     .then(function (response) {
       response.search.forEach((item) => {
-        const found = item.text.indexOf(searchString);
+        const found = item.text.indexOf(lowercase);
 
         if (found != -1) {
           results.push(item);
