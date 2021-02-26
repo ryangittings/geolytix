@@ -4,19 +4,20 @@ const resultList = document.querySelector('#results');
 
 const process = async (searchString) => {
   const results = [];
+  const lowercase = searchString.toLowerCase();
 
   return await fetch('/search.json')
     .then(function (response) {
       return response.json();
     })
     .then(function (response) {
-      for (var item in response.search) {
-        const found = response.search[item].text.indexOf(searchString);
+      response.search.forEach((item) => {
+        const found = item.text.indexOf(lowercase);
 
         if (found != -1) {
-          results.push(response.search[item]);
+          results.push(item);
         }
-      }
+      });
 
       return results;
     });
