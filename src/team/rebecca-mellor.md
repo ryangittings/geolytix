@@ -1,6 +1,6 @@
 ---
 name: Rebecca Mellor
-position: Apprentice Data Analyst
+position: Data Analyst
 linkedin: https://www.linkedin.com/in/rebecca-mellor-291467173
 date: 2020-01-31
 ---
