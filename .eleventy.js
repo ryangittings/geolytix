@@ -46,6 +46,7 @@ module.exports = (config) => {
   config.addShortcode('cloudinaryFetch', cloudinaryFetchShortcode);
 
   // Pass through
+  config.addPassthroughCopy('./src/google69002230bb41088e.html');
   config.addPassthroughCopy('./src/img/');
   config.addPassthroughCopy('./src/fonts/');
   config.addPassthroughCopy('./src/js/');
