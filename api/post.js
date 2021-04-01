@@ -4,6 +4,10 @@ module.exports = async (req, res) => {
   const { body } = req;
   const { formID } = body;
 
+  if (body.url && body.url !== '') {
+    return res.end('Invalid form');
+  }
+
   const url = `https://api.hsforms.com/submissions/v3/integration/submit/7361526/${formID}`;
 
   const fields = Object.keys(body)

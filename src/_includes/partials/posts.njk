@@ -25,8 +25,10 @@
         {% include '../partials/post-card.njk' %}
       {% endfor %}
     </ul>
-    
-    {% include "partials/pagination.njk" %}
+
+    {% if not disablePagination %}
+      {% include "partials/pagination.njk" %}
+    {% endif %}
     </div>
   </div>
 </section>
