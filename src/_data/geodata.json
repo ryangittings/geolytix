@@ -2,19 +2,19 @@
   "items": [
     {
       "title": "United Kingdom",
-      "iframe": "https://geolytix.dev/geodata/view/embedded?layers=Mapbox%20Baselayer,Retail%20Points,Mapbox%20Labels&locale=London&lat=51.513086920438866&lng=-0.13568254330194943&z=15.653345156959716"
+      "iframe": "https://geolytix.xyz/geodata/view/embedded?layers=Mapbox%20Baselayer,Retail%20Points,Mapbox%20Labels&locale=London&lat=51.513086920438866&lng=-0.13568254330194943&z=15.653345156959716"
     },
     {
       "title": "Europe",
-      "iframe": "https://geolytix.dev/geodata/view/embedded?layers=Mapbox%20Baselayer,European%20Indicators&locale=Europe&lat=45.28338298049735&lng=2.806106177105653&z=5.509548750548199"
+      "iframe": "https://geolytix.xyz/geodata/view/embedded?layers=Mapbox%20Baselayer,European%20Indicators&locale=Europe&lat=45.28338298049735&lng=2.806106177105653&z=5.509548750548199"
     },
     {
       "title": "Asia Pacific",
-      "iframe": "https://geolytix.dev/geodata/view/embedded?layers=Mapbox%20Baselayer,Chomoku,Retail%20Places,Retail%20Venues,Mapbox%20Label&locale=APAC&lat=35.68447872510821&lng=139.79016273577636&z=12.469462321599364"
+      "iframe": "https://geolytix.xyz/geodata/view/embedded?layers=Mapbox%20Baselayer,Chomoku,Retail%20Places,Retail%20Venues,Mapbox%20Label&locale=APAC&lat=35.68447872510821&lng=139.79016273577636&z=12.469462321599364"
     },
     {
       "title": "Americas",
-      "iframe": "https://geolytix.dev/geodata/view/embedded?layers=Mapbox%20Baselayer,Mapbox%20Label,Demography%20Grid,Retail%20Places,Retail%20Venues&locale=Americas&lat=-22.916326505326055&lng=-43.268103436029165&z=12.607994421479654"
+      "iframe": "https://geolytix.xyz/geodata/view/embedded?layers=Mapbox%20Baselayer,Mapbox%20Label,Demography%20Grid,Retail%20Places,Retail%20Venues&locale=Americas&lat=-22.916326505326055&lng=-43.268103436029165&z=12.607994421479654"
     }
   ]
 }
