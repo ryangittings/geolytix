@@ -1,6 +1,7 @@
 ---
-name: Elizabeth Dawson
+name: Lizzie Dawson
 position: Associate
+linkedin: https://www.linkedin.com/in/lizzie-dawson-889ab246/
 date: 2021-04-26
 ---
 Lizzie has over 6 years experience in Location Planning, Consumer Research and Retail Consultancy roles. She has recently returned home having spent 2 years based in Sydney, guiding businesses with research and analytics. Prior to her move overseas, she spent 4 years in the Property Consulting Group at CACI.
