@@ -1,6 +1,7 @@
 ---
 name: Kate McGoldrick
 position: Communications Officer
+linkedin: https://www.linkedin.com/in/kate-mcgoldrick-b09795172/
 date: 2020-02-21
 ---
 
