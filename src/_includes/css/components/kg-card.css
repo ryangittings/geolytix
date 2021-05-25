@@ -5,6 +5,8 @@
 
 .kg-card img {
   display: inline-block;
+  width: 100%;
+  height: auto;
 }
 
 .kg-card figcaption {
