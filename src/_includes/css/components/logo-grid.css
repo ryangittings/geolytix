@@ -8,3 +8,7 @@
   height: 4rem;
   object-fit: contain;
 }
+
+.logo-grid a {
+  display: block;
+}
