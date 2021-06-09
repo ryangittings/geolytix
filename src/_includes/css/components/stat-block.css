@@ -3,7 +3,12 @@
 }
 
 .stat-block {
+  position: relative;
   text-align: center;
+}
+
+.stat-block a {
+  text-decoration: none;
 }
 
 .stat-block__number {
