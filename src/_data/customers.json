@@ -9,6 +9,14 @@
       }
     },
     {
+      "name": "Anytime Fitness",
+      "logo": {
+        "path": "/stories/logos/anytime-fitness.png",
+        "width": "1858",
+        "height": "670"
+      }
+    },
+    {
       "name": "Arco",
       "has_story": true,
       "logo": {
@@ -41,6 +49,15 @@
         "path": "/stories/logos/coles.svg",
         "width": "440",
         "height": "143"
+      }
+    },
+    {
+      "name": "Cook",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/cook.png",
+        "width": "1191",
+        "height": "283"
       }
     },
     {
@@ -154,6 +171,15 @@
       }
     },
     {
+      "name": "Mydentist",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/mydentist.png",
+        "width": "1323",
+        "height": "336"
+      }
+    },
+    {
       "name": "On the Market",
       "has_story": true,
       "logo": {
@@ -184,6 +210,14 @@
         "path": "/stories/logos/savills.svg",
         "width": "500",
         "height": "500"
+      }
+    },
+    {
+      "name": "Smyk",
+      "logo": {
+        "path": "/stories/logos/smyk.png",
+        "width": "1040",
+        "height": "336"
       }
     },
     {
