@@ -10,16 +10,23 @@
   border: none;
   text-indent: -9999px;
   transform: translateY(-50%);
-  width: var(--size-600);
-  height: var(--size-600);
+  width: var(--size-700);
+  height: var(--size-700);
+  backdrop-filter: blur(10px);
+  border-radius: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.tns-controls button:hover {
+  transform: translateY(-50%) scale(1.1);
 }
 
 .tns-controls button[data-controls='prev'] {
   left: var(--size-400);
-  background: url('/img/icons/arrow-left.svg') no-repeat center / contain;
+  background: rgba(255, 255, 255, 0.1) url('/img/icons/arrow-left.svg') no-repeat center / 60% auto;
 }
 
 .tns-controls button[data-controls='next'] {
   right: var(--size-400);
-  background: url('/img/icons/arrow-right.svg') no-repeat center / contain;
+  background: rgba(255, 255, 255, 0.1) url('/img/icons/arrow-right.svg') no-repeat center / 60% auto;
 }

@@ -2,60 +2,65 @@ const form = document.querySelector('#search');
 const term = document.querySelector('#search-str');
 const resultList = document.querySelector('#results');
 
-const process = async (searchString) => {
-  const results = [];
-  const lowercase = searchString.toLowerCase();
+const search = () => {
+  let timeout = null;
 
-  return await fetch('/search.json')
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (response) {
-      response.search.forEach((item) => {
-        const found = item.text.indexOf(lowercase);
+  const process = async (searchString) => {
+    const lowercase = searchString.toLowerCase();
 
-        if (found != -1) {
-          results.push(item);
-        }
-      });
-
-      return results;
+    const res = await fetch('/api/search', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        term: lowercase,
+      }),
     });
-};
 
-const search = async () => {
-  if (term.value.length == 0) {
+    return await res.json();
+  };
+
+  const fireSearch = async () => {
+    if (term.value.length == 0) {
+      resultList.innerHTML = '';
+      return;
+    }
+
+    const results = await process(term.value);
     resultList.innerHTML = '';
-    return;
-  }
 
-  const results = await process(term.value);
-  resultList.innerHTML = '';
+    if (results.length > 0) {
+      results.forEach((result) => {
+        const e = document.createElement('li');
+        e.classList = 'search-result';
+        e.innerHTML = `<a href="${result.url}">${result.title}</a>`;
 
-  if (results.length > 0) {
-    results.forEach((result) => {
+        resultList.appendChild(e);
+      });
+    } else {
       const e = document.createElement('li');
       e.classList = 'search-result';
-      e.innerHTML = `<a href="${result.url}">${result.title}</a>`;
+      e.innerHTML = `<a href="#">No results.</a>`;
 
       resultList.appendChild(e);
-    });
-  } else {
-    const e = document.createElement('li');
-    e.classList = 'search-result';
-    e.innerHTML = `<a href="#">No results.</a>`;
+    }
+  };
 
-    resultList.appendChild(e);
-  }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    fireSearch();
+  });
+
+  term.addEventListener('keyup', function (e) {
+    clearTimeout(timeout);
+
+    // Make a new timeout set to go off in 1000ms (1 second)
+    timeout = setTimeout(function () {
+      fireSearch();
+    }, 200);
+  });
 };
-
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
-  search();
-});
-
-term.addEventListener('input', function (e) {
-  search();
-});
 
 search();
