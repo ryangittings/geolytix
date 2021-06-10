@@ -23,14 +23,19 @@ metaDesc: When location matters, organisations turn to us first. We’re driven 
   <script src="/js/components/hex-background.js" defer></script>
   <div class="wrapper">
     <div class="gap-bottom-800">
-      <div class="measure-short">
-        <h2 class="eyebrow">{{ "Our Values" | i18n }}</h2>
-        <h3 class="text-700">{{ "The people who work at Geolytix share our vision and our values." | i18n }}</h3>
+      <div class="split-pair">
+        <div class="measure-short">
+          <h2 class="eyebrow">{{ "Our Values" | i18n }}</h2>
+          <h3 class="text-700">{{ "The people who work at Geolytix share our vision and our values." | i18n }}</h3>
 
-        <div class="measure-compact">
-          <p>{{ "Geolytix was born in 2011. Co-founded by Blair Freebairn and Sarah Hitchcock, our vision remains the same today." | i18n }}</p>
-          <p><strong>{{ "When location matters, organisations turn to us first." | i18n }}</strong></p>
-          <p>{{ "The people who work at Geolytix share our vision and values. We’re driven by our belief that the best work is born from a happy, dedicated and trusted team." | i18n }}</p>
+          <div class="measure-compact">
+            <p>{{ "Geolytix was born in 2011. Co-founded by Blair Freebairn and Sarah Hitchcock, our vision remains the same today." | i18n }}</p>
+            <p><strong>{{ "When location matters, organisations turn to us first." | i18n }}</strong></p>
+            <p>{{ "The people who work at Geolytix share our vision and values. We’re driven by our belief that the best work is born from a happy, dedicated and trusted team." | i18n }}</p>
+          </div>
+        </div>
+        <div>
+          <img src="{% cloudinary '/about/blair-and-sarah.jpg', 'w_616,f_auto' %}" srcset="{% cloudinary '/about/blair-and-sarah.jpg', 'w_616,f_auto,dpr_2.0' %} 2x" class="width-full" alt="Blair and Sarah">
         </div>
       </div>
     </div>
