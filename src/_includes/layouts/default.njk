@@ -44,7 +44,7 @@ layout: layouts/base.njk
     <div class="newsletter-form">
       <div class="newsletter-form__content">
         <h2 class="text-400">{{ "Stay Up to Date with Geolytix" | i18n}}</h2>
-        <p class="text-300">{{ "We’d love to let you know when we release new open data and update you with new stuff we’re working on. We won’t email often and you can unsubscribe at any time." | i18n }}</p>
+        <p class="text-300">{{ "We’d love to let you know when we release new open data and update you with all the exciting projects we’re working on" | i18n }}</p>
       </div>
       <form action="/api/post" method="post" class="newsletter-form__form">
         <div class="input-group">
@@ -57,12 +57,13 @@ layout: layouts/base.njk
       </form>
     </div>
     <ul class="[ logo-grid ] [ auto-grid ]">
-      <li><img src="{% cloudinary "/awards/dataiq.png", 'h_64' %}" srcset="{% cloudinary "/awards/dataiq.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="DataIQ Awards 2020 Winner"></li>
-      <li><img src="{% cloudinary "/awards/fsb.jpg", 'h_64' %}" srcset="{% cloudinary "/awards/fsb.jpg", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="FSB London Business Awards Runner Up"></li>
-      <li><img src="{% cloudinary "/awards/geoawesome.png", 'h_64' %}" srcset="{% cloudinary "/awards/geoawesome.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="GEO awesomeness"></li>
-      <li><img src="{% cloudinary "/awards/nba.jpg", 'h_64' %}" srcset="{% cloudinary "/awards/nba.jpg", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="National Business Awards UK Finalist 2014"></li>
-      <li><img src="{% cloudinary "/awards/qa.jpg", 'h_64' %}" srcset="{% cloudinary "/awards/qa.jpg", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="The Queen's Awards for Enterprise: Innovation 2016"></li>
-      <li><img src="{% cloudinary "/awards/sla.jpg", 'h_64' %}" srcset="{% cloudinary "/awards/sla.jpg", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="The Society for Location Analysis"></li>
+      <li><a href="/blog/geolytix-scoop-the-data-for-environment-top-spot-at-the-data-iq-awards/"><img src="{% cloudinary "/awards/dataiq.png", 'h_64' %}" srcset="{% cloudinary "/awards/dataiq.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="DataIQ Awards 2020 Winner"></a></li>
+      <li><a href="/blog/geolytix-wins-second-queens-award/"><img src="{% cloudinary "/awards/queens.png", 'h_64' %}" srcset="{% cloudinary "/awards/queens.png", 'h_64,dpr_2.0' %} 2x" width="150" height="217" alt="Queens Award 2021"></a></li>
+      <li><a href="https://geoawesomeness.com/top-100-geospatial-companies-and-ecosystem-map-2021/" target="_blank" rel="noopener noreferrer"><img src="{% cloudinary "/awards/geoawesome.png", 'h_64' %}" srcset="{% cloudinary "/awards/geoawesome.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="GEO awesomeness"></a></li>
+      <li><a href="/blog/2014-07-25-national-business-awards-double-finalists/"><img src="{% cloudinary "/awards/nba.jpg", 'h_64' %}" srcset="{% cloudinary "/awards/nba.jpg", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="National Business Awards UK Finalist 2014"></a></li>
+      <li><a href="/blog/2016-07-01-data-analytics-firm-geolytix-win-queens-award-for-enterprise/"><img src="{% cloudinary "/awards/qa.jpg", 'h_64' %}" srcset="{% cloudinary "/awards/qa.jpg", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="The Queen's Awards for Enterprise: Innovation 2016"></a></li>
+      <li><a href="https://thesla.org/" target="_blank" rel="noopener noreferrer"><img src="{% cloudinary "/awards/sla-new.png", 'h_64' %}" srcset="{% cloudinary "/awards/sla-new.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="The Society for Location Analysis"></a></li>
+      <li><a href="https://thesla.org/" target="_blank" rel="noopener noreferrer"><img src="{% cloudinary "/awards/export-champion.png", 'h_64' %}" srcset="{% cloudinary "/awards/export-champion.png", 'h_64,dpr_2.0' %} 2x" width="223" height="226" alt="Export Champion"></a></li>
     </ul>
   </div>
 </aside>

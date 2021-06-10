@@ -1,5 +1,5 @@
 .logo-grid {
-  --auto-grid-min: 5rem;
+  --auto-grid-min: 4rem;
 }
 
 .logo-grid img {
@@ -7,4 +7,8 @@
   width: 100%;
   height: 4rem;
   object-fit: contain;
+}
+
+.logo-grid a {
+  display: block;
 }

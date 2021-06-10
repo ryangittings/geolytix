@@ -1,0 +1,274 @@
+{
+  "items": [
+    {
+      "name": "Adidas",
+      "logo": {
+        "path": "/stories/logos/adidas.svg",
+        "width": "377",
+        "height": "77"
+      }
+    },
+    {
+      "name": "Anytime Fitness",
+      "logo": {
+        "path": "/stories/logos/anytime-fitness.png",
+        "width": "1858",
+        "height": "670"
+      }
+    },
+    {
+      "name": "Arco",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/arco.svg",
+        "width": "3228",
+        "height": "936"
+      }
+    },
+    {
+      "name": "Asda",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/asda.png",
+        "width": "2121",
+        "height": "623"
+      }
+    },
+    {
+      "name": "Camelot",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/camelot.png",
+        "width": "210",
+        "height": "158"
+      }
+    },
+    {
+      "name": "Coles",
+      "logo": {
+        "path": "/stories/logos/coles.svg",
+        "width": "440",
+        "height": "143"
+      }
+    },
+    {
+      "name": "Cook",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/cook.png",
+        "width": "1191",
+        "height": "283"
+      }
+    },
+    {
+      "name": "Coop",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/co-op.svg",
+        "width": "440",
+        "height": "143"
+      }
+    },
+    {
+      "name": "Commercial People",
+      "logo": {
+        "path": "/stories/logos/commercial-people.svg",
+        "width": "200",
+        "height": "98"
+      }
+    },
+    {
+      "name": "Costa",
+      "logo": {
+        "path": "/stories/logos/costa.png",
+        "width": "2057",
+        "height": "640"
+      }
+    },
+    {
+      "name": "Currys",
+      "logo": {
+        "path": "/stories/logos/currys.svg",
+        "width": "1587",
+        "height": "1123"
+      }
+    },
+    {
+      "name": "Dominos",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/dominos.png",
+        "width": "288",
+        "height": "60"
+      }
+    },
+    {
+      "name": "Dr Martens",
+      "logo": {
+        "path": "/stories/logos/dr-martens.png",
+        "width": "2000",
+        "height": "1140"
+      }
+    },
+    {
+      "name": "EE",
+      "logo": {
+        "path": "/stories/logos/ee.png",
+        "width": "929",
+        "height": "1607"
+      }
+    },
+    {
+      "name": "GSTTC",
+      "logo": {
+        "path": "/stories/logos/gsttc.png",
+        "width": "1575",
+        "height": "1575"
+      }
+    },
+    {
+      "name": "Harrogate Borough Council",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/hbc.svg",
+        "width": "186",
+        "height": "94"
+      }
+    },
+    {
+      "name": "John Lewis",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/john-lewis.svg",
+        "width": "2500",
+        "height": "1577"
+      }
+    },
+    {
+      "name": "KFC",
+      "logo": {
+        "path": "/stories/logos/kfc.svg",
+        "width": "779",
+        "height": "779"
+      }
+    },
+    {
+      "name": "Marks and Spencer",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/mands.svg",
+        "width": "1773",
+        "height": "1085"
+      }
+    },
+    {
+      "name": "Mitchells and Butlers",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/mitchells.png",
+        "width": "1123",
+        "height": "793"
+      }
+    },
+    {
+      "name": "Mydentist",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/mydentist.png",
+        "width": "1323",
+        "height": "336"
+      }
+    },
+    {
+      "name": "On the Market",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/on-the-market.svg",
+        "width": "1067",
+        "height": "400"
+      }
+    },
+    {
+      "name": "Post Office",
+      "logo": {
+        "path": "/stories/logos/post-office.svg",
+        "width": "300",
+        "height": "225"
+      }
+    },
+    {
+      "name": "Sainsburys",
+      "logo": {
+        "path": "/stories/logos/sainsburys.png",
+        "width": "995",
+        "height": "399"
+      }
+    },
+    {
+      "name": "Savills",
+      "logo": {
+        "path": "/stories/logos/savills.svg",
+        "width": "500",
+        "height": "500"
+      }
+    },
+    {
+      "name": "Smyk",
+      "logo": {
+        "path": "/stories/logos/smyk.png",
+        "width": "1040",
+        "height": "336"
+      }
+    },
+    {
+      "name": "Tesco",
+      "logo": {
+        "path": "/stories/logos/tesco.svg",
+        "width": "200",
+        "height": "53"
+      }
+    },
+    {
+      "name": "Total Fitness",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/total-fitness.png",
+        "width": "399",
+        "height": "126"
+      }
+    },
+    {
+      "name": "Waitrose",
+      "logo": {
+        "path": "/stories/logos/waitrose.svg",
+        "width": "652",
+        "height": "652"
+      }
+    },
+    {
+      "name": "Walmart",
+      "logo": {
+        "path": "/stories/logos/walmart.svg",
+        "width": "2500",
+        "height": "719"
+      }
+    },
+    {
+      "name": "West Yorkshire Auth",
+      "logo": {
+        "path": "/stories/logos/west-yorkshire-auth.png",
+        "width": "533",
+        "height": "533"
+      }
+    },
+    {
+      "name": "Wickes",
+      "has_story": true,
+      "logo": {
+        "path": "/stories/logos/wickes.png",
+        "width": "5000",
+        "height": "2690"
+      }
+    }
+  ]
+}

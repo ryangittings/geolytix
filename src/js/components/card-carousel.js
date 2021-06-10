@@ -3,7 +3,7 @@ var slider = tns({
   autoplay: true,
   gutter: 32,
   nav: false,
-  controls: false,
+  controls: true,
   autoplayButtonOutput: false,
   items: 1,
   edgePadding: 48,

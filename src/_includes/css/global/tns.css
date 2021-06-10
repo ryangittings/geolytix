@@ -1,0 +1,25 @@
+.tns-outer {
+  position: relative;
+}
+
+.tns-controls button {
+  position: absolute;
+  top: 50%;
+  display: block;
+  z-index: 50;
+  border: none;
+  text-indent: -9999px;
+  transform: translateY(-50%);
+  width: var(--size-600);
+  height: var(--size-600);
+}
+
+.tns-controls button[data-controls='prev'] {
+  left: var(--size-400);
+  background: url('/img/icons/arrow-left.svg') no-repeat center / contain;
+}
+
+.tns-controls button[data-controls='next'] {
+  right: var(--size-400);
+  background: url('/img/icons/arrow-right.svg') no-repeat center / contain;
+}
