@@ -10,7 +10,7 @@ module.exports = async (req, res) => {
     res.end('No term specified');
   }
 
-  const result = await fetch(`${process.env.TEST_URL}/search.json`);
+  const result = await fetch(`${process.env.VERCEL_URL}/search.json`);
   const data = await result.json();
 
   const createIndex = (posts) => {
