@@ -10,8 +10,6 @@ module.exports = async (req, res) => {
     res.end('No term specified');
   }
 
-  console.log(process.env.VERCEL_ENV);
-
   const prefix = process.env.VERCEL_ENV == 'development' ? 'http://' : 'https://';
 
   const result = await fetch(`${prefix}${process.env.VERCEL_URL}/search.json`);
