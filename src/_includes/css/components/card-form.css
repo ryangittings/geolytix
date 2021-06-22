@@ -1,11 +1,14 @@
 .card-form {
   position: relative;
   z-index: 2;
+}
+
+.card-form--overlap {
   transform: translateY(calc(var(--size-900) * -1));
 }
 
 .card-form__inner {
-  --card-form-gap: var(--size-600);
+  --card-form-gap: var(--size-400);
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(calc(50% - var(--card-form-gap)), 1fr));

@@ -17,3 +17,7 @@
 .split-pair > :nth-last-child(n + 3) ~ * {
   flex-basis: 100%;
 }
+
+.split-pair--start {
+  --split-pair-align: flex-start;
+}

@@ -143,97 +143,160 @@ metaDesc: Location Planning experts providing retail & demographic data worldwid
       {% endfor %}
       <script src="/js/components/tabs.js" defer></script>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="mapp" class="bg-cream-light pad-top-900">
-    <div class="wrapper">
-      <div class="text-align-center gap-bottom-800">
-        <div class="measure-compact">
-          <h2 class="eyebrow">{{ "MAPP" | i18n }}</h2>
-          <h3 class="text-700">{{ "Predictive location intelligence customised for you." | i18n }}</h3>
-        </div>
-      </div>
-
-      <div class="auto-grid">
-        <div>
-          <h3 class="eyebrow">Overview</h3>
-          <p>{{ "MAPP is our online market intelligence and mapping tool which allows anybody to use location data for business decision-making." | i18n }}</p>
-          <p>{{ "We create bespoke, innovative solutions which work for you." | i18n }}</p>
-          <p>{{ "Visualise your stores, competitors, filter by performance and generate reports and dashboards in a matter of seconds..." | i18n }}</p>
-        </div>
-        <div>
-          <h3 class="eyebrow">Key Features</h3>
-          <ul class="checklist">
-            <li>{{ "Catchment & demographic analysis" | i18n }}</li>
-            <li>{{ "Site feasibility assessments" | i18n }}</li>
-            <li>{{ "Gap analysis & hotspots" | i18n }}</li>
-            <li>{{ "Import & export data" | i18n }}</li>
-            <li>{{ "User roles" | i18n }}</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="eyebrow">Key Benefits</h3>
-          <ul class="checklist">
-            <li>{{ "Simple & easy-to-use" | i18n }}</li>
-            <li>{{ "Accessible anywhere" | i18n }}</li>
-            <li>{{ "Secure" | i18n }}</li>
-            <li>{{ "Unlimited usage" | i18n }}</li>
-            <li>{{ "Integrated data & modelling" | i18n }}</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="window">
-        <div class="window__toolbar">
-          <span class="window__toolbar-item"></span>
-          <span class="window__toolbar-item"></span>
-          <span class="window__toolbar-item"></span>
-        </div>
-        <div class="window__video">
-          <video src="https://res.cloudinary.com/dvx8vwneg/video/upload/q_auto:eco/website/video/mapp.mp4" muted autoplay playsinline loop></video>
-        </div>
-      </div>
-
-      {# <div class="[ button-group ] [ text-align-center gap-top-600 gap-bottom-600 ]">
-      <a href="https://geolytix.xyz/mapp" class="button" target="_blank" rel="noopener noreferrer">{{ "Try MAPP for free" | i18n }}</a>
-    </div> #}
-    </div>
-  </section>
-
-  <section class="pad-top-900 pad-bottom-900">
-    <div class="wrapper">
-      <div class="text-align-center gap-bottom-800">
-        <div class="measure-compact">
-          <h3 class="text-700">{{ "We create success stories" | i18n }}</h3>
-          <p>{{ "We build close, on-going relationships with our customers and will become your trusted advisers" | i18n }}</p>
-        </div>
+<section id="mapp" class="bg-cream-light pad-top-900">
+  <div class="wrapper">
+    <div class="text-align-center gap-bottom-800">
+      <div class="measure-compact">
+        <h2 class="eyebrow">{{ "MAPP" | i18n }}</h2>
+        <h3 class="text-700">{{ "Predictive location intelligence customised for you." | i18n }}</h3>
       </div>
     </div>
 
-    <ul class="card-carousel">
-      {% for story in collections.success %}
-        <li>
-          {% include './_includes/partials/case-study-card.njk' %}
-        </li>
-      {% endfor %}
-    </ul>
-
-    <script src="/js/vendor/tiny-slider.js" defer></script>
-    <script src="/js/components/card-carousel.js" defer></script>
-
-    <div class="wrapper wrapper--short">
-      <div class="text-align-center gap-top-800">
-        <h3 class="eyebrow color-primary-mid gap-bottom-600">{{ "Our Customers also include:" | i18n }}</h3>
-
-        <ul class="[ logo-grid ] [ auto-grid ]">
-          {% for customer in customers.items %}
-            <li>
-              {% if customer.has_story %}<a href="/success-stories/{{ customer.name | slug }}/">{% endif %}
-              <img src="{% cloudinary customer.logo.path %}" width="{{ customer.logo.width }}" height="{{ customer.logo.height }}" alt="{{ customer.name }} Logo">
-              {% if customer.has_story %}</a>{% endif %}
-            </li>
-          {% endfor %}
+    <div class="auto-grid">
+      <div>
+        <h3 class="eyebrow">Overview</h3>
+        <p>{{ "MAPP is our online market intelligence and mapping tool which allows anybody to use location data for business decision-making." | i18n }}</p>
+        <p>{{ "We create bespoke, innovative solutions which work for you." | i18n }}</p>
+        <p>{{ "Visualise your stores, competitors, filter by performance and generate reports and dashboards in a matter of seconds..." | i18n }}</p>
+      </div>
+      <div>
+        <h3 class="eyebrow">Key Features</h3>
+        <ul class="checklist">
+          <li>{{ "Catchment & demographic analysis" | i18n }}</li>
+          <li>{{ "Site feasibility assessments" | i18n }}</li>
+          <li>{{ "Gap analysis & hotspots" | i18n }}</li>
+          <li>{{ "Import & export data" | i18n }}</li>
+          <li>{{ "User roles" | i18n }}</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="eyebrow">Key Benefits</h3>
+        <ul class="checklist">
+          <li>{{ "Simple & easy-to-use" | i18n }}</li>
+          <li>{{ "Accessible anywhere" | i18n }}</li>
+          <li>{{ "Secure" | i18n }}</li>
+          <li>{{ "Unlimited usage" | i18n }}</li>
+          <li>{{ "Integrated data & modelling" | i18n }}</li>
         </ul>
       </div>
     </div>
-  </section>
+
+    <div class="window">
+      <div class="window__toolbar">
+        <span class="window__toolbar-item"></span>
+        <span class="window__toolbar-item"></span>
+        <span class="window__toolbar-item"></span>
+      </div>
+      <div class="window__video">
+        <video src="https://res.cloudinary.com/dvx8vwneg/video/upload/q_auto:eco/website/video/mapp.mp4" muted autoplay playsinline loop></video>
+      </div>
+    </div>
+
+    {# <div class="[ button-group ] [ text-align-center gap-top-600 gap-bottom-600 ]">
+    <a href="https://geolytix.xyz/mapp" class="button" target="_blank" rel="noopener noreferrer">{{ "Try MAPP for free" | i18n }}</a>
+  </div> #}
+  </div>
+</section>
+
+<section class="pad-top-900 pad-bottom-900">
+  <div class="wrapper">
+    <div class="text-align-center gap-bottom-800">
+      <div class="measure-compact">
+        <h3 class="text-700">{{ "We create success stories" | i18n }}</h3>
+        <p>{{ "We build close, on-going relationships with our customers and will become your trusted advisers" | i18n }}</p>
+      </div>
+    </div>
+  </div>
+
+  <ul class="card-carousel">
+    {% for story in collections.success %}
+      <li>
+        {% include './_includes/partials/case-study-card.njk' %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <script src="/js/vendor/tiny-slider.js" defer></script>
+  <script src="/js/components/card-carousel.js" defer></script>
+
+  <div class="wrapper wrapper--short">
+    <div class="text-align-center gap-top-800">
+      <h3 class="eyebrow color-primary-mid gap-bottom-600">{{ "Our Customers also include:" | i18n }}</h3>
+
+      <ul class="[ logo-grid ] [ auto-grid ]">
+        {% for customer in customers.items %}
+          <li>
+            {% if customer.has_story %}<a href="/success-stories/{{ customer.name | slug }}/">{% endif %}
+            <img src="{% cloudinary customer.logo.path %}" width="{{ customer.logo.width }}" height="{{ customer.logo.height }}" alt="{{ customer.name }} Logo">
+            {% if customer.has_story %}</a>{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="pad-top-900 pad-bottom-900">
+  <div class="wrapper">
+    <div class="split-pair">
+      <div class="measure-long">
+        <h2>{{ "Proudly recognised by the best" | i18n }}</h2>
+        <p class="weight-mid">{{ "We’re delighted to have won 2 Queens Awards, our first for Innovation and second for International Trade." | i18n }}</p>
+        
+        <blockquote class="[ quote ] [ gap-bottom-600 ]">
+          <p>Geolytix has attracted the attention of some impressive clients. A real enabler of business with their product, but also and equally impressive, an enabler through their approach to staff</p>
+          <cite>Simon Freary, CEO Chartered Quality Institute</cite>
+        </blockquote>
+
+        <blockquote class="quote">
+          <p>Geolytix is a global thought leader in its niche and selling to top brands. This appears to be a company that likes the direction in which it’s going, and the people on the journey. This is a role model leader in its commercial field</p>
+          <cite>Emma Jones, CEO Enterprise Nation</cite>
+        </blockquote>
+      </div>
+      <div>
+        <form action="/api/post" method="post" class="card card-form">
+          <div class="pad-600">
+            <h3 class="eyebrow">{{ "Talk to Us" | i18n }}</h3>
+            <h3 class="text-600">{{ "Find out more" | i18n }}</h3>
+            <p>{{ "Join the many companies who put their trust in us. Let’s find a solution together." | i18n }}</p>
+
+            <div class="card-form__inner">
+              <div class="form-field">
+                <label for="first_name">{{ "First Name" | i18n }}<span class="color-red">*</span></label>
+                <input type="text" id="firstname" name="firstname" required>
+              </div>
+              <div class="form-field">
+                <label for="last_name">{{ "Last Name" | i18n }}<span class="color-red">*</span></label>
+                <input type="text" id="lastname" name="lastname" required>
+              </div>
+              <div class="form-field">
+                <label for="email_address">{{ "Email Address" | i18n }}<span class="color-red">*</span></label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-field">
+                <label for="telephone">{{ "Telephone" | i18n }}</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-field form-field--large">
+                <label for="message">{{ "Message" | i18n }}<span class="color-red">*</span></label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="[ card-form__actions ] [ bg-regular-gray pad-400 ]">
+            <div class="checkbox-field">
+              <input type="checkbox" name="marketing" id="marketing" value="true">
+              <label for="marketing" class="text-300 weight-light">{{ "We’d love to let you know when we release new open data and update you with all the exciting projects we’re working on" | i18n }}</label>
+            </div>
+            <input type="text" class="visually-hidden" name="url" aria-hidden="true" autocomplete="off">
+            <input type="hidden" name="formID" value="75c9a40b-490c-4e20-9fa9-ffccf3cf0d40">
+            <button type="submit" class="button">{{ "Send Enquiry" | i18n }}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
