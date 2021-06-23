@@ -239,24 +239,53 @@ metaDesc: Location Planning experts providing retail & demographic data worldwid
   </div>
 </section>
 
-<section class="pad-top-900 pad-bottom-900">
-  <div class="wrapper">
-    <div class="split-pair">
-      <div class="measure-long">
-        <h2>{{ "Proudly recognised by the best" | i18n }}</h2>
-        <p class="weight-mid">{{ "We’re delighted to have won 2 Queens Awards, our first for Innovation and second for International Trade." | i18n }}</p>
-        
-        <blockquote class="[ quote ] [ gap-bottom-600 ]">
-          <p>Geolytix has attracted the attention of some impressive clients. A real enabler of business with their product, but also and equally impressive, an enabler through their approach to staff</p>
-          <cite>Simon Freary, CEO Chartered Quality Institute</cite>
-        </blockquote>
-
-        <blockquote class="quote">
-          <p>Geolytix is a global thought leader in its niche and selling to top brands. This appears to be a company that likes the direction in which it’s going, and the people on the journey. This is a role model leader in its commercial field</p>
-          <cite>Emma Jones, CEO Enterprise Nation</cite>
-        </blockquote>
+<section class="bg-light pad-top-900 pad-bottom-900">
+  <div class="flow">
+    <div>
+      <div class="wrapper wrapper--short">
+        <h3 class="text-700 text-align-center">{{ "We’re delighted to have won 2 Queens Awards, our first for Innovation and second for International Trade." | i18n }}</h3>
       </div>
-      <div>
+    </div>
+
+    <div>
+      <div class="wrapper">
+        <div class="text-align-center">
+          <h2 class="eyebrow">{{ "Proudly recognised by the best" | i18n }}</h2>
+          <ul class="[ logo-grid ] [ auto-grid ]">
+            <li><a href="/blog/geolytix-scoop-the-data-for-environment-top-spot-at-the-data-iq-awards/"><img src="{% cloudinary "/awards/dataiq.png", 'h_64' %}" srcset="{% cloudinary "/awards/dataiq.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="DataIQ Awards 2020 Winner"></a></li>
+            <li><a href="/blog/geolytix-wins-second-queens-award/"><img src="{% cloudinary "/awards/queens.png", 'h_64' %}" srcset="{% cloudinary "/awards/queens.png", 'h_64,dpr_2.0' %} 2x" width="150" height="217" alt="Queens Award 2021"></a></li>
+            <li><a href="https://geoawesomeness.com/top-100-geospatial-companies-and-ecosystem-map-2021/" target="_blank" rel="noopener noreferrer"><img src="{% cloudinary "/awards/geoawesome.png", 'h_64' %}" srcset="{% cloudinary "/awards/geoawesome.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="GEO awesomeness"></a></li>
+            <li><a href="/blog/2014-07-25-national-business-awards-double-finalists/"><img src="{% cloudinary "/awards/nba.jpg", 'h_64' %}" srcset="{% cloudinary "/awards/nba.jpg", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="National Business Awards UK Finalist 2014"></a></li>
+            <li><a href="/blog/2016-07-01-data-analytics-firm-geolytix-win-queens-award-for-enterprise/"><img src="{% cloudinary "/awards/qa.jpg", 'h_64' %}" srcset="{% cloudinary "/awards/qa.jpg", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="The Queen's Awards for Enterprise: Innovation 2016"></a></li>
+            <li><a href="https://thesla.org/" target="_blank" rel="noopener noreferrer"><img src="{% cloudinary "/awards/sla-new.png", 'h_64' %}" srcset="{% cloudinary "/awards/sla-new.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="The Society for Location Analysis"></a></li>
+            <li><a href="https://thesla.org/" target="_blank" rel="noopener noreferrer"><img src="{% cloudinary "/awards/export-champion.png", 'h_64' %}" srcset="{% cloudinary "/awards/export-champion.png", 'h_64,dpr_2.0' %} 2x" width="223" height="226" alt="Export Champion"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="wrapper">
+        <div class="split-pair">
+          <div>
+            <blockquote class="[ quote ] [ gap-bottom-600 ]">
+              <p>Geolytix has attracted the attention of some impressive clients. A real enabler of business with their product, but also and equally impressive, an enabler through their approach to staff</p>
+              <cite>Simon Freary, CEO Chartered Quality Institute</cite>
+            </blockquote>
+          </div>
+
+          <div>
+            <blockquote class="quote">
+              <p>Geolytix is a global thought leader in its niche and selling to top brands. This appears to be a company that likes the direction in which it’s going, and the people on the journey. This is a role model leader in its commercial field</p>
+              <cite>Emma Jones, CEO Enterprise Nation</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="wrapper">
         <form action="/api/post" method="post" class="card card-form">
           <div class="pad-600">
             <h3 class="eyebrow">{{ "Talk to Us" | i18n }}</h3>
