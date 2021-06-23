@@ -239,92 +239,40 @@ metaDesc: Location Planning experts providing retail & demographic data worldwid
   </div>
 </section>
 
-<section class="bg-light pad-top-900 pad-bottom-900">
-  <div class="flow">
-    <div>
-      <div class="wrapper wrapper--short">
-        <h3 class="text-700 text-align-center">{{ "We’re delighted to have won 2 Queens Awards, our first for Innovation and second for International Trade." | i18n }}</h3>
+<section class="bg-cream-light pad-top-900 pad-bottom-900">
+  <div class="wrapper wrapper--short">
+    <div class="gap-bottom-700 text-align-center">
+        <h2 class="text-300 eyebrow">Let's Talk</h2>
+        <h3 class="text-700">{{ "We’re delighted to have won 2 Queens Awards, our first for Innovation and second for International Trade." | i18n }}</h3>
+        <p>{{ "Join the many companies who put their trust in us. Let’s find a solution together." | i18n }}</p>
+        <a href="/contact/" class="button">{{ "Talk to Us" | i18n }}</a>
       </div>
     </div>
 
-    <div>
-      <div class="wrapper">
-        <div class="text-align-center">
-          <h2 class="eyebrow">{{ "Proudly recognised by the best" | i18n }}</h2>
-          <ul class="[ logo-grid ] [ auto-grid ]">
-            <li><a href="/blog/geolytix-scoop-the-data-for-environment-top-spot-at-the-data-iq-awards/"><img src="{% cloudinary "/awards/dataiq.png", 'h_64' %}" srcset="{% cloudinary "/awards/dataiq.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="DataIQ Awards 2020 Winner"></a></li>
-            <li><a href="/blog/geolytix-wins-second-queens-award/"><img src="{% cloudinary "/awards/queens.png", 'h_64' %}" srcset="{% cloudinary "/awards/queens.png", 'h_64,dpr_2.0' %} 2x" width="150" height="217" alt="Queens Award 2021"></a></li>
-            <li><a href="https://geoawesomeness.com/top-100-geospatial-companies-and-ecosystem-map-2021/" target="_blank" rel="noopener noreferrer"><img src="{% cloudinary "/awards/geoawesome.png", 'h_64' %}" srcset="{% cloudinary "/awards/geoawesome.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="GEO awesomeness"></a></li>
-            <li><a href="/blog/2014-07-25-national-business-awards-double-finalists/"><img src="{% cloudinary "/awards/nba.jpg", 'h_64' %}" srcset="{% cloudinary "/awards/nba.jpg", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="National Business Awards UK Finalist 2014"></a></li>
-            <li><a href="/blog/2016-07-01-data-analytics-firm-geolytix-win-queens-award-for-enterprise/"><img src="{% cloudinary "/awards/qa.jpg", 'h_64' %}" srcset="{% cloudinary "/awards/qa.jpg", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="The Queen's Awards for Enterprise: Innovation 2016"></a></li>
-            <li><a href="https://thesla.org/" target="_blank" rel="noopener noreferrer"><img src="{% cloudinary "/awards/sla-new.png", 'h_64' %}" srcset="{% cloudinary "/awards/sla-new.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="The Society for Location Analysis"></a></li>
-            <li><a href="https://thesla.org/" target="_blank" rel="noopener noreferrer"><img src="{% cloudinary "/awards/export-champion.png", 'h_64' %}" srcset="{% cloudinary "/awards/export-champion.png", 'h_64,dpr_2.0' %} 2x" width="223" height="226" alt="Export Champion"></a></li>
-          </ul>
-        </div>
+    <div class="wrapper">
+      <div class="auto-grid">
+        <blockquote class="quote">
+          <p>Geolytix has attracted the attention of some impressive clients. A real enabler of business with their product, but also and equally impressive, an enabler through their approach to staff</p>
+          <cite>Simon Freary, CEO Chartered Quality Institute</cite>
+        </blockquote>
+
+        <blockquote class="quote">
+          <p>Geolytix is a global thought leader in its niche and selling to top brands. This appears to be a company that likes the direction in which it’s going, and the people on the journey. This is a role model leader in its commercial field</p>
+          <cite>Emma Jones, CEO Enterprise Nation</cite>
+        </blockquote>
       </div>
-    </div>
 
-    <div>
-      <div class="wrapper">
-        <div class="split-pair">
-          <div>
-            <blockquote class="[ quote ] [ gap-bottom-600 ]">
-              <p>Geolytix has attracted the attention of some impressive clients. A real enabler of business with their product, but also and equally impressive, an enabler through their approach to staff</p>
-              <cite>Simon Freary, CEO Chartered Quality Institute</cite>
-            </blockquote>
-          </div>
-
-          <div>
-            <blockquote class="quote">
-              <p>Geolytix is a global thought leader in its niche and selling to top brands. This appears to be a company that likes the direction in which it’s going, and the people on the journey. This is a role model leader in its commercial field</p>
-              <cite>Emma Jones, CEO Enterprise Nation</cite>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <div class="wrapper">
-        <form action="/api/post" method="post" class="card card-form">
-          <div class="pad-600">
-            <h3 class="eyebrow">{{ "Talk to Us" | i18n }}</h3>
-            <h3 class="text-600">{{ "Find out more" | i18n }}</h3>
-            <p>{{ "Join the many companies who put their trust in us. Let’s find a solution together." | i18n }}</p>
-
-            <div class="card-form__inner">
-              <div class="form-field">
-                <label for="first_name">{{ "First Name" | i18n }}<span class="color-red">*</span></label>
-                <input type="text" id="firstname" name="firstname" required>
-              </div>
-              <div class="form-field">
-                <label for="last_name">{{ "Last Name" | i18n }}<span class="color-red">*</span></label>
-                <input type="text" id="lastname" name="lastname" required>
-              </div>
-              <div class="form-field">
-                <label for="email_address">{{ "Email Address" | i18n }}<span class="color-red">*</span></label>
-                <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-field">
-                <label for="telephone">{{ "Telephone" | i18n }}</label>
-                <input type="tel" id="phone" name="phone">
-              </div>
-              <div class="form-field form-field--large">
-                <label for="message">{{ "Message" | i18n }}<span class="color-red">*</span></label>
-                <textarea id="message" name="message" required></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="[ card-form__actions ] [ bg-regular-gray pad-400 ]">
-            <div class="checkbox-field">
-              <input type="checkbox" name="marketing" id="marketing" value="true">
-              <label for="marketing" class="text-300 weight-light">{{ "We’d love to let you know when we release new open data and update you with all the exciting projects we’re working on" | i18n }}</label>
-            </div>
-            <input type="text" class="visually-hidden" name="url" aria-hidden="true" autocomplete="off">
-            <input type="hidden" name="formID" value="75c9a40b-490c-4e20-9fa9-ffccf3cf0d40">
-            <button type="submit" class="button">{{ "Send Enquiry" | i18n }}</button>
-          </div>
-        </form>
+      <div class="gap-top-700 text-align-center">
+        <h2 class="eyebrow">{{ "Proudly recognised by the best" | i18n }}</h2>
+        <ul class="[ logo-grid ] [ auto-grid ]">
+          <li><a href="/blog/geolytix-scoop-the-data-for-environment-top-spot-at-the-data-iq-awards/"><img src="{% cloudinary "/awards/dataiq.png", 'h_64' %}" srcset="{% cloudinary "/awards/dataiq.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="DataIQ Awards 2020 Winner"></a></li>
+          <li><a href="/blog/geolytix-wins-second-queens-award/"><img src="{% cloudinary "/awards/queens.png", 'h_64' %}" srcset="{% cloudinary "/awards/queens.png", 'h_64,dpr_2.0' %} 2x" width="150" height="217" alt="Queens Award 2021"></a></li>
+          <li><a href="https://geoawesomeness.com/top-100-geospatial-companies-and-ecosystem-map-2021/" target="_blank" rel="noopener noreferrer"><img src="{% cloudinary "/awards/geoawesome.png", 'h_64' %}" srcset="{% cloudinary "/awards/geoawesome.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="GEO awesomeness"></a></li>
+          <li><a href="/blog/2014-07-25-national-business-awards-double-finalists/"><img src="{% cloudinary "/awards/nba.jpg", 'h_64' %}" srcset="{% cloudinary "/awards/nba.jpg", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="National Business Awards UK Finalist 2014"></a></li>
+          <li><a href="/blog/2016-07-01-data-analytics-firm-geolytix-win-queens-award-for-enterprise/"><img src="{% cloudinary "/awards/qa.jpg", 'h_64' %}" srcset="{% cloudinary "/awards/qa.jpg", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="The Queen's Awards for Enterprise: Innovation 2016"></a></li>
+          <li><a href="https://thesla.org/" target="_blank" rel="noopener noreferrer"><img src="{% cloudinary "/awards/sla-new.png", 'h_64' %}" srcset="{% cloudinary "/awards/sla-new.png", 'h_64,dpr_2.0' %} 2x" width="64" height="64" alt="The Society for Location Analysis"></a></li>
+          <li><a href="https://thesla.org/" target="_blank" rel="noopener noreferrer"><img src="{% cloudinary "/awards/export-champion.png", 'h_64' %}" srcset="{% cloudinary "/awards/export-champion.png", 'h_64,dpr_2.0' %} 2x" width="223" height="226" alt="Export Champion"></a></li>
+        </ul>
       </div>
     </div>
   </div>
